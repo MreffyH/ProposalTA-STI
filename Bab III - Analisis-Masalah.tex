@@ -7,18 +7,94 @@
 \chapter{ANALISIS MASALAH}
 \label{chap:analisis-masalah}
 \section{Analisis Kondisi Saat Ini}
-Menurut \textcite{laudon2020}, gambarkan terlebih dahulu model konseptual sistem yang ada saat ini. Model konseptual ini berisi berbagai komponen atau subsitem dan interaksi antarsubsistem tersebut. Setelah itu, berikan penjelasan tentang masalah yang ada pada sistem tersebut. Paragraf berikut berisi contoh penjabaran masalah sistem informasi fasilitas kesehatan untuk pasien \autocite{pressman2019}. 
+Perencanaan keuangan pada UKM saat ini umumnya masih bergantung pada proses manual dan pencatatan sederhana. Pendekatan ini bukan merupakan kesalahan pelaku usaha, melainkan akibat dari keterbatasan waktu, sumber daya, serta kebutuhan operasional harian yang lebih mendesak dibandingkan perencanaan keuangan jangka panjang. Metode tradisional memang bekerja dengan baik pada kondisi bisnis yang stabil, namun mulai menemui keterbatasan ketika UKM perlu merespons perubahan pasar yang cepat atau ketika transaksi menjadi lebih kompleks. Dengan demikian, permasalahan yang muncul bukan pada pelaku usaha, melainkan pada ketiadaan alat bantu yang ringan, adaptif, dan dapat digunakan tanpa memerlukan peningkatan kompetensi teknis secara signifikan.
 \section{Analisis Kebutuhan}
-\lipsum[4]
+Analisis kebutuhan berguna untuk memahami masalah dan kebutuhan dari pengguna. Bagian ini akan membahas mengenai identifikasi masalah pengguna, kebutuhan fungsional, dan kebutuhan non-fungsional.
+
 \subsection{Identifikasi Masalah Pengguna}
-\lipsum[5]
+Berdasarkan kondisi saat ini, permasalahan utama pengguna (pelaku UKM) dapat dirangkum sebagai berikut:
+\begin{enumerate}
+    \item Tidak memiliki alat yang mampu menganalisis data keuangan dan menghasilkan prediksi yang relevan secara otomatis.
+    \item Kesulitan merencanakan anggaran karena tidak tersedia panduan berbasis data atau rekomendasi yang terdokumentasi.
+    \item Proses perencanaan masih reaktif, bukan prediktif, sehingga UKM sering terlambat merespon perubahan.
+    \item Keterbatasan waktu dan kemampuan teknis untuk menggunakan perangkat lunak analisis yang kompleks.
+    \item Tidak adanya integrasi antara proses pencatatan, analisis, dan pembuatan laporan anggaran.
+\end{enumerate}
+
 \subsection{Kebutuhan Fungsional}
-\lipsum[6]
+Sistem dirancang agar dapat membantu UKM menjalankan proses perencanaan anggaran secara otomatis, kebutuhan fungsional yang diperlukan adalah:
+
+\begin{enumerate}
+    \item Sistem dapat menerima dan membaca data keuangan sederhana (pemasukan, pengeluaran, kategori biaya).
+    \item Sistem mampu melakukan \textit{retrieval} informasi terkait pola keuangan atau pengetahuan pendukung anggaran.
+    \item Sistem menghasilkan analisis dan rekomendasi anggaran secara otomatis menggunakan pendekatan RAG.
+    \item Sistem dapat memprediksi tren sederhana seperti proyeksi biaya atau perkiraan arus kas.
+    \item Sistem menyediakan laporan anggaran dalam format yang mudah dipahami pengguna.
+    \item Integrasi \textit{workflow} dengan n8n untuk pengumpulan data, pemanggilan model, dan distribusi output.
+\end{enumerate}
+
 \subsection{Kebutuhan Nonfungsional}
-\lipsum[7]
+Sistem harus dapat memenuhi beberapa kriteria nonfungsional untuk memastikan efektivitas dan efisiensi penggunaannya. Kebutuhan nonfungsional meliputi:
+\begin{enumerate}
+    \item \textit{Usability}:  
+    Antarmuka sistem harus sederhana, mudah dipahami, dan dapat digunakan oleh pengguna dengan tingkat literasi digital yang bervariasi.
+
+    \item \textit{Reliability}:  
+    Sistem harus mampu menghasilkan \textit{output} secara konsisten berdasarkan data dan konteks yang diberikan.
+
+    \item \textit{Performance}:  
+    Waktu pemrosesan analisis dan pembuatan rekomendasi anggaran harus berada pada tingkat yang wajar, sehingga tidak menghambat penggunaan sehari-hari oleh UKM.
+
+    \item \textit{Security}:  
+    Data keuangan yang di-\textit{input} pengguna harus diproses dengan menjaga kerahasiaan.
+
+    \item \textit{Privacy}:  
+    Informasi pengguna hanya digunakan untuk keperluan analisis dalam sistem dan tidak dibagikan ke pihak eksternal.
+
+    \item \textit{Availability}:  
+    Sistem harus dapat dijalankan secara mandiri pada lingkungan \textit{runtime} n8n yang stabil, baik lokal maupun server, sehingga dapat diakses kapan dibutuhkan oleh pengguna.
+
+    \item \textit{Scalability}:  
+    Arsitektur sistem harus memungkinkan penambahan modul baru, seperti modul penilaian risiko atau analisis biaya lanjutan, tanpa perlu merombak komponen utama.
+
+    \item \textit{Maintainability}:  
+    Alur kerja (\textit{workflow}) pada n8n harus dirancang modular agar mudah diperbarui, diperbaiki, atau dikembangkan seiring bertambahnya kebutuhan pengguna atau perubahan model AI.
+
+    \item \textit{Safety}:  
+    Sistem harus menghindari untuk memberikan rekomendasi yang dapat memicu keputusan finansial berisiko tinggi tanpa peringatan. Output sistem perlu dilengkapi batasan konteks agar tidak digunakan untuk keputusan investasi berisiko.
+\end{enumerate}
 
 \section{Analisis Pemilihan Solusi}
+Analisis pemilihan solusi digunakan untuk mencari dan mempertimbangkan segala rangkaian solusi yang bisa digunakan. Bagian ini akan membahas mengenai alternatif dan analisis penentuan solusi yang tersedia.
+
+% Diubah Jadi Tabel Harusnya
 \subsection{Alternatif Solusi}
-\lipsum[8]
+Sebelum menentukan pendekatan yang akan digunakan, beberapa alternatif solusi telah dianalisis berdasarkan kesesuaian kebutuhan UKM, kompleksitas implementasi, serta tingkat pemeliharaan jangka panjang.
+\begin{enumerate}
+    \item Metode Statistik Tradisional  
+    Menggunakan regresi linear, moving average, atau exponential smoothing.  
+    
+    Kelemahan: tidak cocok untuk data tidak teratur, kurang adaptif.
+
+    \item Machine Learning Konvensional  
+    Menggunakan model seperti Random Forest, XGBoost, atau LSTM.  
+    
+    Kelemahan: memerlukan dataset besar dan pelatihan model yang tidak mudah untuk UKM.
+    
+    \item Sistem Pakar Keuangan  
+    Menggunakan aturan keuangan berbasis rule-based.  
+    
+    Kelemahan: kaku, sulit diperbarui, tidak cocok untuk konteks UKM yang dinamis.
+
+    \item Menggunakan LLM Sederhana 
+    Menggunakan LLM untuk menjawab pertanyaan dan memberi rekomendasi.  
+    
+    Kelemahan: berisiko memberikan jawaban tidak akurat (\textit{hallucination}) jika tanpa sumber data.
+    
+    \item RAG (Retrieval-Augmented Generation) + Workflow Low-Code  
+    Menggabungkan pengambilan pengetahuan dan model generatif dalam satu alur otomatis.  
+    \textit{Kelebihan:} adaptif, berbasis data, mampu memproses dokumen UKM, dan tidak memerlukan pelatihan model rumit.
+\end{enumerate} 
+
 \subsection{Analisis Penentuan Solusi}
-\lipsum[9]
+Setelah mempertimbangkan kelebihan dan kekurangan setiap alternatif, pendekatan RAG yang diintegrasikan dengan platform otomasi low-code seperti n8n dipilih sebagai solusi utama. Alasan pemilihan ini adalah:

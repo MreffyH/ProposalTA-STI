@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  19 NOV 2025 15:27
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  19 NOV 2025 17:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1319,21 +1319,35 @@ Bab III.
 
 [11
 
-]) (Bab IV - Desain-Konsep-Solusi.tex
+]
+Overfull \hbox (7.55008pt too wide) in paragraph at lines 30--31
+[]\TU/TimesNewRoman(0)/m/n/12 Sistem menghasilkan analisis dan rekomendasi angg
+aran secara otomatis meng-
+ []
+
+
+Overfull \hbox (0.90439pt too wide) in paragraph at lines 45--47
+\TU/TimesNewRoman(0)/m/n/12 garan harus berada pada tingkat yang wajar, sehingg
+a tidak menghambat peng-
+ []
+
+
 
 [12]
 
-[13]
+[13]) (Bab IV - Desain-Konsep-Solusi.tex
+
+[14]
 Bab IV.
 ) (Bab V - Rencana-Selanjutnya.tex
 
-[14
+[15
 
 ]
 Bab V.
 )
 
-[15
+[16
 
 ]
 Overfull \hbox (10.57468pt too wide) in paragraph at lines 400--400
@@ -1342,15 +1356,8 @@ omian Republik Indonesia. 2024.
  []
 
 
-Overfull \hbox (6.60919pt too wide) in paragraph at lines 400--400
-[][]\TU/TimesNewRoman(0)/m/n/12 Laudon, Kenneth C., dan Jane P. Laudon. 2020. \
-TU/TimesNewRoman(0)/m/it/12 Sistem Informasi Manajemen. \TU/TimesNewRoman(0)/m/
-n/12 Jakarta:
- []
 
-
-
-[16
+[17
 
 
 ]
@@ -1368,7 +1375,7 @@ See the caption package documentation for explanation.
 
 
 
-[17] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
+[18] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
@@ -1380,13 +1387,13 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31265 strings out of 403196
- 614057 string characters out of 5456126
- 1980100 words of memory out of 5000000
- 59444 multiletter control sequences out of 15000+600000
+ 31250 strings out of 403196
+ 613664 string characters out of 5456126
+ 1979964 words of memory out of 5000000
+ 59429 multiletter control sequences out of 15000+600000
  632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,8n,93p,1245b,6721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (24 pages).
+pdf (25 pages).

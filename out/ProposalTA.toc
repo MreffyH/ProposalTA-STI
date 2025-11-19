@@ -45,25 +45,15 @@
 \babel@toc {indonesian}{}\relax 
 \contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{11}{chapter.3}%
 \contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{11}{section.3.1}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
 \contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{11}{section.3.2}%
 \contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{11}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{12}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{12}{subsection.3.2.3}%
-\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{12}{section.3.3}%
-\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{12}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{12}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{14}{chapter.4}%
-\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{15}{chapter.5}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{13}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{14}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{15}{chapter.4}%
+\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{16}{chapter.5}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
