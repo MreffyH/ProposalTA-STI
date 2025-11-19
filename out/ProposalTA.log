@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  19 NOV 2025 14:57
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  19 NOV 2025 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1162,29 +1162,27 @@ Overfull \hbox (64.45271pt too wide) in paragraph at lines 303--308
 
 [1]
 
-[2] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.toc
-
-[3
-
-])
+[2] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.toc)
 \tf@toc=\write5
 \openout5 = `ProposalTA.toc'.
 
 
 
-[4] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lof)
+[3
+
+] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lof)
 \tf@lof=\write6
 \openout6 = `ProposalTA.lof'.
 
 
 
-[5] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lot)
+[4] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lot)
 \tf@lot=\write7
 \openout7 = `ProposalTA.lot'.
 
 
 
-[6] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lol)
+[5] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lol)
 \tf@lol=\write8
 \openout8 = `ProposalTA.lol'.
 
@@ -1243,7 +1241,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[7
+[6
 
 ] (Bab I - Pendahuluan.tex
 Bab I.
@@ -1287,71 +1285,55 @@ naan \TU/TimesNewRoman(0)/m/it/12 Retrieval-Augmented
 
 [5]
 Bab II.
-File: image/gambar1.png Graphic file (type bmp)
-<image/gambar1.png>
+
+Package biblatex-chicago Warning: Empty Ibidem citation on input line 11.
+
 
 
 [6
 
 ]
-Overfull \hbox (5.19266pt too wide) in paragraph at lines 30--31
-[]\TU/TimesNewRoman(0)/m/n/12 Gambar yang didapat di suatu pustaka atau referen
-si sebaiknya digambar ulang,
+
+[7]
+Overfull \hbox (7.27528pt too wide) in paragraph at lines 37--38
+[]\TU/TimesNewRoman(0)/m/n/12 AI dapat mengelompokkan varians, mendeteksi penyi
+mpangan signifikan, serta mem-
  []
 
 
 
-[7] (table/tabel1.tex) [8] [9]
-Overfull \hbox (13.9993pt too wide) in paragraph at lines 161--161
-|[]\TU/TimesNewRoman(0)/b/n/12 Beberapa Contoh Penulisan Rumus atau Persamaan M
-atematika Meng-
+[8]
+Overfull \hbox (2.88016pt too wide) in paragraph at lines 46--47
+[]\TU/TimesNewRoman(0)/m/n/12 Mengurangi risiko \TU/TimesNewRoman(0)/m/it/12 ha
+llucination \TU/TimesNewRoman(0)/m/n/12 karena jawaban didasarkan pada sumber y
+ang
  []
 
 
+
+[9]) (Bab III - Analisis-Masalah.tex
 
 [10]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 206.
-
-(C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 215.
-
-
-[11]
-Overfull \hbox (19.22398pt too wide) in paragraph at lines 232--238
- [][] 
- []
-
-
-
-[12]) (Bab III - Analisis-Masalah.tex
-
-[13]
-
-[14]
 Bab III.
 
 
-[15
+[11
 
 ]) (Bab IV - Desain-Konsep-Solusi.tex
 
-[16]
+[12]
 
-[17]
+[13]
 Bab IV.
 ) (Bab V - Rencana-Selanjutnya.tex
 
-[18
+[14
 
 ]
 Bab V.
 )
 
-[19
+[15
 
 ]
 Overfull \hbox (10.57468pt too wide) in paragraph at lines 400--400
@@ -1368,28 +1350,43 @@ n/12 Jakarta:
 
 
 
-[20
+[16
 
 
-] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
+]
+
+Package caption Warning: Unused \captionsetup[figure] on input line 377.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[table] on input line 378.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 380.
+See the caption package documentation for explanation.
+
+
+
+[17] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: A9C3A0D9ADFE6C97340C7E98089EC31D;6732.
+(rerunfilecheck)             Checksum: 548A71AE1406F3FE69EA12B81594672F;4968.
 Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 \openout1 = `ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31465 strings out of 403196
- 616456 string characters out of 5456126
- 1989538 words of memory out of 5000000
- 59628 multiletter control sequences out of 15000+600000
- 633110 words of font info for 87 fonts, out of 8000000 for 9000
+ 31265 strings out of 403196
+ 614057 string characters out of 5456126
+ 1980100 words of memory out of 5000000
+ 59444 multiletter control sequences out of 15000+600000
+ 632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,14n,93p,1245b,6721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,8n,93p,1245b,6721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (28 pages).
+pdf (24 pages).
