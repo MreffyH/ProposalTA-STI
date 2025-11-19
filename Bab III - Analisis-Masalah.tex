@@ -70,31 +70,66 @@ Analisis pemilihan solusi digunakan untuk mencari dan mempertimbangkan segala ra
 % Diubah Jadi Tabel Harusnya
 \subsection{Alternatif Solusi}
 Sebelum menentukan pendekatan yang akan digunakan, beberapa alternatif solusi telah dianalisis berdasarkan kesesuaian kebutuhan UKM, kompleksitas implementasi, serta tingkat pemeliharaan jangka panjang.
-\begin{enumerate}
-    \item Metode Statistik Tradisional  
-    Menggunakan regresi linear, moving average, atau exponential smoothing.  
-    
-    Kelemahan: tidak cocok untuk data tidak teratur, kurang adaptif.
+\begin{longtable}{|p{3cm}|p{5cm}|p{5cm}|}
+\caption{Perbandingan Alternatif Solusi untuk Sistem Perencanaan Anggaran UKM}
+\label{tbl:alternatifSolusi} \\
+\hline
+\textbf{Metode} & \textbf{Kelebihan} & \textbf{Keterbatasan} \\
+\hline
+\endfirsthead
 
-    \item Machine Learning Konvensional  
-    Menggunakan model seperti Random Forest, XGBoost, atau LSTM.  
-    
-    Kelemahan: memerlukan dataset besar dan pelatihan model yang tidak mudah untuk UKM.
-    
-    \item Sistem Pakar Keuangan  
-    Menggunakan aturan keuangan berbasis rule-based.  
-    
-    Kelemahan: kaku, sulit diperbarui, tidak cocok untuk konteks UKM yang dinamis.
+\hline
+\textbf{Metode} & \textbf{Kelebihan} & \textbf{Keterbatasan} \\
+\hline
+\endhead
 
-    \item Menggunakan LLM Sederhana 
-    Menggunakan LLM untuk menjawab pertanyaan dan memberi rekomendasi.  
-    
-    Kelemahan: berisiko memberikan jawaban tidak akurat (\textit{hallucination}) jika tanpa sumber data.
-    
-    \item RAG (Retrieval-Augmented Generation) + Workflow Low-Code  
-    Menggabungkan pengambilan pengetahuan dan model generatif dalam satu alur otomatis.  
-    \textit{Kelebihan:} adaptif, berbasis data, mampu memproses dokumen UKM, dan tidak memerlukan pelatihan model rumit.
-\end{enumerate} 
+\hline
+\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+Metode Statistik Tradisional
+&
+Sederhana, mudah dipahami; komputasi ringan; efektif untuk pola stabil
+&
+Kurang adaptif terhadap perubahan; tidak cocok untuk data tidak terstruktur; sulit menangani nonlinieritas
+\\ \hline
+
+\textit{Machine Learning} Konvensional
+&
+Mampu mempelajari pola kompleks; akurasi lebih baik; mendukung variabel banyak
+&
+Membutuhkan dataset besar; implementasi rumit; pemeliharaan tidak mudah bagi UKM
+\\ \hline
+
+Sistem Pakar (\textit{Rule-Based})
+&
+Aturan jelas; mudah diaudit; cocok untuk proses stabil
+&
+Tidak fleksibel; sulit diperbarui; tidak cocok untuk variasi kasus UKM
+\\ \hline
+
+\textit{LLM Standalone}
+&
+Mudah digunakan; tidak perlu pelatihan model; cepat memberikan analisis umum
+&
+Berpotensi \textit{hallucination}; tidak terhubung dengan data UKM; konsistensi jawaban tidak terjamin
+\\ \hline
+
+RAG + Workflow n8n
+&
+Berbasis data; rujukan jelas; mudah diautomasi; tidak perlu pelatihan model khusus
+&
+Butuh basis pengetahuan awal; bergantung pada kualitas \textit{retrieval}; memerlukan layanan model AI stabil
+\\ \hline
+
+\end{longtable}
 
 \subsection{Analisis Penentuan Solusi}
-Setelah mempertimbangkan kelebihan dan kekurangan setiap alternatif, pendekatan RAG yang diintegrasikan dengan platform otomasi low-code seperti n8n dipilih sebagai solusi utama. Alasan pemilihan ini adalah:
+Setelah mempertimbangkan kelebihan dan kekurangan setiap alternatif, pendekatan RAG yang diintegrasikan dengan platform otomasi \textit{low-code} seperti n8n dipilih sebagai solusi utama. Pemilihan pendekatan berbasis RAG yang terintegrasi dengan \textit{workflow low-code} n8n bukan dilakukan karena AI dianggap sebagai satu-satunya solusi, melainkan karena pendekatan ini menawarkan kombinasi yang seimbang antara kemudahan penggunaan, kemampuan adaptif, serta biaya implementasi yang relatif rendah. 
+
+Perbaikan prosedur manual dan penggunaan metode tradisional memang tetap relevan dan dapat berjalan paralel. Namun kedua pendekatan tersebut memiliki keterbatasan ketika UKM membutuhkan rekomendasi yang cepat, berbasis data, dan mampu menyesuaikan diri dengan perubahan kondisi operasional. 
+
+Pendekatan RAG dipilih bukan sebagai substitusi total terhadap proses manual, tetapi sebagai alat bantu yang dapat mengotomatisasi bagian-bagian pekerjaan yang repetitif, menyajikan informasi yang lebih terstruktur, dan memberikan dukungan keputusan tanpa menambah beban kerja atau kebutuhan pelatihan tambahan bagi pelaku UKM.
