@@ -1,0 +1,247 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global/global}
+    \entry{BPBI}{misc}{}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Buku {Praktis} {Bahasa} {Indonesia} 1/{Kata} - {Wikisumber} bahasa {Indonesia}}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
+      \endverb
+      \verb{url}
+      \verb https://id.wikisource.org/wiki/Buku_Praktis_Bahasa_Indonesia_1/Kata
+      \endverb
+    \endentry
+    \entry{hariharan2018}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bdcf3a53998f0e017d5c743e4aa68f8e}{%
+           family={Hariharan},
+           familyi={H\bibinitperiod},
+           given={N.\bibnamedelimi Kunnathuvalappil},
+           giveni={N\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81d824ec5105fe0423b10651d8c83fa8}{%
+           family={Naveen},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4e1f82dd54ba3f8da2dc67696b79ff6}
+      \strng{fullhash}{b4e1f82dd54ba3f8da2dc67696b79ff6}
+      \strng{fullhashraw}{b4e1f82dd54ba3f8da2dc67696b79ff6}
+      \strng{bibnamehash}{b4e1f82dd54ba3f8da2dc67696b79ff6}
+      \strng{authorbibnamehash}{b4e1f82dd54ba3f8da2dc67696b79ff6}
+      \strng{authornamehash}{b4e1f82dd54ba3f8da2dc67696b79ff6}
+      \strng{authorfullhash}{b4e1f82dd54ba3f8da2dc67696b79ff6}
+      \strng{authorfullhashraw}{b4e1f82dd54ba3f8da2dc67696b79ff6}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Emerging Technologies and Innovative Research}
+      \field{number}{7}
+      \field{title}{Artificial Intelligence and Human Collaboration in Financial Planning}
+      \field{volume}{5}
+      \field{year}{2018}
+    \endentry
+    \entry{kemenko2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3be42e11fb4b1e9d1b974a6a10621428}{%
+           family={Kemenko},
+           familyi={K\bibinitperiod},
+           given={Kementerian\bibnamedelimb Koordinator\bibnamedelimb Bidang\bibnamedelimb Perekonomian\bibnamedelimb Republik\bibnamedelima Indonesia},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3be42e11fb4b1e9d1b974a6a10621428}
+      \strng{fullhash}{3be42e11fb4b1e9d1b974a6a10621428}
+      \strng{fullhashraw}{3be42e11fb4b1e9d1b974a6a10621428}
+      \strng{bibnamehash}{3be42e11fb4b1e9d1b974a6a10621428}
+      \strng{authorbibnamehash}{3be42e11fb4b1e9d1b974a6a10621428}
+      \strng{authornamehash}{3be42e11fb4b1e9d1b974a6a10621428}
+      \strng{authorfullhash}{3be42e11fb4b1e9d1b974a6a10621428}
+      \strng{authorfullhashraw}{3be42e11fb4b1e9d1b974a6a10621428}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Diakses: 10 November 2025}
+      \field{title}{Pemerintah Dorong UMKM Naik Kelas Tingkatkan Kontribusi terhadap Ekspor Indonesia}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.ekon.go.id/publikasi/detail/6152/pemerintah-dorong-umkm-naik-kelas-tingkatkan-kontribusi-terhadap-ekspor-indonesia
+      \endverb
+      \verb{url}
+      \verb https://www.ekon.go.id/publikasi/detail/6152/pemerintah-dorong-umkm-naik-kelas-tingkatkan-kontribusi-terhadap-ekspor-indonesia
+      \endverb
+    \endentry
+    \entry{ajitesh2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=59f484da1bb5341a2bdb0dfd8f6fe96a}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Ajitesh},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
+      \strng{fullhash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
+      \strng{fullhashraw}{59f484da1bb5341a2bdb0dfd8f6fe96a}
+      \strng{bibnamehash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
+      \strng{authorbibnamehash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
+      \strng{authornamehash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
+      \strng{authorfullhash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
+      \strng{authorfullhashraw}{59f484da1bb5341a2bdb0dfd8f6fe96a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed October 20, 2025}
+      \field{title}{Linear vs Non-Linear Data: How to Know}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://vitalflux.com/how-know-data-linear-non-linear/
+      \endverb
+      \verb{url}
+      \verb https://vitalflux.com/how-know-data-linear-non-linear/
+      \endverb
+    \endentry
+    \entry{laudon2020}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2a3d8893ad04ba3c98081349c47e2f6c}{%
+           family={Laudon},
+           familyi={L\bibinitperiod},
+           given={Kenneth\bibnamedelima C.},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7104f050b378ef23f0bc36c2b73e5ea2}{%
+           family={Laudon},
+           familyi={L\bibinitperiod},
+           given={Jane\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Jakarta}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{fullhash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{fullhashraw}{a99ce1573b42821945806f73f25db5a4}
+      \strng{bibnamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorbibnamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authornamehash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorfullhash}{a99ce1573b42821945806f73f25db5a4}
+      \strng{authorfullhashraw}{a99ce1573b42821945806f73f25db5a4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Sistem Informasi Manajemen}
+      \field{year}{2020}
+    \endentry
+    \entry{pressman2019}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4d3f81788d99cf425c4b6e0a454baab0}{%
+           family={Pressman},
+           familyi={P\bibinitperiod},
+           given={Roger\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Yogyakarta}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Education}%
+      }
+      \strng{namehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{fullhash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{fullhashraw}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{bibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authorbibnamehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authornamehash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authorfullhash}{4d3f81788d99cf425c4b6e0a454baab0}
+      \strng{authorfullhashraw}{4d3f81788d99cf425c4b6e0a454baab0}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rekayasa Perangkat Lunak: Pendekatan Praktisi}
+      \field{year}{2019}
+    \endentry
+    \entry{wasserbacher2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=aeb9aa2d9630f5650dab578314236f21}{%
+           family={Wasserbacher},
+           familyi={W\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8b1ae9734f477eac207fdb4e76b4b4d}{%
+           family={Spindler},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{738051cf5e6786f1372742d60ce88606}
+      \strng{fullhash}{738051cf5e6786f1372742d60ce88606}
+      \strng{fullhashraw}{738051cf5e6786f1372742d60ce88606}
+      \strng{bibnamehash}{738051cf5e6786f1372742d60ce88606}
+      \strng{authorbibnamehash}{738051cf5e6786f1372742d60ce88606}
+      \strng{authornamehash}{738051cf5e6786f1372742d60ce88606}
+      \strng{authorfullhash}{738051cf5e6786f1372742d60ce88606}
+      \strng{authorfullhashraw}{738051cf5e6786f1372742d60ce88606}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Digital Finance}
+      \field{number}{1}
+      \field{title}{Machine Learning for Financial Forecasting, Planning and Analysis: Recent Developments and Pitfalls}
+      \field{volume}{4}
+      \field{year}{2022}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

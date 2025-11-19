@@ -5,34 +5,67 @@
 \label{chap:pendahuluan}
 % --- Latar Belakang ---
 \section{Latar Belakang}
-Latar Belakang menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tugas akhir. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
-\begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di puskesmas daerah pedesaan dan masalah yang dihadapi.
-\item	Berbagai solusi yang telah diterapkan atau solusi yang tersedia dan memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut.
-\end{enumerate}
+Usaha Mikro, Kecil, dan Menengah (UMKM) merupakan sektor dengan kontribusi terbesar terhadap perekonomian Indonesia. Berdasarkan data \textcite{kemenko2024}, lebih dari 64 juta unit usaha dikategorikan sebagai UMKM dan menyumbang lebih dari 60\% Produk Domestik Bruto (PDB) nasional, serta menyerap sekitar 97\% tenaga kerja. Data ini menunjukkan betapa pentingnya sektor usaha berskala mikro, kecil, maupun menengah dalam menopang stabilitas ekonomi nasional.
 
+Meskipun data pemerintah menggunakan istilah UMKM, tugas akhir ini secara khusus berfokus pada UKM (Usaha Kecil dan Menengah), yaitu dua kelompok usaha yang berada pada tingkat yang lebih matang dibanding usaha mikro. UKM umumnya memiliki struktur operasional lebih kompleks, kebutuhan pengelolaan keuangan lebih besar, serta potensi adopsi teknologi yang lebih tinggi. Oleh karena itu, UKM menghadapi tantangan yang lebih signifikan dalam hal manajemen keuangan, perencanaan anggaran, dan adaptasi terhadap perubahan pasar.
+
+Dalam konteks bisnis modern, kemampuan melakukan \textit{financial forecasting} dan perencanaan anggaran secara akurat merupakan faktor kunci dalam proses pengambilan keputusan. Penelitian sebelumnya menunjukkan bahwa perencanaan anggaran yang berbasis prediksi dapat meningkatkan kesiapan organisasi dalam menghadapi perubahan pasar, mengalokasikan sumber daya secara efisien, dan memperkuat ketahanan bisnis \autocite{hariharan2018}. Bagi UKM, kemampuan ini sangat penting untuk menjaga keberlanjutan usaha sekaligus meningkatkan daya saing.
+
+Namun, sebagian besar UKM di Indonesia masih menggunakan pendekatan tradisional seperti \textit{moving averages}, regresi linear, atau analisis deret waktu sederhana. Pendekatan ini memang mudah diterapkan, tetapi memiliki keterbatasan signifikan dalam menangani pola data nonlinier, volatilitas musiman, dan kompleksitas pasar. Analisis terbaru menunjukkan bahwa metode statistik konvensional kurang adaptif terhadap pola data modern sehingga sering menghasilkan prediksi yang tidak akurat \autocite{ajitesh2022}.
+
+Perkembangan teknologi kecerdasan buatan (AI) menghadirkan peluang besar untuk meningkatkan akurasi \textit{forecasting} dan efektivitas perencanaan keuangan. Studi terbaru menunjukkan bahwa teknik berbasis \textit{machine learning} mampu mempelajari pola kompleks, mengolah data dalam skala besar, dan beradaptasi terhadap perubahan pasar jauh dengan lebih baik dibanding metode tradisional \autocite{wasserbacher2022}. Integrasi AI tidak hanya meningkatkan akurasi prediksi, tetapi juga memperkuat proses penganggaran melalui rekomendasi yang lebih kontekstual, responsif, dan berbasis data.
+
+Meskipun pemanfaatan AI dalam \textit{forecasting} dan \textit{budgeting} berkembang pesat di perusahaan besar, penelitian yang secara khusus menganalisis penerapannya pada UKM Indonesia masih sangat terbatas. Berdasarkan kondisi tersebut, tugas akhir ini bertujuan mengembangkan implementasi AI untuk membantu UKM melakukan analisis keuangan, proyeksi, dan penyusunan anggaran secara lebih efektif dan adaptif.
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
-Rumusan Masalah berisi masalah utama yang dibahas dalam tugas akhir. Rumusan masalah yang baik memiliki struktur sebagai berikut:
+Berdasarkan latar belakang yang telah dijelaskan, rumusan masalah dalam tugas akhir ini adalah:
 \begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
+\item	Bagaimana keterbatasan metode perencanaan keuangan tradisional mempengaruhi akurasi dan efektivitas perencanaan anggaran pada UKM?
+\item	Bagaimana peran kecerdasan buatan, khususnya pendekatan \textit{Retrieval-Augmented Generation (RAG)}, dapat meningkatkan adaptivitas dan kualitas analisis dalam perencanaan anggaran UKM?
+\item Bagaimana merancang dan mengimplementasikan sistem otonomisasi perencanaan anggaran berbasis RAG yang efisien dan dapat diterapkan pada UKM melalui platform otomasi \textit{low-code}?
 \end{enumerate}
 
 % --- Tujuan ---
 \section{Tujuan}
-Tuliskan tujuan utama dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tugas akhir. Fokuskan pada hasil akhir yang ingin diperoleh setelah tugas akhir diselesaikan, terkait dengan penyelesaian persoalan pada rumusan masalah. Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di akhir pelaksanaan tugas akhir apakah tercapai atau tidak. Tuliskan kriteria keberhasilan tugas akhir ini.
+Tujuan yang ingin dicapai dalam pelaksanaan tugas akhir ini adalah sebagai berikut:
+\begin{enumerate}
+\item Menganalisis keterbatasan metode perencanaan keuangan tradisional yang digunakan UKM, khususnya terkait akurasi prediksi dan kemampuan adaptasi terhadap dinamika pasar.
+\item Mengkaji potensi dan kontribusi pendekatan kecerdasan buatan, terutama \textit{Retrieval-Augmented Generation (RAG)}, dalam meningkatkan kualitas, adaptivitas, dan ketepatan perencanaan anggaran UKM.
+\item Merancang dan mengembangkan sistem otonomisasi perencanaan anggaran berbasis RAG yang terintegrasi dengan platform otomasi \textit{low-code} untuk menghasilkan proses perencanaan anggaran yang lebih efisien, akurat, dan mudah diterapkan oleh UKM.
+\end{enumerate}
 
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
-Tuliskan batasan-batasan yang diambil dalam pelaksanaan tugas akhir. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tugas akhir dibuat cukup spesifik.
+Agar penelitian ini terarah dan fokus pada tujuan yang ingin dicapai, maka batasan masalah dalam tugas akhir ini ditetapkan sebagai berikut:
+\begin{enumerate}
+\item Penelitian ini berfokus pada pengembangan sistem otonomisasi perencanaan anggaran untuk UKM, dengan cakupan pada analisis data keuangan sederhana, prediksi tren, dan rekomendasi alokasi anggaran. Lingkupnya tidak mencakup fungsi keuangan lain seperti akuntansi lengkap, perpajakan, atau manajemen operasional.
+\item Data yang digunakan dalam pengujian sistem berasal dari data simulasi dan/atau data representatif dari studi kasus UKM (misalnya Air Minum ARBAS atau startup binaan Lab SCCIC ITB). Data tidak harus mencerminkan keseluruhan kondisi finansial UKM Indonesia.
+\item Pendekatan kecerdasan buatan dibatasi pada penggunaan \textit{Retrieval-Augmented Generation (RAG)} sebagai mekanisme analisis dan rekomendasi, serta integrasi platform otomasi \textit{low-code} hanya digunakan untuk alur dasar seperti pengambilan data, pemrosesan, dan penyajian hasil.
+\item Antarmuka pengguna disederhanakan untuk kebutuhan demonstrasi sistem, tanpa fokus pada desain UI/UX yang kompleks atau kustomisasi mendalam sesuai kebutuhan spesifik UKM.
+\item Evaluasi sistem berfokus pada relevansi informasi hasil RAG, kesesuaian rekomendasi dengan konteks perencanaan anggaran UKM, serta kelayakan proses otomasi. Evaluasi aspek hukum, keamanan data tingkat lanjut, performa skala besar, atau integrasi penuh dengan sistem eksternal tidak dibahas.
+\end{enumerate}
 
 % --- Metodologi Pengerjaan TA ---
 \section{Metodologi}
-Tuliskan semua tahapan yang akan dilalui selama pelaksanaan tugas akhir. Tahapan ini spesifik untuk menyelesaikan persoalan tugas akhir. Khusus untuk penyusunan proposal ini, jelaskan secara detail:
+Penelitian ini menggunakan pendekatan \textit{Waterfall} sebagai model pengembangan sistem. Model ini dipilih karena memberikan alur kerja yang terstruktur, sistematis, serta sesuai dengan kebutuhan penelitian yang menekankan proses analisis, perancangan, implementasi, dan evaluasi sistem otonomisasi perencanaan anggaran berbasis \textit{Retrieval-Augmented Generation} (RAG). Setiap tahapan menghasilkan luaran yang menjadi masukan bagi tahap berikutnya sehingga memudahkan proses validasi dan dokumentasi.
+
+Secara umum, metodologi penelitian terdiri dari lima tahapan utama sebagai berikut:
+
 \begin{enumerate}
-\item	Tahapan investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Langkah-langkah pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara sistematis di Bab II Studi Literatur.
+
+\item \textbf{Analisis Kebutuhan}\\
+Tahapan ini mencakup identifikasi kebutuhan UKM terkait proses perencanaan keuangan, termasuk jenis data keuangan yang digunakan, kebutuhan prediksi dan analisis, serta aspek-aspek anggaran yang perlu diotomatisasi. Data diperoleh melalui studi literatur, tinjauan jurnal terkait forecasting dan budgeting berbasis AI, serta analisis terhadap karakteristik data studi kasus UKM (misalnya Air Minum Arbus atau startup binaan SCCIC ITB). Hasil analisis digunakan sebagai dasar penyusunan spesifikasi sistem.
+
+\item \textbf{Perancangan Sistem (\textit{System Design})}\\
+Pada tahap ini dilakukan perancangan arsitektur sistem berbasis RAG yang meliputi desain proses \textit{retrieval}, \textit{generation}, serta mekanisme pengolahan data keuangan. Selain itu, dilakukan perancangan alur otomasi menggunakan platform \textit{low-code} n8n untuk mendukung proses pengumpulan data, pemanggilan model RAG, dan penyajian hasil kepada pengguna. Diagram alir, arsitektur komponen, dan perancangan skenario interaksi sistem disusun pada tahap ini.
+
+\item \textbf{Implementasi Sistem}\\
+Tahapan ini melibatkan pembangunan sistem sesuai rancangan, termasuk implementasi model RAG, konfigurasi modul \textit{retrieval}, dan integrasi alur otomasi melalui n8n. Data simulatif atau data studi kasus UKM digunakan untuk menguji kemampuan sistem dalam menghasilkan analisis keuangan, prediksi tren sederhana, serta rekomendasi anggaran secara otomatis. Implementasi dilakukan secara iteratif dengan memastikan setiap komponen dapat berfungsi secara konsisten.
+
+\item \textbf{Pengujian Sistem (\textit{Testing})}\\
+Pengujian dilakukan untuk memastikan sistem berjalan sesuai kebutuhan dan menghasilkan keluaran yang relevan. Metode yang digunakan mengacu pada evaluasi RAG, yang menilai kualitas hasil berdasarkan relevansi konteks, ketepatan jawaban, serta kesesuaian rekomendasi terhadap data keuangan. Pengujian juga mencakup uji alur otomasi pada n8n untuk memastikan integrasi antarkomponen bekerja secara stabil.
+
+\item \textbf{Evaluasi dan Dokumentasi}\\
+Tahap terakhir mencakup evaluasi terhadap efektivitas sistem dalam mendukung proses perencanaan anggaran UKM, termasuk analisis manfaat, keterbatasan, serta potensi pengembangan lebih lanjut. Seluruh proses dan hasil penelitian kemudian disusun dalam bentuk dokumentasi laporan tugas akhir.
+
 \end{enumerate}
