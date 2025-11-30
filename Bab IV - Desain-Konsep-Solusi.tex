@@ -3,7 +3,66 @@
 % ==========================================
 \chapter{DESAIN KONSEP SOLUSI}
 \label{chap:desain-konsep-solusi}
-Ilustrasikan desain konsep solusi dalam bentuk model konseptual dan penjelasan secara ringkas, 
-beserta perbedaannya dengan sistem saat ini. Ilustrasi harus dapat dibandingkan (\textit{before} and \textit{after}). 
-Karena masih berupa proposal, bab ini hanya berisi gambar desain konsep solusi tersebut dan 
-penjelasan perbandingannya dengan gambar sistem yang ada saat ini (yang tergambar di awal Bab \ref{chap:analisis-masalah}).
+
+Bab ini menjelaskan mengenai desain konsep solusi implementasi AI dalam perencanaan anggaran usaha kecil dan menengah. Desain konsep solusi yang diusulkan menggunakan kecerdasan buatan yang memanfaatkan \textit{multi-agent}, dibangun menggunakan \textit{workflow automation} n8n, menggunakan model bahasa OpenAI (nantinya dipilih menggunakan kombinasi O3, GPT-4.1, GPT-4o mini, dan GPT-5nano) sebagai mesin \textit{reasoning} dan analisis keuangan. Berikut adalah \textit{high-level design} dari desain konsep solusi yang akan dirancang.
+
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.7\textwidth]{image/Flowchart.png}
+	\caption{Data Flow untuk Perencanaan Anggaran \autocite{Vivet2023}}
+	\label{gambar:Data Flow}
+\end{figure}
+
+Diagram Data Flow untuk Perencanaan Anggaran yang diadaptasi dari \textcite{Vivet2023} menjelaskan alur dasar bagaimana data keuangan diproses menjadi informasi yang siap digunakan dalam pengambilan keputusan anggaran. Proses dimulai dari Database Structured, yaitu tempat penyimpanan data historis yang telah disusun dalam format terstruktur, seperti pendapatan dan pengeluaran per periode. 
+Data ini kemudian dikirim ke tahap \textit{Forecast Computing}, sistem melakukan komputasi prediktif untuk mengidentifikasi pola historis dan memproyeksikan kondisi keuangan pada periode berikutnya. Tahap \textit{forecasting} ini merupakan inti dari proses perencanaan anggaran modern karena menghasilkan estimasi yang menjadi acuan penyusunan anggaran. 
+Hasil komputasi selanjutnya disajikan melalui \textit{Data Visualization}, yaitu proses visualisasi dalam bentuk grafik, tabel, atau dashboard sehingga informasi dapat dengan mudah dipahami oleh pengambil keputusan. Dengan demikian, alur ini menggambarkan transformasi data mentah menjadi insight finansial yang terstruktur dan siap digunakan untuk perencanaan anggaran yang lebih akurat dan berbasis data.
+
+Untuk memberikan gambaran yang lebih jelas, diberikan diagram arsitektur sistem yang disusun dengan pembagian \textit{Presentation Layer, Application Gateaway Layer, Business Layer, Data and Infrastructure Layer}.
+
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.7\textwidth]{image/Architecture.png}
+	\caption{Arsiterktur Sistem }
+	\label{gambar:Archiecture System}
+\end{figure}
+
+Diagram arsitektur sistem Gambar IV.2 menggambarkan seluruh komponen sistem bekerja. Masing-masing lapisan memiliki fungsi yang saling melengkapi.
+\begin{enumerate}
+
+\item \textit{Presentation Layer}\\
+Lapisan ini merupakan titik interaksi langsung antara pengguna dan sistem. \textit{Web Dashboard} berfungsi untuk menampilkan ringkasan analisis keuangan, hasil perhitungan tren, rancangan anggaran, serta rekomendasi yang dihasilkan sistem. Pengguna juga dapat memasukkan data keuangan secara manual atau mengunggah file sederhana melalui antarmuka ini.
+\textit{Chat-Style Interface} Antarmuka percakapan yang memungkinkan pengguna berkomunikasi dengan sistem secara lebih natural. Pada mode ini, pengguna dapat memberikan instruksi seperti “buatkan rencana anggaran tahun depan” atau “validasi anggaran berikut,” yang kemudian akan diteruskan sebagai permintaan ke sistem backend.
+
+\item \textit{Application Gateaway Layer}\\
+Lapisan ini berfungsi sebagai gerbang penghubung antara antarmuka pengguna dengan logika bisnis sistem. \textit{API Gateaway/Backend Service} befungsi untuk 
+textit{Connector n8n} merupakan komponen penghubung yang menjembatani sistem backend dengan \textit{workflow} otomatisasi berbasis n8n. Melalui connector ini, permintaan yang masuk akan diarahkan ke rangkaian agen AI yang sesuai, kemudian hasil analisis akan dikembalikan dalam format yang terstandardisasi.
+
+\item \textit{Business Layer}\\
+Merupakan inti dari sistem dan tempat seluruh proses kecerdasan buatan berlangsung. \textit{CFO Agent} Agen utama yang bertindak sebagai koordinator atau pusat pengambilan keputusan. CFO Agent menentukan alur kerja, mengatur pemanggilan agen lain, dan menyusun hasil akhir yang akan disampaikan kepada pengguna.
+\textit{Multi Agent} terdiri atas tiga agen spesialis yang masing-masing menjalankan fungsi yang selaras dengan ruang lingkup penelitian. \textit{Data and Trend Analysis Agent} melakukan pengolahan data keuangan sederhana, merangkum pola historis, dan menghasilkan prediksi tren keuangan untuk periode selanjutnya.
+\textit{Budget Planning Agent} bertugas merancang draft anggaran berdasarkan tren dan tujuan yang diberikan pengguna. Agen ini menyusun alokasi anggaran per kategori secara terstruktur. \textit{Budget Validation Agent} melakukan pemeriksaan konsistensi, validasi logis, dan memberikan rekomendasi optimasi anggaran. Agen ini memastikan bahwa rancangan anggaran memenuhi batas pendapatan, target laba, serta alokasi yang proporsional.
+
+\item \textit{Data and Infrastructure Layer}\\
+Lapisan ini menyediakan fondasi penyimpanan dan infrastruktur untuk mendukung seluruh proses pada lapisan sebelumnya. \textit{Financial Database} Menyimpan data historis pendapatan, pengeluaran, dan hasil rancangan anggaran. Basis data ini menjadi sumber utama bagi agen analisis dan perencanaan. 
+\textit{AI Infrastructure} mencakup LLM seperti OpenAI GPT-4.1 dan GPT-4o yang digunakan oleh agen-agen di \textit{Business Layer}. Infrastruktur ini memastikan pemrosesan permintaan dilakukan secara efisien dan akurat.
+\textit{Supporting Infrastructure} termasuk server untuk menjalankan workflow n8n, backend API, logging, monitoring, dan komponen pendukung lainnya. Elemen ini memastikan sistem tetap stabil, skalabel, dan aman ketika menerima permintaan dari banyak pengguna.
+
+\end{enumerate}
+
+Melalui pendekatan ini, sistem mampu menghasilkan analisis tren, rancangan anggaran, dan validasi secara otomatis sehingga meningkatkan akurasi, kecepatan, dan konsistensi dibandingkan metode penyusunan anggaran konvensional. Desain ini menjadi landasan untuk tahap implementasi dan evaluasi pada bab selanjutnya.
+
+% \section{Perbandingan Sistem Tradisional dan Sistem Berbasis AI}
+% Subbab ini menguraikan perbandingan antara pendekatan tradisional dan pendekatan berbasis AI dalam dua aspek utama, yaitu akurasi perencanaan anggaran dan akurasi \textit{forecasting}.
+
+
+% \subsection{Akurasi Perencanaan Anggaran}
+% Pendekatan tradisional umumnya bersifat statis dan tidak mampu melakukan penyesuaian otomatis ketika terdapat perubahan dalam proyeksi pendapatan atau kondisi operasional. Penelitian tentang penggunaan AI dalam aktivitas perencanaan menunjukkan bahwa AI dapat meningkatkan efektivitas pengelolaan anggaran dengan mengidentifikasi pola pengeluaran yang tidak efisien dan memberikan saran alokasi yang lebih tepat \autocite{chen2021}.
+% \subsection{Akurasi \textit{Forecasting}}
+
+
+% Ilustrasikan desain konsep solusi dalam bentuk model konseptual dan penjelasan secara ringkas, 
+% beserta perbedaannya dengan sistem saat ini. Ilustrasi harus dapat dibandingkan (\textit{before} and \textit{after}). 
+% Karena masih berupa proposal, bab ini hanya berisi gambar desain konsep solusi tersebut dan 
+% penjelasan perbandingannya dengan gambar sistem yang ada saat ini (yang tergambar di awal Bab \ref{chap:analisis-masalah}).
