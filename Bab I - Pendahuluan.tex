@@ -7,65 +7,67 @@
 \section{Latar Belakang}
 Usaha Mikro, Kecil, dan Menengah (UMKM) merupakan sektor dengan kontribusi terbesar terhadap perekonomian Indonesia. Berdasarkan data \textcite{kemenko2024}, lebih dari 64 juta unit usaha dikategorikan sebagai UMKM dan menyumbang lebih dari 60\% Produk Domestik Bruto (PDB) nasional, serta menyerap sekitar 97\% tenaga kerja. Data ini menunjukkan betapa pentingnya sektor usaha berskala mikro, kecil, maupun menengah dalam menopang stabilitas ekonomi nasional.
 
-Meskipun data pemerintah menggunakan istilah UMKM, tugas akhir ini secara khusus berfokus pada UKM (Usaha Kecil dan Menengah), yaitu dua kelompok usaha yang berada pada tingkat yang lebih matang dibanding usaha mikro. UKM umumnya memiliki struktur operasional lebih kompleks, kebutuhan pengelolaan keuangan lebih besar, serta potensi adopsi teknologi yang lebih tinggi. Oleh karena itu, UKM menghadapi tantangan yang lebih signifikan dalam hal manajemen keuangan, perencanaan anggaran, dan adaptasi terhadap perubahan pasar.
+Meskipun data pemerintah menggunakan istilah UMKM, tugas akhir ini akan berfokus pada UKM (Usaha Kecil dan Menengah), yaitu dua kelompok usaha yang berada pada tingkat yang lebih matang dibanding usaha mikro. UKM umumnya memiliki struktur operasional lebih kompleks, kebutuhan pengelolaan keuangan lebih besar, serta potensi adopsi teknologi yang lebih tinggi. Kompleksitas ini membuat UKM menghadapi tantangan yang semakin signifikan dalam manajemen keuangan dan pengambilan keputusan, termasuk ketidaktepatan dalam penentuan anggaran proyek, ketiadaan mekanisme validasi anggaran, hingga kesulitan menilai kelayakan ekspansi ke produk atau usaha baru. Permasalahan-permasalahan ini menunjukkan bahwa UKM membutuhkan sistem perencanaan anggaran yang tidak hanya memproyeksikan angka, tetapi juga dapat mendukung proses pengecekan, verifikasi, dan pembuktian manfaat.
 
-Dalam konteks bisnis modern, kemampuan melakukan \textit{financial forecasting} dan perencanaan anggaran secara akurat merupakan faktor kunci dalam proses pengambilan keputusan. Penelitian sebelumnya menunjukkan bahwa perencanaan anggaran yang berbasis prediksi dapat meningkatkan kesiapan organisasi dalam menghadapi perubahan pasar, mengalokasikan sumber daya secara efisien, dan memperkuat ketahanan bisnis \autocite{hariharan2018}. Bagi UKM, kemampuan ini sangat penting untuk menjaga keberlanjutan usaha sekaligus meningkatkan daya saing.
+Dalam konteks bisnis modern, kemampuan melakukan perencanaan anggaran dan \textit{financial forecasting} secara akurat merupakan faktor kunci dalam proses pengambilan keputusan. Terdapat penelitian yang menunjukkan bahwa perencanaan anggaran yang berbasis prediksi dapat meningkatkan kesiapan organisasi dalam menghadapi perubahan pasar, mengalokasikan sumber daya secara efisien, dan memperkuat ketahanan bisnis \autocite{hariharan2018}. Bagi UKM, kebutuhan ini semakin besar karena ketidaktepatan alokasi anggaran seringkali menimbulkan sisa dana proyek yang tidak terpakai, penggunaan anggaran yang tidak tepat sasaran, serta keputusan investasi yang tidak memiliki dasar analitis, seperti pengajuan peningkatan spesifikasi komputer tanpa mengetahui apakah peningkatan tersebut benar-benar akan meningkatkan output bisnis.
 
-Namun, sebagian besar UKM di Indonesia masih menggunakan pendekatan tradisional seperti \textit{moving averages}, regresi linear, atau analisis deret waktu sederhana. Pendekatan ini memang mudah diterapkan, tetapi memiliki keterbatasan signifikan dalam menangani pola data nonlinier, volatilitas musiman, dan kompleksitas pasar. Analisis terbaru menunjukkan bahwa metode statistik konvensional kurang adaptif terhadap pola data modern sehingga sering menghasilkan prediksi yang tidak akurat \autocite{ajitesh2022}.
+Namun, sebagian besar UKM di Indonesia masih menggunakan pendekatan perencanaan keuangan tradisional, seperti menghitung rata-rata dari data sebelumnya atau menyalin pola tahun sebelumnya. Cara ini memang mudah dilakukan, tetapi sering tidak mampu mengikuti perubahan kondisi usaha, dinamika pasar, maupun kebutuhan operasional yang semakin kompleks. Analisis terbaru menunjukkan bahwa metode statistik konvensional kurang adaptif terhadap pola data modern sehingga sering menghasilkan prediksi yang tidak akurat \autocite{ajitesh2022}. Ketidaktepatan prediksi inilah yang pada akhirnya berkontribusi pada kesalahan dalam penentuan anggaran proyek, serta tidak tersedianya pembuktian yang kuat ketika UKM ingin mengevaluasi dampak dari pengajuan anggaran baru.
 
-Perkembangan teknologi kecerdasan buatan (AI) menghadirkan peluang besar untuk meningkatkan akurasi \textit{forecasting} dan efektivitas perencanaan keuangan. Studi terbaru menunjukkan bahwa teknik berbasis \textit{machine learning} mampu mempelajari pola kompleks, mengolah data dalam skala besar, dan beradaptasi terhadap perubahan pasar jauh dengan lebih baik dibanding metode tradisional \autocite{wasserbacher2022}. Integrasi AI tidak hanya meningkatkan akurasi prediksi, tetapi juga memperkuat proses penganggaran melalui rekomendasi yang lebih kontekstual, responsif, dan berbasis data.
+Perkembangan teknologi kecerdasan buatan (AI) menghadirkan peluang besar untuk meningkatkan akurasi \textit{forecasting} dan efektivitas perencanaan keuangan. Studi terbaru menunjukkan bahwa teknik berbasis \textit{machine learning} mampu mempelajari pola kompleks, mengolah data dalam skala besar, dan beradaptasi terhadap perubahan pasar jauh dengan lebih baik dibanding metode tradisional \autocite{wasserbacher2022}. Integrasi AI tidak hanya meningkatkan akurasi prediksi, tetapi juga memungkinkan proses perencanaan anggaran yang lebih komprehensif, seperti validasi kelayakan anggaran, analisis dampak investasi, dan bahkan penilaian potensi keberhasilan ketika UKM ingin masuk ke produk atau pasar baru berdasarkan data historis dan kondisi pasar terkini.
 
 Meskipun pemanfaatan AI dalam \textit{forecasting} dan \textit{budgeting} berkembang pesat di perusahaan besar, penelitian yang secara khusus menganalisis penerapannya pada UKM Indonesia masih sangat terbatas. Berdasarkan kondisi tersebut, tugas akhir ini bertujuan mengembangkan implementasi AI untuk membantu UKM melakukan analisis keuangan, proyeksi, dan penyusunan anggaran secara lebih efektif dan adaptif.
 % --- Rumusan Masalah ---
 \section{Rumusan Masalah}
 Berdasarkan latar belakang yang telah dijelaskan, rumusan masalah dalam tugas akhir ini adalah:
 \begin{enumerate}
-\item	Bagaimana keterbatasan metode perencanaan keuangan tradisional mempengaruhi akurasi dan efektivitas perencanaan anggaran pada UKM?
-\item	Bagaimana peran kecerdasan buatan, khususnya pendekatan \textit{Retrieval-Augmented Generation (RAG)}, dapat meningkatkan adaptivitas dan kualitas analisis dalam perencanaan anggaran UKM?
-\item Bagaimana merancang dan mengimplementasikan sistem otonomisasi perencanaan anggaran berbasis RAG yang efisien dan dapat diterapkan pada UKM melalui platform otomasi \textit{low-code}?
+\item	Bagaimana mengatasi ketidaktepatan penentuan anggaran proyek pada UKM agar alokasi dan penggunaan dana lebih sesuai kebutuhan?
+\item	Bagaimana menyediakan mekanisme validasi untuk rencana anggaran baru sehingga UKM dapat menilai manfaat dan kelayakannya sebelum disetujui?
+\item   Bagaimana membantu UKM menilai kelayakan ekspansi ke produk atau usaha baru berdasarkan kondisi pasar dan kemampuan internal?
+\item   Bagaimana merancang sistem berbasis AI yang dapat memberikan rekomendasi dan analisis untuk mendukung ketiga kebutuhan tersebut?
 \end{enumerate}
 
 % --- Tujuan ---
 \section{Tujuan}
 Tujuan yang ingin dicapai dalam pelaksanaan tugas akhir ini adalah sebagai berikut:
 \begin{enumerate}
-\item Menganalisis keterbatasan metode perencanaan keuangan tradisional yang digunakan UKM, khususnya terkait akurasi prediksi dan kemampuan adaptasi terhadap dinamika pasar.
-\item Mengkaji potensi dan kontribusi pendekatan kecerdasan buatan, terutama \textit{Retrieval-Augmented Generation (RAG)}, dalam meningkatkan kualitas, adaptivitas, dan ketepatan perencanaan anggaran UKM.
-\item Merancang dan mengembangkan sistem otonomisasi perencanaan anggaran berbasis RAG yang terintegrasi dengan platform otomasi \textit{low-code} untuk menghasilkan proses perencanaan anggaran yang lebih efisien, akurat, dan mudah diterapkan oleh UKM.
+\item Mengidentifikasi penyebab ketidaktepatan anggaran proyek pada UKM.
+\item Mengembangkan metode validasi rencana anggaran yang terukur.
+\item Merancang pendekatan penilaian kelayakan ekspansi usaha atau produk baru.
+\item Membangun sistem pendukung keputusan berbasis AI yang dapat memberikan rekomendasi anggaran, validasi, dan analisis kelayakan bagi UKM.
 \end{enumerate}
 
 % --- Batasan Masalah ---
 \section{Batasan Masalah}
 Agar penelitian ini terarah dan fokus pada tujuan yang ingin dicapai, maka batasan masalah dalam tugas akhir ini ditetapkan sebagai berikut:
 \begin{enumerate}
-\item Penelitian ini berfokus pada pengembangan sistem otonomisasi perencanaan anggaran untuk UKM, dengan cakupan pada analisis data keuangan sederhana, prediksi tren, dan rekomendasi alokasi anggaran. Lingkupnya tidak mencakup fungsi keuangan lain seperti akuntansi lengkap, perpajakan, atau manajemen operasional.
+\item Penelitian ini berfokus pada pengembangan sistem otonomisasi perencanaan anggaran untuk UKM, dengan cakupan pada ketepatan alokasi anggaran proyek, validasi rencana anggaran baru, dan penilaian kelayakan ekspansi produk atau usaha baru. Lingkupnya tidak mencakup fungsi keuangan lain seperti akuntansi lengkap, perpajakan, atau manajemen operasional.
 \item Data yang digunakan dalam pengujian sistem berasal dari data simulasi dan/atau data representatif dari studi kasus UKM (misalnya Air Minum ARBAS atau startup binaan Lab SCCIC ITB). Data tidak harus mencerminkan keseluruhan kondisi finansial UKM Indonesia.
 \item Pendekatan kecerdasan buatan dibatasi pada penggunaan \textit{Retrieval-Augmented Generation (RAG)} sebagai mekanisme analisis dan rekomendasi, serta integrasi platform otomasi \textit{low-code} hanya digunakan untuk alur dasar seperti pengambilan data, pemrosesan, dan penyajian hasil.
 \item Antarmuka pengguna disederhanakan untuk kebutuhan demonstrasi sistem, tanpa fokus pada desain UI/UX yang kompleks atau kustomisasi mendalam sesuai kebutuhan spesifik UKM.
-\item Evaluasi sistem berfokus pada relevansi informasi hasil RAG, kesesuaian rekomendasi dengan konteks perencanaan anggaran UKM, serta kelayakan proses otomasi. Evaluasi aspek hukum, keamanan data tingkat lanjut, performa skala besar, atau integrasi penuh dengan sistem eksternal tidak dibahas.
+\item Evaluasi sistem dibatasi pada kualitas rekomendasi, relevansi output, dan kelayakan proses otomasi, tanpa mencakup keamanan data tingkat lanjut, aspek legal, atau integrasi menyeluruh dengan sistem internal UKM.
 \end{enumerate}
 
 % --- Metodologi Pengerjaan TA ---
 \section{Metodologi}
-Penelitian ini menggunakan pendekatan \textit{Waterfall} sebagai model pengembangan sistem. Model ini dipilih karena memberikan alur kerja yang terstruktur, sistematis, serta sesuai dengan kebutuhan penelitian yang menekankan proses analisis, perancangan, implementasi, dan evaluasi sistem otonomisasi perencanaan anggaran berbasis \textit{Retrieval-Augmented Generation} (RAG). Setiap tahapan menghasilkan luaran yang menjadi masukan bagi tahap berikutnya sehingga memudahkan proses validasi dan dokumentasi.
+Penelitian ini menggunakan pendekatan \textit{Waterfall} sebagai model pengembangan sistem. Model ini dipilih karena memberikan alur kerja yang terstruktur dan sesuai dengan kebutuhan penelitian yang menekankan proses analisis, perancangan, pembangunan, dan evaluasi sistem pendukung keputusan berbasis \textit{Retrieval-Augmented Generation} (RAG). Setiap tahap menghasilkan keluaran yang menjadi dasar untuk tahap berikutnya sehingga memudahkan proses validasi dan dokumentasi.
 
 Secara umum, metodologi penelitian terdiri dari lima tahapan utama sebagai berikut:
 
 \begin{enumerate}
 
 \item \textbf{Analisis Kebutuhan}\\
-Tahapan ini mencakup identifikasi kebutuhan UKM terkait proses perencanaan keuangan, termasuk jenis data keuangan yang digunakan, kebutuhan prediksi dan analisis, serta aspek-aspek anggaran yang perlu diotomatisasi. Data diperoleh melalui studi literatur, tinjauan jurnal terkait forecasting dan budgeting berbasis AI, serta analisis terhadap karakteristik data studi kasus UKM (misalnya Air Minum Arbus atau startup binaan SCCIC ITB). Hasil analisis digunakan sebagai dasar penyusunan spesifikasi sistem.
+Tahapan ini mencakup identifikasi tiga permasalahan utama UKM, yaitu ketidaktepatan penentuan anggaran proyek, ketiadaan mekanisme validasi anggaran baru, serta kesulitan menilai kelayakan ekspansi usaha atau produk baru. Analisis dilakukan melalui studi literatur, tinjauan penelitian terkait perencanaan anggaran dan pengambilan keputusan pada UKM, serta pengkajian kebutuhan data dan proses bisnis UKM. Hasil analisis digunakan untuk menyusun spesifikasi sistem dan kebutuhan fungsional.
 
 \item \textbf{Perancangan Sistem (\textit{System Design})}\\
-Pada tahap ini dilakukan perancangan arsitektur sistem berbasis RAG yang meliputi desain proses \textit{retrieval}, \textit{generation}, serta mekanisme pengolahan data keuangan. Selain itu, dilakukan perancangan alur otomasi menggunakan platform \textit{low-code} n8n untuk mendukung proses pengumpulan data, pemanggilan model RAG, dan penyajian hasil kepada pengguna. Diagram alir, arsitektur komponen, dan perancangan skenario interaksi sistem disusun pada tahap ini.
+Tahap ini mencakup perancangan arsitektur sistem berbasis RAG untuk menghasilkan analisis anggaran, validasi rencana anggaran, dan rekomendasi kelayakan ekspansi usaha. Perancangan meliputi desain proses \textit{retrieval}, \textit{generation}, serta pemetaan kebutuhan data UKM. Selain itu, dilakukan perancangan alur otomasi menggunakan platform \textit{low-code} n8n untuk proses pengambilan data, pemanggilan RAG, dan penyajian hasil. Diagram alur, arsitektur komponen, dan skenario interaksi sistem disusun pada tahap ini.
 
 \item \textbf{Implementasi Sistem}\\
-Tahapan ini melibatkan pembangunan sistem sesuai rancangan, termasuk implementasi model RAG, konfigurasi modul \textit{retrieval}, dan integrasi alur otomasi melalui n8n. Data simulatif atau data studi kasus UKM digunakan untuk menguji kemampuan sistem dalam menghasilkan analisis keuangan, prediksi tren sederhana, serta rekomendasi anggaran secara otomatis. Implementasi dilakukan secara iteratif dengan memastikan setiap komponen dapat berfungsi secara konsisten.
+Tahapan ini meliputi pembangunan komponen sistem sesuai rancangan, termasuk implementasi model RAG, konfigurasi modul \textit{retrieval}, serta integrasi alur otomasi melalui n8n. Data simulasi atau data studi kasus UKM digunakan untuk menghasilkan keluaran berupa rekomendasi alokasi anggaran, validasi pengajuan anggaran, dan analisis kelayakan ekspansi. Implementasi dilakukan secara bertahap untuk memastikan konsistensi fungsi setiap komponen.
 
 \item \textbf{Pengujian Sistem (\textit{Testing})}\\
-Pengujian dilakukan untuk memastikan sistem berjalan sesuai kebutuhan dan menghasilkan keluaran yang relevan. Metode yang digunakan mengacu pada evaluasi RAG, yang menilai kualitas hasil berdasarkan relevansi konteks, ketepatan jawaban, serta kesesuaian rekomendasi terhadap data keuangan. Pengujian juga mencakup uji alur otomasi pada n8n untuk memastikan integrasi antarkomponen bekerja secara stabil.
+Pengujian dilakukan untuk menilai apakah sistem menghasilkan keluaran yang relevan, konsisten, dan sesuai kebutuhan UKM. Metode pengujian mengacu pada evaluasi RAG, yang mencakup penilaian relevansi konteks, ketepatan jawaban, serta kesesuaian rekomendasi dengan data yang digunakan. Selain itu, dilakukan pengujian alur otomasi pada n8n untuk memastikan integrasi antarkomponen berjalan stabil.
 
 \item \textbf{Evaluasi dan Dokumentasi}\\
-Tahap terakhir mencakup evaluasi terhadap efektivitas sistem dalam mendukung proses perencanaan anggaran UKM, termasuk analisis manfaat, keterbatasan, serta potensi pengembangan lebih lanjut. Seluruh proses dan hasil penelitian kemudian disusun dalam bentuk dokumentasi laporan tugas akhir.
+Tahap terakhir mencakup evaluasi efektivitas sistem dalam mendukung pengambilan keputusan anggaran UKM, termasuk batasan sistem dan potensi pengembangan lanjutan. Seluruh tahapan, hasil pengujian, dan analisis disusun dalam bentuk laporan tugas akhir.
 
 \end{enumerate}
