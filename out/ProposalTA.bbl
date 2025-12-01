@@ -48,70 +48,6 @@
       \field{volume}{19}
       \field{year}{2010}
     \endentry
-    \entry{n8n2025}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=a8b25e22d2825487d29c4ba9b7651dc3}{%
-           family={Been},
-           familyi={B\bibinitperiod},
-           given={Yaron},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{a8b25e22d2825487d29c4ba9b7651dc3}
-      \strng{fullhash}{a8b25e22d2825487d29c4ba9b7651dc3}
-      \strng{fullhashraw}{a8b25e22d2825487d29c4ba9b7651dc3}
-      \strng{bibnamehash}{a8b25e22d2825487d29c4ba9b7651dc3}
-      \strng{authorbibnamehash}{a8b25e22d2825487d29c4ba9b7651dc3}
-      \strng{authornamehash}{a8b25e22d2825487d29c4ba9b7651dc3}
-      \strng{authorfullhash}{a8b25e22d2825487d29c4ba9b7651dc3}
-      \strng{authorfullhashraw}{a8b25e22d2825487d29c4ba9b7651dc3}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Automate Financial Operations with O3 CFO and GPT-4.1-mini Finance Team}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb https://n8n.io/workflows/6906-automate-financial-operations-with-o3-cfo-and-gpt-41-mini-finance-team/
-      \endverb
-      \verb{url}
-      \verb https://n8n.io/workflows/6906-automate-financial-operations-with-o3-cfo-and-gpt-41-mini-finance-team/
-      \endverb
-    \endentry
-    \entry{google2023}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b4e595bd8646c01df540ff38696a35be}{%
-           family={Cloud},
-           familyi={C\bibinitperiod},
-           given={Google},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b4e595bd8646c01df540ff38696a35be}
-      \strng{fullhash}{b4e595bd8646c01df540ff38696a35be}
-      \strng{fullhashraw}{b4e595bd8646c01df540ff38696a35be}
-      \strng{bibnamehash}{b4e595bd8646c01df540ff38696a35be}
-      \strng{authorbibnamehash}{b4e595bd8646c01df540ff38696a35be}
-      \strng{authornamehash}{b4e595bd8646c01df540ff38696a35be}
-      \strng{authorfullhash}{b4e595bd8646c01df540ff38696a35be}
-      \strng{authorfullhashraw}{b4e595bd8646c01df540ff38696a35be}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{How AI is Transforming Financial Services}
-      \field{year}{2023}
-      \verb{urlraw}
-      \verb https://cloud.google.com/use-cases/retrieval-augmented-generation
-      \endverb
-      \verb{url}
-      \verb https://cloud.google.com/use-cases/retrieval-augmented-generation
-      \endverb
-    \endentry
     \entry{fischer2018}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=582e61688f938e2dc9f9c019ba6e496f}{%
@@ -146,6 +82,93 @@
       \field{title}{Deep Learning with Long Short-Term Memory Networks for Financial Market Predictions}
       \field{volume}{270}
       \field{year}{2018}
+    \endentry
+    \entry{Gao2024}{online}{}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=572def57560315de76cedfc3e17c2eb2}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Yunfan},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bdc1e50b7faa4f8d1a9844199179e6c2}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Yun},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03e7985fe5e84b74e9f01c4cdbaaee9c}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Xinyu},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16ccf3d9ea55a78a7d3dfea173515f1f}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Kangxiang},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fd6e4a40c152c7e39a43964918a2c4a5}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Jinliu},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=efef66e4d4bad100544cfae4a2b3104b}{%
+           family={Bi},
+           familyi={B\bibinitperiod},
+           given={Yuxi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f59ef2d4288d687c75882fd75c94cd09}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5541cd69dde50ba09f8968212da6602c}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jiawei},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=00b734eb3fb588e4c6c94e4271080d0b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Meng},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9cca37a322a37778f7e30f057e2c2f90}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haofen},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f1678cfa142d8029151d4faacf40f176}
+      \strng{fullhash}{0ac64c8a2a8c144751e6f1d6573b5725}
+      \strng{fullhashraw}{0ac64c8a2a8c144751e6f1d6573b5725}
+      \strng{bibnamehash}{0ac64c8a2a8c144751e6f1d6573b5725}
+      \strng{authorbibnamehash}{0ac64c8a2a8c144751e6f1d6573b5725}
+      \strng{authornamehash}{f1678cfa142d8029151d4faacf40f176}
+      \strng{authorfullhash}{0ac64c8a2a8c144751e6f1d6573b5725}
+      \strng{authorfullhashraw}{0ac64c8a2a8c144751e6f1d6573b5725}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed November 20, 2025}
+      \field{title}{Retrieval-Augmented Generation for Large Language Models: A Survey}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2312.10997
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2312.10997
+      \endverb
     \endentry
     \entry{hariharan2018}{article}{}{}
       \name{author}{2}{}{%
@@ -212,6 +235,34 @@
       \field{title}{Integrating AI Techniques for Enhanced Financial Forecasting and Budgeting Strategies}
       \field{year}{2023}
     \endentry
+    \entry{Joshi2025}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3bbe5695aae2f7d6e1560876b54233b6}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Satyadhar},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3bbe5695aae2f7d6e1560876b54233b6}
+      \strng{fullhash}{3bbe5695aae2f7d6e1560876b54233b6}
+      \strng{fullhashraw}{3bbe5695aae2f7d6e1560876b54233b6}
+      \strng{bibnamehash}{3bbe5695aae2f7d6e1560876b54233b6}
+      \strng{authorbibnamehash}{3bbe5695aae2f7d6e1560876b54233b6}
+      \strng{authornamehash}{3bbe5695aae2f7d6e1560876b54233b6}
+      \strng{authorfullhash}{3bbe5695aae2f7d6e1560876b54233b6}
+      \strng{authorfullhashraw}{3bbe5695aae2f7d6e1560876b54233b6}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Current Journal of Applied Science and Technology}
+      \field{title}{Architectures and Challenges of AI Multi-Agent Frameworks for Financial Services}
+      \field{volume}{44}
+      \field{year}{2025}
+    \endentry
     \entry{kemenko2024}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3be42e11fb4b1e9d1b974a6a10621428}{%
@@ -276,6 +327,105 @@
       \endverb
       \verb{url}
       \verb https://vitalflux.com/how-know-data-linear-non-linear/
+      \endverb
+    \endentry
+    \entry{lewis2020}{online}{}{}
+      \name{author}{12}{}{%
+        {{un=0,uniquepart=base,hash=ecbe786a5668bf643d74bb24fe1c3cfe}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79978685fd7b37606022b06c0f6419a1}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d205faec67355b6e0ec49f82a492324c}{%
+           family={Piktus},
+           familyi={P\bibinitperiod},
+           given={Aleksandra},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e1c32989a78998fe3c03c981d0da2dc7}{%
+           family={Petroni},
+           familyi={P\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b24392ebfb2c0a35979fc689c389c649}{%
+           family={Karpukhin},
+           familyi={K\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=78a420900f50a8470ad085fb05231bf6}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Naman},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4eadcf26f55e11fe4be834b52d9b7fdf}{%
+           family={Küttler},
+           familyi={K\bibinitperiod},
+           given={Heinrich},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c97f53fdeeb04c28de19e3324cb4bc0a}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4d56d3d370b3afd4ad2ebf985fbd3f8}{%
+           family={Yih},
+           familyi={Y\bibinitperiod},
+           given={Wen-tau},
+           giveni={W\bibinithyphendelim t\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3ff4029884ead9928954ea33714192c}{%
+           family={Rocktäschel},
+           familyi={R\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cd024b217f3f2f8126e253b8c84d24d}{%
+           family={Riedel},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ff4054748b404714b51dc5828fbadad4}{%
+           family={Kiela},
+           familyi={K\bibinitperiod},
+           given={Douw},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f238c3bfc4b30650dd17e65c4aadfc66}
+      \strng{fullhash}{1d37b9a775fea5bb2cc758cefa96bbef}
+      \strng{fullhashraw}{1d37b9a775fea5bb2cc758cefa96bbef}
+      \strng{bibnamehash}{452afd10632c9891e6047226cb9830e3}
+      \strng{authorbibnamehash}{452afd10632c9891e6047226cb9830e3}
+      \strng{authornamehash}{f238c3bfc4b30650dd17e65c4aadfc66}
+      \strng{authorfullhash}{1d37b9a775fea5bb2cc758cefa96bbef}
+      \strng{authorfullhashraw}{1d37b9a775fea5bb2cc758cefa96bbef}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed November 20, 2025}
+      \field{title}{Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/2005.11401v4
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/2005.11401v4
       \endverb
     \endentry
     \entry{marotta2022}{article}{}{}

@@ -1,9 +1,9 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {chapter}{DAFTAR GAMBAR}{iv}{figure.caption.1}%
-\contentsline {chapter}{DAFTAR TABEL}{v}{figure.caption.1}%
-\contentsline {chapter}{\centering \normalsize DAFTAR KODE}{vi}{chapter*.2}%
+\contentsline {chapter}{DAFTAR GAMBAR}{v}{figure.caption.1}%
+\contentsline {chapter}{DAFTAR TABEL}{vi}{figure.caption.1}%
+\contentsline {chapter}{\centering \normalsize DAFTAR KODE}{vii}{chapter*.2}%
 \contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {I.1}Latar Belakang}{1}{section.1.1}%
 \babel@toc {english}{}\relax 
@@ -42,28 +42,55 @@
 \contentsline {section}{\numberline {II.4}\textit {Retrieval-Augmented Generation (RAG)}}{9}{section.2.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {section}{\numberline {II.5}Otomatisasi \textit {Low-Code} untuk Sistem Keuangan (n8n)}{10}{section.2.5}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{11}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{11}{section.3.1}%
-\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{11}{section.3.2}%
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
-\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{12}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{12}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{12}{subsection.3.2.3}%
-\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{13}{section.3.3}%
-\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{13}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{14}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{16}{chapter.4}%
+\contentsline {subsection}{\numberline {II.4.1}Arsitektur dan Mekanisme RAG}{9}{subsection.2.4.1}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{20}{chapter.5}%
+\contentsline {subsection}{\numberline {II.4.2}Kelebihan RAG dalam Tugas Berbasis Pengetahuan}{10}{subsection.2.4.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {section}{\numberline {II.5}\textit {Workflow dan Multi-Agent AI}}{11}{section.2.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.5.1}Konsep dan Peran Multi-Agent dalam Sistem AI}{11}{subsection.2.5.1}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {II.5.2}\textit {Workflow Automation} menggunakan \textit {Multi-Agent Systems}}{12}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {II.5.3}Arsitektur \textit {Multi-Agent Frameworks}}{12}{subsection.2.5.3}%
+\contentsline {chapter}{\numberline {III}ANALISIS MASALAH}{13}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Analisis Kondisi Saat Ini}{13}{section.3.1}%
+\contentsline {section}{\numberline {III.2}Analisis Kebutuhan}{13}{section.3.2}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {subsection}{\numberline {III.2.1}Identifikasi Masalah Pengguna}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {III.2.2}Kebutuhan Fungsional}{14}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {III.2.3}Kebutuhan Nonfungsional}{14}{subsection.3.2.3}%
+\contentsline {section}{\numberline {III.3}Analisis Pemilihan Solusi}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {III.3.1}Alternatif Solusi}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {III.3.2}Analisis Penentuan Solusi}{16}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{18}{chapter.4}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
+\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{22}{chapter.5}%
+\babel@toc {english}{}\relax 
+\babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 

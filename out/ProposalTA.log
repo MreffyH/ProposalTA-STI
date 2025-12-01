@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  1 DEC 2025 22:12
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  2 DEC 2025 00:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1162,27 +1162,29 @@ Overfull \hbox (64.45271pt too wide) in paragraph at lines 303--308
 
 [1]
 
-[2] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.toc)
+[2] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.toc
+
+[3
+
+])
 \tf@toc=\write5
 \openout5 = `ProposalTA.toc'.
 
 
 
-[3
-
-] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lof)
+[4] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lof)
 \tf@lof=\write6
 \openout6 = `ProposalTA.lof'.
 
 
 
-[4] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lot)
+[5] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lot)
 \tf@lot=\write7
 \openout7 = `ProposalTA.lot'.
 
 
 
-[5] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lol)
+[6] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lol)
 \tf@lol=\write8
 \openout8 = `ProposalTA.lol'.
 
@@ -1241,7 +1243,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[6
+[7
 
 ] (Bab I - Pendahuluan.tex
 Bab I.
@@ -1281,21 +1283,56 @@ Bab II.
 [7]
 
 [8]
-Overfull \hbox (2.88016pt too wide) in paragraph at lines 50--51
-[]\TU/TimesNewRoman(0)/m/n/12 Mengurangi risiko \TU/TimesNewRoman(0)/m/it/12 ha
-llucination \TU/TimesNewRoman(0)/m/n/12 karena jawaban didasarkan pada sumber y
-ang
+
+[9]
+File: image/RAG Archi.png Graphic file (type bmp)
+<image/RAG Archi.png>
+
+Overfull \hbox (7.54723pt too wide) in alignment at lines 65--71
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in alignment at lines 71--76
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in alignment at lines 76--80
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in alignment at lines 80--83
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in alignment at lines 83--120
+ [] [] [] 
  []
 
 
 
-[9]) (Bab III - Analisis-Masalah.tex
-
 [10]
+File: image/Applications of AI Multi Agents.png Graphic file (type bmp)
+<image/Applications of AI Multi Agents.png>
+
+
+[11]
+Overfull \hbox (13.64363pt too wide) in paragraph at lines 155--157
+\TU/TimesNewRoman(0)/m/n/12 Beberapa framework \TU/TimesNewRoman(0)/m/it/12 mul
+ti-agent \TU/TimesNewRoman(0)/m/n/12 populer seperti LangChain, CrewAI, OpenAI 
+Swarm,
+ []
+
+) (Bab III - Analisis-Masalah.tex
+
+[12]
 Bab III.
 
 
-[11
+[13
 
 ]
 Overfull \hbox (7.55008pt too wide) in paragraph at lines 33--34
@@ -1305,121 +1342,121 @@ aran secara otomatis meng-
 
 
 
-[12]
+[14]
 Overfull \hbox (0.90439pt too wide) in paragraph at lines 47--49
 \TU/TimesNewRoman(0)/m/n/12 garan harus berada pada tingkat yang wajar, sehingg
 a tidak menghambat peng-
  []
 
 
-Overfull \hbox (7.54723pt too wide) in alignment at lines 75--81
+Overfull \hbox (7.54723pt too wide) in alignment at lines 74--80
  [] [] [] 
  []
 
 
-Overfull \hbox (7.54723pt too wide) in alignment at lines 81--86
+Overfull \hbox (7.54723pt too wide) in alignment at lines 80--85
  [] [] [] 
  []
 
 
-Overfull \hbox (7.54723pt too wide) in alignment at lines 86--90
+Overfull \hbox (7.54723pt too wide) in alignment at lines 85--89
  [] [] [] 
  []
 
 
-Overfull \hbox (7.54723pt too wide) in alignment at lines 90--93
+Overfull \hbox (7.54723pt too wide) in alignment at lines 89--92
  [] [] [] 
  []
 
 
-Underfull \hbox (badness 7613) in paragraph at lines 95--96
+Underfull \hbox (badness 7613) in paragraph at lines 94--95
 []|\TU/TimesNewRoman(0)/m/n/12 Metode Statistik
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 []|\TU/TimesNewRoman(0)/m/it/12 Machine Lear-
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 102--103
+Underfull \hbox (badness 3229) in paragraph at lines 101--102
 \TU/TimesNewRoman(0)/m/it/12 ning \TU/TimesNewRoman(0)/m/n/12 Konvensio-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 []|\TU/TimesNewRoman(0)/m/n/12 Mampu mempelajari pola
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 106--107
+Underfull \hbox (badness 3514) in paragraph at lines 105--106
 \TU/TimesNewRoman(0)/m/n/12 implementasi rumit; peme-
  []
 
 
-Underfull \hbox (badness 5681) in paragraph at lines 106--107
+Underfull \hbox (badness 5681) in paragraph at lines 105--106
 \TU/TimesNewRoman(0)/m/n/12 liharaan tidak mudah bagi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 []|\TU/TimesNewRoman(0)/m/n/12 Sistem Pakar
  []
 
 
-Underfull \hbox (badness 6675) in paragraph at lines 118--119
+Underfull \hbox (badness 6675) in paragraph at lines 117--118
 \TU/TimesNewRoman(0)/m/n/12 lu pelatihan model; cepat
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 120--121
+Underfull \hbox (badness 2213) in paragraph at lines 119--120
 \TU/TimesNewRoman(0)/m/n/12 dak terhubung dengan data
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 []|\TU/TimesNewRoman(0)/m/n/12 Butuh basis pengetahuan
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 127--128
+Underfull \hbox (badness 3148) in paragraph at lines 126--127
 \TU/TimesNewRoman(0)/m/n/12 litas \TU/TimesNewRoman(0)/m/it/12 retrieval\TU/Tim
 esNewRoman(0)/m/n/12 ; memerlukan
  []
 
 
-Overfull \hbox (7.54723pt too wide) in alignment at lines 93--130
+Overfull \hbox (7.54723pt too wide) in alignment at lines 92--129
  [] [] [] 
  []
 
 
 
-[13]) (Bab IV - Desain-Konsep-Solusi.tex
+[15]) (Bab IV - Desain-Konsep-Solusi.tex
 
-[14]
+[16]
 
-[15]
+[17]
 Bab IV.
 File: image/Flowchart.png Graphic file (type bmp)
 <image/Flowchart.png>
 
 
-[16
+[18
 
 ]
 File: image/Architecture.png Graphic file (type bmp)
 <image/Architecture.png>
 
 
-[17]
-
-[18]) (Bab V - Rencana-Selanjutnya.tex
-
 [19]
+
+[20]) (Bab V - Rencana-Selanjutnya.tex
+
+[21]
 Bab V.
 )
 
-[20
+[22
 
 ]
 Overfull \hbox (10.57468pt too wide) in paragraph at lines 400--400
@@ -1429,7 +1466,7 @@ omian Republik Indonesia. 2024.
 
 
 
-[21
+[23
 
 
 ]
@@ -1439,25 +1476,25 @@ See the caption package documentation for explanation.
 
 
 
-[22] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
+[24] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: 548A71AE1406F3FE69EA12B81594672F;4968.
+(rerunfilecheck)             Checksum: 3935B1DB023E571474F38A2D25963C30;6231.
 Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 \openout1 = `ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31292 strings out of 403196
- 614680 string characters out of 5456126
- 1981389 words of memory out of 5000000
- 59468 multiletter control sequences out of 15000+600000
+ 31326 strings out of 403196
+ 615602 string characters out of 5456126
+ 1979055 words of memory out of 5000000
+ 59500 multiletter control sequences out of 15000+600000
  632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,9n,93p,1245b,8562s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,9n,93p,1245b,8564s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (29 pages).
+pdf (32 pages).

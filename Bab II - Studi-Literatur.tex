@@ -41,28 +41,130 @@ Bagi UKM, kemampuan ini sangat membantu untuk mengevaluasi ketidaktepatan anggar
 Dengan demikian, penerapan AI dalam \textit{variance analysis} tidak hanya mempercepat proses evaluasi anggaran, tetapi juga meningkatkan kualitas pengambilan keputusan strategis bagi UKM yang sedang menghadapi keterbatasan waktu, sumber daya, dan kompetensi analitis.
 
 \section{\textit{Retrieval-Augmented Generation (RAG)}}
-\textit{Retrieval-Augmented Generation (RAG)} merupakan pendekatan kecerdasan buatan yang menggabungkan proses pencarian informasi (\textit{retrieval}) dengan kemampuan generatif model bahasa besar (LLM). Tujuannya adalah meningkatkan akurasi dan relevansi keluaran model dengan menyediakan konteks tambahan yang bersumber dari pengetahuan eksternal \autocite{google2023}.
+Pendekatan \textit{Retrieval-Augmented Generation (RAG)} diperkenalkan sebagai solusi untuk menangani tugas-tugas bahasa alami yang bersifat \textit{knowledge-intensive}. Model ini mengombinasikan dua sumber pengetahuan utama, yaitu \textit{parametric memory} (pengetahuan yang tersimpan dalam parameter model bahasa) dan \textit{non-parametric memory} berupa basis dokumen yang dapat diambil kembali melalui mekanisme \textit{neural retrieval}. Integrasi kedua komponen tersebut memungkinkan sistem menghasilkan keluaran yang lebih akurat, kontekstual, serta dapat dilacak sumber informasinya \autocite{lewis2020}.
 
-RAG bekerja dengan mengambil informasi terkait dari basis data atau dokumen menggunakan pencarian semantik, kemudian menyertakannya sebagai konteks bagi LLM. Dengan cara ini, model tidak hanya mengandalkan pengetahuan bawaan hasil pelatihan, tetapi juga mampu menghasilkan jawaban yang lebih faktual, terkini, dan sesuai kebutuhan domain tertentu.
+\subsection{Arsitektur dan Mekanisme RAG}
 
-Pendekatan ini memberikan tiga keunggulan utama :
+Secara umum, RAG terdiri dari dua komponen utama yaitu \textit{retriever} dan \textit{generator}. 
+Menurut \textcite{lewis2020}, \textit{retriever} menggunakan \textit{Dense Passage Retrieval (DPR)} untuk mencari dokumen yang relevan berdasarkan kueri input, sedangkan generator (umumnya model berbasis BART atau model \textit{seq2seq} lainnya) menghasilkan keluaran dengan menggabungkan input asli dan konten dari dokumen yang diambil \autocite{lewis2020}. 
+Pada jurnal tersebut dijelaskan bahwa RAG dapat bekerja dalam dua mode, yaitu RAG-Sequence dan RAG-Token. RAG-Sequence menggunakan satu dokumen untuk seluruh hasil keluaran, sedangkan RAG-Token mengizinkan model menggunakan dokumen yang berbeda pada setiap token yang dihasilkan. Fleksibilitas ini membuat RAG unggul dalam menghasilkan keluaran yang kaya informasi dan lebih faktual.
+
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.7\textwidth]{image/RAG Archi.png}
+	\caption{Arsitektur RAG}
+	\label{gambar:RAG Archi}
+\end{figure}
+
+Gambar ilustrasi arsitektur RAG menunjukkan bagaimana model melakukan pemanggilan dokumen menggunakan \textit{Maximum Inner Product Search (MIPS)}, kemudian melakukan proses marginalisasi terhadap dokumen-dokumen terpilih untuk menghasilkan prediksi akhir. Mekanisme ini memastikan bahwa model tidak hanya mengandalkan pengetahuan yang tersimpan dalam parameter, tetapi juga selalu dapat menarik informasi eksternal yang relevan saat diperlukan.
+
+\subsection{Kelebihan RAG dalam Tugas Berbasis Pengetahuan}
+Penelitian \textcite{lewis2020} menunjukkan bahwa RAG secara konsisten melampaui kinerja model \textit{sequence-to-sequence} tradisional dalam berbagai tugas seperti \textit{open-domain question answering}, \textit{fact verification}, dan \textit{knowledge-grounded generation}. 
+
+\begin{longtable}{|p{3cm}|p{5cm}|p{5cm}|}
+\caption{Kelebihan RAG dalam Menghasilkan Jawaban Berbasis Fakta dan Spesifik}
+\label{tbl:Kelebihan RAG} \\
+\hline
+\textbf{Aspek} & \textbf{Factuality} & \textbf{Specificity} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Aspek} & \textbf{Factuality} & \textbf{Specificity} \\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+BART better
+&
+7,1\%
+&
+16,8\%
+\\ \hline
+
+RAG Better
+&
+42,7\%
+&
+37,4\%
+\\ \hline
+
+Both Good
+&
+11,7\%
+&
+11,8\%
+\\ \hline
+
+Both Poor
+&
+17,7\%
+&
+6,9\%
+\\ \hline
+
+No Majority
+&
+20,8\%
+&
+20,1\%
+\\ \hline
+
+\end{longtable}
+
+Salah satu temuan penting pada tabel hasil eksperimen adalah bahwa RAG menghasilkan jawaban yang lebih spesifik dan minim \textit{hallucination} dibandingkan model generatif murni seperti BART. Selain itu, kemampuan untuk memperbarui pengetahuan hanya dengan mengganti indeks dokumen membuat RAG jauh lebih fleksibel dan efisien dalam konteks dunia nyata.
+
+Menurut \textcite{Gao2024}, memperkuat temuan ini dengan menunjukkan bahwa pendekatan RAG tidak hanya efektif dari sisi akurasi, tetapi juga unggul dalam aspek interpretabilitas dan pembaruan pengetahuan. Model dapat memberikan justifikasi berdasarkan dokumen yang diambil, sehingga cocok digunakan dalam sistem pengambilan keputusan yang memerlukan transparansi dan auditabilitas.
+
+\section{\textit{Workflow dan Multi-Agent AI}}
+Perkembangan AI \textit{multi-agent} memberikan kemampuan baru untuk mengotomatiskan alur kerja (\textit{workflow}) dan mendukung pengambilan keputusan kompleks di berbagai sektor, termasuk layanan keuangan. Menurut \textcite{Joshi2025}, framework \textit{multi-agent} modern memanfaatkan kemampuan \textit{reasoning}, \textit{planning}, dan interaksi otonom antaragen untuk menjalankan serangkaian tugas yang sebelumnya memerlukan koordinasi manusia. Hal ini menjadikan arsitektur \textit{multi-agent} relevan dalam konteks sistem yang membutuhkan kolaborasi, analisis kompleks, serta kemampuan adaptasi terhadap dinamika lingkungan \textit{real-time}.
+
+\subsection{Konsep dan Peran Multi-Agent dalam Sistem AI}
+
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.7\textwidth]{image/Applications of AI Multi Agents.png}
+	\caption{Aplikasi \textit{Multi Agents} di keuangan}
+	\label{gambar:Multi Agents App}
+\end{figure}
+
+Multi-agent AI terdiri dari sekumpulan agen cerdas yang dapat bekerja secara individual maupun kolaboratif untuk mencapai tujuan tertentu. \textcite{Joshi2025} menjelaskan bahwa agen dapat menjalankan peran yang berbeda misalnya analis risiko, agen pengambil keputusan, dan agen evaluator yang kemudian berinteraksi melalui mekanisme koordinasi yang terstruktur. Dalam sektor finansial, struktur ini digunakan untuk tugas seperti analisis investasi, manajemen risiko, pendeteksian \textit{fraud}, hingga otomasi proses operasional. 
+
+Menurut gambar \ref{gambar:Multi Agents App}, \textit{multi-agent} AI dapat menangani berbagai domain keputusan dengan membagi fungsi menjadi agen-agen spesifik seperti agen analitik, agen pengawas, hingga agen eksekusi tugas. Pendekatan ini meningkatkan efisiensi dan memperkecil risiko kesalahan akibat proses manual.
+
+\subsection{\textit{Workflow Automation} menggunakan \textit{Multi-Agent Systems}}
+Salah satu kontribusi utama \textit{multi-agent} AI adalah kemampuannya dalam mengotomatisasi \textit{workflow}. Alur kerja dalam \textit{multi-agent} dibangun melalui proses berikut:
 \begin{enumerate}
-\item Mengurangi risiko \textit{hallucination} karena jawaban didasarkan pada sumber yang jelas;  
-\item Memungkinkan integrasi data terbaru dan data internal organisasi;  
-\item Meningkatkan relevansi hasil karena informasi yang digunakan telah disaring melalui mekanisme pencarian.
+    \item \textbf{\textit{Decomposing Task}}: Memecah tugas kompleks menjadi tugas-tugas spesifik yang dapat ditangani oleh agen berbeda.
+    \item \textbf{\textit{Agent Coordination}}: Agen berkomunikasi melalui protokol, saling berbagi konteks dan hasil analisis.
+    \item \textbf{\textit{Decision Fusion}}: Hasil dari beberapa agen dikombinasikan menggunakan mekanisme seperti \textit{weighted voting}, \textit{ensemble decision}, atau metrik sinergi.
+    \item \textbf{\textit{Feedback Loop}}: Sistem mengevaluasi performa setiap agen dan menyesuaikan bobot keputusan, sebagaimana ditunjukkan dalam Algoritma 1 dan Algoritma 2 di jurnal tersebut.
 \end{enumerate}
 
-Dalam konteks perencanaan anggaran UKM, RAG dapat digunakan untuk mengakses data historis, pedoman anggaran, atau laporan keuangan, kemudian menggabungkannya dengan kemampuan analisis LLM untuk menghasilkan rekomendasi yang lebih terarah. Pendekatan ini memungkinkan proses budgeting menjadi lebih adaptif, transparan, dan berbasis pengetahuan.
+Pendekatan \textit{workflow} ini menghasilkan otomasi yang fleksibel, skalabel, dan mampu menyesuaikan diri terhadap perubahan kondisi lingkungan \textit{real-time}. Bagi UKM, mekanisme ini dapat mendukung validasi anggaran, analisis kelayakan produk baru, dan evaluasi anggaran secara otomatis.
 
-\section{Otomatisasi \textit{Low-Code} untuk Sistem Keuangan (n8n)}
-Platform otomasi \textit{low-code} seperti n8n menyediakan lingkungan yang fleksibel untuk membangun alur kerja (\textit{workflow}) berbasis kecerdasan buatan tanpa memerlukan pengembangan perangkat lunak yang kompleks. Dalam konteks manajemen keuangan, n8n memungkinkan integrasi antara model AI, sistem data, dan proses bisnis sehingga berbagai fungsi finansial dapat diotomatisasi.
+\subsection{Arsitektur \textit{Multi-Agent Frameworks}}
+Beberapa framework \textit{multi-agent} populer seperti LangChain, CrewAI, OpenAI Swarm, AutoGen, FinRobot, dan Fincon. Framework tersebut menyediakan komponen seperti:
+\begin{enumerate}
+    \item \textbf{\textit{Planner}}: Agen perencana yang menentukan langkah-langkah yang harus dilakukan.
+    \item \textbf{\textit{Executor}}: Agen pelaksana tugas teknis, misalnya pengambilan data, pemanggilan API, atau analisis keuangan.
+    \item \textbf{\textit{Coordinator}}: Agen pengelola kolaborasi antagen.
+    \item \textbf{\textit{Tooling Layer}}: Integrasi dengan model LLM, basis data, atau lingkungan operasional.
+\end{enumerate}
 
-Salah satu konsep yang relevan adalah pemanfaatan \textit{multi-agent workflow}, di mana beberapa agen AI menjalankan peran yang berbeda sesuai kebutuhan proses keuangan. Misalnya, sebuah agen berperan sebagai pengambil keputusan strategis (analog dengan peran \textit{Chief Financial Officer}), sementara agen lain bertindak sebagai spesialis dalam tugas tertentu seperti perencanaan keuangan, analisis performa, pengelolaan arus kas, atau pemeriksaan kepatuhan. Pendekatan ini memungkinkan pemisahan antara proses pengambilan keputusan tingkat tinggi dan eksekusi teknis sehingga alur kerja menjadi lebih modular dan mudah dikembangkan \autocite{n8n2025}.
-
-Dalam implementasinya, n8n mendukung pemanggilan berbagai model bahasa seperti GPT untuk menghasilkan analisis, laporan, atau rekomendasi berbasis input pengguna. \textit{Workflow} dapat dirancang agar setiap agen memproses bagian tertentu dari permintaan, kemudian hasilnya digabungkan menjadi laporan keuangan yang lebih komprehensif. Konsep ini membuka peluang bagi UKM untuk memiliki sistem perencanaan keuangan yang bersifat otomatis, adaptif, dan hemat biaya tanpa memerlukan infrastruktur perangkat lunak yang kompleks.
-
-Dengan sifatnya yang \textit{open-source} dan mendukung integrasi  berbagai layanan eksternal, n8n menjadi platform yang relevan untuk membangun sistem otonomisasi perencanaan anggaran berbasis AI, termasuk integrasi dengan pendekatan \textit{Retrieval-Augmented Generation (RAG)}.
-
+% \begin{align}
+% Precision &= \frac{TP}{TP + FP} \\
+% Recall &= \frac{TP}{FN} \\
+% F1 &= 2 . \frac{Precision . Recall}{Precision + Recall}
+% \end{align}
 % \lipsum[1]
 
 % \subsection{Gambar}
