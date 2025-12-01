@@ -7,64 +7,171 @@
 \chapter{ANALISIS MASALAH}
 \label{chap:analisis-masalah}
 \section{Analisis Kondisi Saat Ini}
-Perencanaan keuangan pada UKM saat ini umumnya masih bergantung pada proses manual dan pencatatan sederhana. Pendekatan ini bukan merupakan kesalahan pelaku usaha, melainkan akibat dari keterbatasan waktu, sumber daya, serta kebutuhan operasional harian yang lebih mendesak dibandingkan perencanaan keuangan jangka panjang. Metode tradisional memang bekerja dengan baik pada kondisi bisnis yang stabil, namun mulai menemui keterbatasan ketika UKM perlu merespons perubahan pasar yang cepat atau ketika transaksi menjadi lebih kompleks. Dengan demikian, permasalahan yang muncul bukan pada pelaku usaha, melainkan pada ketiadaan alat bantu yang ringan, adaptif, dan dapat digunakan tanpa memerlukan peningkatan kompetensi teknis secara signifikan.
+
+Pada bagian ini, akan dibahas analisis mengenai kondisi sistem yang berhubungan
+dengan topik tugas akhir ini. Alur proses penyusunan anggaran pada UKM secara umum dapat dibagi menjadi lima tahapan utama, sebagaimana ditunjukkan pada \textit{flowchart} berikut. Setiap tahapan menggambarkan langkah-langkah yang biasa dilakukan dalam praktik penyusunan anggaran, mulai dari tahap awal perumusan hingga tahap akhir pelaksanaan.
+
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.7\textwidth]{image/As Is Perencanaan Anggaran.png}
+	\caption{Kondisi Saat Ini Perencanaan Anggaran secara Umum}
+	\label{gambar:Flow Chart As Is}
+\end{figure}
+
+Proses penyusunan anggaran pada UKM umumnya melalui lima tahapan utama. Pertama, penentuan pedoman yang mencakup evaluasi anggaran sebelumnya, penetapan tujuan, penyusunan asumsi, dan pembentukan pihak yang bertanggung jawab. Kedua, tahap persiapan dilakukan dengan mengumpulkan kebutuhan awal dan melakukan sinkronisasi rencana operasional. Ketiga, penentuan anggaran dilakukan dengan menyusun komponen anggaran, menelaah kelayakan setiap kebutuhan, dan melakukan revisi agar selaras dengan tujuan usaha. Keempat, anggaran yang telah dirumuskan kemudian melalui proses pengesahan yang mencakup uji kelayakan dan distribusi sebagai acuan resmi. Terakhir, tahapan pelaksanaan dilakukan dengan menjalankan anggaran sesuai rencana, melakukan monitoring, serta menyusun laporan realisasi sebagai dasar evaluasi untuk periode berikutnya.
+
+Meskipun alur penyusunan anggaran terlihat terstruktur, proses tersebut masih menyisakan sejumlah tantangan yang berdampak langsung pada efektivitas pengelolaan keuangan UKM. Keterbatasan dalam evaluasi historis, kurangnya dasar analitis dalam penentuan kebutuhan, serta minimnya mekanisme verifikasi membuat penyusunan anggaran sering tidak selaras dengan kondisi aktual dan tujuan usaha. Hal ini tidak hanya memengaruhi ketepatan alokasi anggaran, tetapi juga proses pengajuan anggaran baru dan kemampuan usaha dalam menilai peluang ekspansi. 
+
 \section{Analisis Kebutuhan}
-Pada kondisi saat ini, sebagian besar UKM masih menggunakan pendekatan tradisional dalam menyusun anggaran. Proses perencanaan dan pengendalian anggaran umumnya merujuk pada empat tahapan utama, yakni penentuan pedoman anggaran, persiapan anggaran, penentuan anggaran, dan pelaksanaan anggaran \autocite{mekari2025}.
-Pada tahap awal, pedoman anggaran disusun oleh pemilik usaha berdasarkan anggaran tahun sebelumnya. Selanjutnya, tahap persiapan anggaran dilakukan dengan menentukan kebutuhan masing-masing untuk pemasaran, produksi, dan operasional.
-Tahap penentuan anggaran kemudian dilakukan dengan penelaahan dokumen tanpa ada mekanisme validasi otomatis, tahap ini sering memakan waktu lama dan rentan terjadi inkonsistensi antarbagian.
-Pada tahap pelaksanaan anggaran, laporan realisasi tidak secara langsung terhubung dengan perencanaan anggaran yang telah dibuat sehingga monitoring dan evaluasi kinerja tidak dapat dilakukan secara \textit{real-time}. Dampaknya, banyak UKM mengalami kesulitan dalam mengontrol pengeluaran, menganalisis perubahan, maupun memperbarui strategi berdasarkan kondisi keuangan terkini.
+
+Pada tahap ini, permasalahan yang telah diidentifikasi
+sebelumnya dirumuskan lebih lanjut menjadi sejumlah kebutuhan fungsional dan
+non-fungsional yang harus dipenuhi sistem yang akan dikembangkan.
 
 \subsection{Identifikasi Masalah Pengguna}
-Berdasarkan kondisi saat ini, permasalahan utama pengguna (pelaku UKM) dapat dirangkum sebagai berikut:
-\begin{enumerate}
-    \item Tidak memiliki alat yang mampu menganalisis data keuangan dan menghasilkan prediksi yang relevan secara otomatis.
-    \item Kesulitan merencanakan anggaran karena tidak tersedia panduan berbasis data atau rekomendasi yang terdokumentasi.
-    \item Proses perencanaan masih reaktif, bukan prediktif, sehingga UKM sering terlambat merespon perubahan.
-    \item Keterbatasan waktu dan kemampuan teknis untuk menggunakan perangkat lunak analisis yang kompleks.
-    \item Tidak adanya integrasi antara proses pencatatan, analisis, dan pembuatan laporan anggaran.
-\end{enumerate}
+Berdasarkan analisis kondisi tersebut, beberapa permasalahan utama dapat diidentifikasi untuk menjadi fokus analisis lebih lanjut, sebagaimana dirangkum dalam tabel berikut.
+
+\begin{longtable}{|p{3cm}|p{5cm}|p{5cm}|}
+\caption{Masalah Kondisi Saat Ini}
+\label{tbl:Masalah} \\
+\hline
+\textbf{Kode Masalah} &  \textbf{Deskripsi} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Kode Masalah} &  \textbf{Deskripsi} \\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+M-01
+&
+Ketidaktepatan dalam Penentuan Anggaran Proyek
+\\ \hline
+
+M-02
+&
+Tidak Ada Sistem Validasi Anggaran untuk Pengajuan Baru
+\\ \hline
+
+M-03
+&
+Sulit Menilai Kelayakan Produk Baru
+\\ \hline
+
+\end{longtable}
+
+Ketiga permasalahan tersebut menunjukkan bahwa UKM membutuhkan dukungan sistem yang mampu meningkatkan ketepatan, konsistensi, dan kualitas proses perencanaan anggaran. Ketiadaan analisis berbasis data menyebabkan anggaran sulit disusun secara akurat, sementara tidak adanya mekanisme validasi membuat pengajuan anggaran baru tidak dapat dinilai manfaat atau dampaknya secara objektif. Selain itu, keterbatasan informasi pasar dan evaluasi internal menyebabkan keputusan ekspansi usaha sering diambil tanpa pertimbangan yang memadai. Kondisi ini membuka peluang untuk merancang sistem rekomendasi yang dapat memberikan analisis, validasi, dan penilaian kelayakan secara lebih terstruktur dan berbasis pengetahuan. 
 
 \subsection{Kebutuhan Fungsional}
-Sistem dirancang agar dapat membantu UKM menjalankan proses perencanaan anggaran secara otomatis, kebutuhan fungsional yang diperlukan adalah:
+Sistem dirancang agar dapat membantu UKM menjalankan proses perencanaan anggaran, kebutuhan fungsional yang diperlukan adalah:
 
-\begin{enumerate}
-    \item Sistem dapat menerima dan membaca data keuangan sederhana (pemasukan, pengeluaran, kategori biaya).
-    \item Sistem mampu melakukan \textit{retrieval} informasi terkait pola keuangan atau pengetahuan pendukung anggaran.
-    \item Sistem menghasilkan analisis dan rekomendasi anggaran secara otomatis menggunakan pendekatan RAG.
-    \item Sistem dapat memprediksi tren sederhana seperti proyeksi biaya atau perkiraan arus kas.
-    \item Sistem menyediakan laporan anggaran dalam format yang mudah dipahami pengguna.
-\end{enumerate}
+\begin{longtable}{|p{3cm}|p{5cm}|p{7cm}|}
+\caption{Functional Requirement}
+\label{tbl:Functional Req} \\
+\hline
+\textbf{Kode} &  \textbf{Deskripsi} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Kode} &  \textbf{Deskripsi} \\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+FR-01
+&
+Sistem dapat memberikan rekomendasi anggaran proyek
+\\ \hline
+
+FR-02
+&
+Sistem dapat melakukan validasi terhadap pengajuan anggaran baru
+\\ \hline
+
+FR-03
+&
+Sistem dapat memberikan analisis kelayakan ekspansi produk atau usaha baru
+\\ \hline
+
+FR-04
+&
+Sistem dapat mengambil dokumen yang relevan dari basis pengetahuan
+\\ \hline
+
+FR-05
+&
+Sistem dapat menghasilkan rekomendasi berbasis RAG dengan penjelasan
+\\ \hline
+
+\end{longtable}
 
 \subsection{Kebutuhan Nonfungsional}
 Sistem harus dapat memenuhi beberapa kriteria nonfungsional untuk memastikan efektivitas dan efisiensi penggunaannya. Kebutuhan nonfungsional meliputi:
-\begin{enumerate}
-    \item \textit{Usability}:  
-    Antarmuka sistem harus sederhana, mudah dipahami, dan dapat digunakan oleh pengguna dengan tingkat literasi digital yang bervariasi.
 
-    \item \textit{Reliability}:  
-    Sistem harus mampu menghasilkan \textit{output} secara konsisten berdasarkan data dan konteks yang diberikan.
+\begin{longtable}{|p{3cm}|p{5cm}|p{5cm}|}
+\caption{Non-Functional Requirement}
+\label{tbl:Non-Functional Req} \\
+\hline
+\textbf{Kode} &  \textbf{Aspek} &  \textbf{Deskripsi}\\
+\hline
+\endfirsthead
 
-    \item \textit{Performance}:  
-    Waktu pemrosesan analisis dan pembuatan rekomendasi anggaran harus berada pada tingkat yang wajar, sehingga tidak menghambat penggunaan sehari-hari oleh UKM.
+\hline
+\textbf{Kode} &  \textbf{Aspek} &  \textbf{Deskripsi}\\
+\hline
+\endhead
 
-    \item \textit{Security}:  
-    Data keuangan yang di-\textit{input} pengguna harus diproses dengan menjaga kerahasiaan.
+\hline
+\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
 
-    \item \textit{Privacy}:  
-    Informasi pengguna hanya digunakan untuk keperluan analisis dalam sistem dan tidak dibagikan ke pihak eksternal.
+\hline
+\endlastfoot
 
-    \item \textit{Availability}:  
-    Sistem harus dapat dijalankan secara mandiri pada lingkungan \textit{runtime} n8n yang stabil, baik lokal maupun server, sehingga dapat diakses kapan dibutuhkan oleh pengguna.
+NFR-01
+&
+Usability
+&
+Sistem harus mudah digunakan oleh pengguna non-teknis seperti pemilik atau pengelola UKM, dengan antarmuka yang sederhana dan instruksi yang jelas.
+\\ \hline
 
-    \item \textit{Scalability}:  
-    Arsitektur sistem harus memungkinkan penambahan modul baru, seperti modul penilaian risiko atau analisis biaya lanjutan, tanpa perlu merombak komponen utama.
+NFR-02
+&
+Reliability
+&
+Sistem harus menghasilkan rekomendasi yang konsisten, stabil, dan dapat diandalkan.
+\\ \hline
 
-    \item \textit{Maintainability}:  
-    Alur kerja (\textit{workflow}) pada n8n harus dirancang modular agar mudah diperbarui, diperbaiki, atau dikembangkan seiring bertambahnya kebutuhan pengguna atau perubahan model AI.
+NFR-03
+&
+Performance
+&
+Sistem harus memberikan hasil rekomendasi dalam waktu yang wajar agar tetap nyaman digunakan
+\\ \hline
 
-    \item \textit{Safety}:  
-    Sistem harus menghindari untuk memberikan rekomendasi yang dapat memicu keputusan finansial berisiko tinggi tanpa peringatan. Output sistem perlu dilengkapi batasan konteks agar tidak digunakan untuk keputusan investasi berisiko.
-\end{enumerate}
+NFR-04
+&
+Maintainability
+&
+Sistem harus mudah diperbarui, termasuk pembaruan dokumen basis pengetahuan serta konfigurasi alur kerja tanpa membutuhkan perubahan besar.
+\\ \hline
+\end{longtable}
 
 \section{Analisis Pemilihan Solusi}
 Analisis pemilihan solusi digunakan untuk mencari dan mempertimbangkan segala rangkaian solusi yang bisa digunakan. Bagian ini akan membahas mengenai alternatif dan analisis penentuan solusi yang tersedia.
