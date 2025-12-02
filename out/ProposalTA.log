@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  2 DEC 2025 12:03
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  2 DEC 2025 19:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -942,7 +942,7 @@ Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-
 english.tex)
 Package babel Info: Importing data for english
-(babel)             from babel-en.ini. Reported on input line 10.
+(babel)             from babel-en.ini. Reported on input line 25.
 )
 \openout1 = `ProposalTA.aux'.
 
@@ -1160,14 +1160,12 @@ Overfull \hbox (64.45271pt too wide) in paragraph at lines 303--308
 
 
 
-[1]
+[1] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.toc
 
-[2] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.toc
-
-[3
+[2
 
 ]
-Overfull \hbox (18.71347pt too wide) in paragraph at lines 97--97
+Overfull \hbox (18.71347pt too wide) in paragraph at lines 95--95
  [] [][][]\TU/TimesNewRoman(0)/m/n/12 Sistem Rekomendasi Berbasis \TU/TimesNewR
 oman(0)/m/it/12 Retrieval-Augmented Generation (RAG) 
  []
@@ -1178,19 +1176,19 @@ oman(0)/m/it/12 Retrieval-Augmented Generation (RAG)
 
 
 
-[4] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lof)
+[3] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lof)
 \tf@lof=\write6
 \openout6 = `ProposalTA.lof'.
 
 
 
-[5] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lot)
+[4] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lot)
 \tf@lot=\write7
 \openout7 = `ProposalTA.lot'.
 
 
 
-[6] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lol)
+[5] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lol)
 \tf@lol=\write8
 \openout8 = `ProposalTA.lol'.
 
@@ -1249,7 +1247,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 
-[7
+[6
 
 ] (Bab I - Pendahuluan.tex
 Bab I.
@@ -1520,22 +1518,55 @@ Overfull \hbox (57.77356pt too wide) in alignment at lines 235--262
 
 [19]
 Bab IV.
-File: image/As Is Perencanaan Anggaran.png Graphic file (type bmp)
-<image/As Is Perencanaan Anggaran.png>
+File: image/Use Case.png Graphic file (type bmp)
+<image/Use Case.png>
 
 
 [20
 
 ]
-File: image/Architecture.png Graphic file (type bmp)
-<image/Architecture.png>
+Overfull \hbox (50.22635pt too wide) in alignment at lines 25--31
+ [] [] [] 
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (50.22635pt too wide) in alignment at lines 31--36
+ [] [] [] 
+ []
 
+
+Overfull \hbox (50.22635pt too wide) in alignment at lines 36--40
+ [] [] [] 
+ []
+
+
+Overfull \hbox (50.22635pt too wide) in alignment at lines 40--43
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 8038) in paragraph at lines 51--51
+[]|\TU/TimesNewRoman(0)/m/n/12 Analisis Kelayakan Produ-
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 52--52
+\TU/TimesNewRoman(0)/m/n/12 duk atau pasar baru dengan mempertim-
+ []
+
+
+Overfull \hbox (50.22635pt too wide) in alignment at lines 43--54
+ [] [] [] 
+ []
+
+File: image/To Be Flowchart.png Graphic file (type bmp)
+<image/To Be Flowchart.png>
 
 
 [21]
+File: image/Architecture system.png Graphic file (type bmp)
+<image/Architecture system.png>
+
 
 [22]) (Bab V - Rencana-Selanjutnya.tex
 
@@ -1575,19 +1606,19 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: 3221502497AB428751AA964CCFF9A3DC;8108.
+(rerunfilecheck)             Checksum: 5AE2D1D9C188FD3D5EE74FC12E5E8DD6;8648.
 Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 \openout1 = `ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31347 strings out of 403196
- 616138 string characters out of 5456126
- 1982391 words of memory out of 5000000
- 59521 multiletter control sequences out of 15000+600000
+ 31368 strings out of 403196
+ 616702 string characters out of 5456126
+ 1983104 words of memory out of 5000000
+ 59540 multiletter control sequences out of 15000+600000
  632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,9n,93p,1245b,8564s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,9n,93p,1447b,6721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (34 pages).
+pdf (33 pages).
