@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  2 DEC 2025 19:39
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  2 DEC 2025 21:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1572,11 +1572,120 @@ File: image/Architecture system.png Graphic file (type bmp)
 
 [23]
 Bab V.
-)
+
 
 [24
 
 ]
+Overfull \hbox (48.61902pt too wide) in alignment at lines 85--90
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (48.61902pt too wide) in alignment at lines 90--94
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+[]|\TU/TimesNewRoman(0)/m/n/12 Kualitas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\TU/TimesNewRoman(0)/m/n/12 dokumen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\TU/TimesNewRoman(0)/m/n/12 KB ren-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+\TU/TimesNewRoman(0)/m/n/12 dah/tidak
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+[]|\TU/TimesNewRoman(0)/m/n/12 Halusinasi/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/n/12 ketidak-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
+\TU/TimesNewRoman(0)/m/n/12 selarasan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]|\TU/TimesNewRoman(0)/m/n/12 Koneksi/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\TU/TimesNewRoman(0)/m/n/12 tunneling
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 98--98
+[]|\TU/TimesNewRoman(0)/m/n/12 Biaya ope-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\TU/TimesNewRoman(0)/m/n/12 rasional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\TU/TimesNewRoman(0)/m/n/12 melebihi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+[]|\TU/TimesNewRoman(0)/m/n/12 Perubahan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(0)/m/n/12 ruang
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(0)/m/n/12 lingkup
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(0)/m/n/12 dan waktu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--99
+\TU/TimesNewRoman(0)/m/n/12 pengem-
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 99--99
+\TU/TimesNewRoman(0)/m/n/12 01 & UC-02 dulu, UC-03 dija-
+ []
+
+
+Overfull \hbox (48.61902pt too wide) in alignment at lines 94--100
+ [] [] [] [] [] 
+ []
+
+
+
+[25])
+
+[26]
 Overfull \hbox (12.08437pt too wide) in paragraph at lines 400--400
 \TU/TimesNewRoman(0)/m/n/12 SMEs to Achieve Sustainable Business Performance: A
 pplication of Technology–
@@ -1590,7 +1699,7 @@ omian Republik Indonesia. 2024.
 
 
 
-[25
+[27
 
 
 ]
@@ -1600,25 +1709,25 @@ See the caption package documentation for explanation.
 
 
 
-[26] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
+[28] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: 5AE2D1D9C188FD3D5EE74FC12E5E8DD6;8648.
+(rerunfilecheck)             Checksum: DF3F56103F3CEBE4E3B39710996CB518;9631.
 Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 \openout1 = `ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31368 strings out of 403196
- 616702 string characters out of 5456126
- 1983104 words of memory out of 5000000
- 59540 multiletter control sequences out of 15000+600000
+ 31378 strings out of 403196
+ 616856 string characters out of 5456126
+ 1984324 words of memory out of 5000000
+ 59550 multiletter control sequences out of 15000+600000
  632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,9n,93p,1447b,6721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (33 pages).
+pdf (35 pages).
