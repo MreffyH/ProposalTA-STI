@@ -4,15 +4,21 @@
 \chapter{DESAIN KONSEP SOLUSI}
 \label{chap:desain-konsep-solusi}
 
-Bab ini menjelaskan mengenai desain konsep solusi implementasi AI dalam perencanaan anggaran usaha kecil dan menengah. Desain konsep solusi yang diusulkan menggunakan kecerdasan buatan yang memanfaatkan \textit{multi-agent}, dibangun menggunakan \textit{workflow automation} n8n, menggunakan model bahasa OpenAI (nantinya dipilih menggunakan kombinasi O3, GPT-4.1, GPT-4o mini, dan GPT-5nano) sebagai mesin \textit{reasoning} dan analisis keuangan. Berikut adalah \textit{high-level design} dari desain konsep solusi yang akan dirancang.
+Bab ini menjelaskan mengenai desain konsep solusi implementasi AI dalam perencanaan anggaran usaha kecil dan menengah. Sistem ini adalah pendukung keputusan perencanaan anggaran berbasis \textit{RAG (Retrieval-Augmented Generation)} dengan \textit{workflow} terorkestrasi. Tujuannya untuk memberikan rekomendasi ketepatan anggaran proyek, memvalidasi pengajuan anggaran baru, dan menganalisis kelayakan ekspansi produk/usaha. Sistem bekerja dengan mengambil dokumen dan data relevan sebagai dasar analisis, kemudian menghasilkan keluaran yang beralasan (explainable) beserta rujukan sumber.
 
 \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
-    	\includegraphics[width=0.7\textwidth]{image/Flowchart.png}
+    	\includegraphics[width=0.7\textwidth]{image/As Is Perencanaan Anggaran.png}
 	\caption{Data Flow untuk Perencanaan Anggaran \autocite{Vivet2023}}
 	\label{gambar:Data Flow}
 \end{figure}
+
+Proses dimulai dari penentuan jenis analisis oleh pengguna—apakah anggaran proyek, validasi pengajuan, atau ekspansi—karena pilihan ini menentukan parameter input yang dibutuhkan serta jalur proses selanjutnya. Setelah itu, pengguna menetapkan pedoman analisis berupa tujuan periode, asumsi utama (misalnya permintaan, biaya, atau kapasitas), dan bila ada, hasil evaluasi anggaran sebelumnya sebagai konteks bisnis. Sistem kemudian melakukan orkestrasi workflow, yaitu menyusun kueri dari input tersebut, memilih sumber data (dokumen pedoman, histori, atau referensi pasar), lalu memanggil modul retrieval dan meneruskan konteksnya ke modul reasoning. 
+Pada tahap penentuan anggaran, mesin melakukan RAG dengan menelusuri knowledge base, mengambil chunk paling relevan, dan menyusun rekomendasi berikut justifikasinya berdasarkan mode analisis yang dipilih. Selanjutnya masuk ke pengesahan anggaran, di mana hasil sistem diuji kelayakannya—misalnya melalui batas biaya atau ambang ROI—sebelum didistribusikan sebagai acuan pelaksanaan. Terakhir, pada tahap pelaksanaan, anggaran dijalankan dan dilakukan monitoring serta pelaporan realisasi, lalu data tersebut kembali menjadi artefak dan evidence untuk siklus evaluasi berikutnya.
+
+Desain konsep solusi yang diusulkan menggunakan kecerdasan buatan yang memanfaatkan \textit{multi-agent}, dibangun menggunakan \textit{workflow automation} n8n, menggunakan model bahasa OpenAI (nantinya dipilih menggunakan kombinasi O3, GPT-4.1, GPT-4o mini, dan GPT-5nano) sebagai mesin \textit{reasoning} dan analisis keuangan. Berikut adalah \textit{high-level design} dari desain konsep solusi yang akan dirancang.
+
 
 Diagram Data Flow untuk Perencanaan Anggaran yang diadaptasi dari \textcite{Vivet2023} menjelaskan alur dasar bagaimana data keuangan diproses menjadi informasi yang siap digunakan dalam pengambilan keputusan anggaran. Proses dimulai dari Database Structured, yaitu tempat penyimpanan data historis yang telah disusun dalam format terstruktur, seperti pendapatan dan pengeluaran per periode. 
 Data ini kemudian dikirim ke tahap \textit{Forecast Computing}, sistem melakukan komputasi prediktif untuk mengidentifikasi pola historis dan memproyeksikan kondisi keuangan pada periode berikutnya. Tahap \textit{forecasting} ini merupakan inti dari proses perencanaan anggaran modern karena menghasilkan estimasi yang menjadi acuan penyusunan anggaran. 
