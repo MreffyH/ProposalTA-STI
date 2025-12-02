@@ -82,6 +82,39 @@
       \field{volume}{19}
       \field{year}{2010}
     \endentry
+    \entry{Faisal2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aa6796c2c32a8836b1716d941189e4ca}{%
+           family={Faisal},
+           familyi={F\bibinitperiod},
+           given={Saffa},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aa6796c2c32a8836b1716d941189e4ca}
+      \strng{fullhash}{aa6796c2c32a8836b1716d941189e4ca}
+      \strng{fullhashraw}{aa6796c2c32a8836b1716d941189e4ca}
+      \strng{bibnamehash}{aa6796c2c32a8836b1716d941189e4ca}
+      \strng{authorbibnamehash}{aa6796c2c32a8836b1716d941189e4ca}
+      \strng{authornamehash}{aa6796c2c32a8836b1716d941189e4ca}
+      \strng{authorfullhash}{aa6796c2c32a8836b1716d941189e4ca}
+      \strng{authorfullhashraw}{aa6796c2c32a8836b1716d941189e4ca}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed November 30, 2025}
+      \field{title}{Weighted Scoring Model: What It is and How to Create It}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://userpilot.com/blog/weighted-scoring-model/
+      \endverb
+      \verb{url}
+      \verb https://userpilot.com/blog/weighted-scoring-model/
+      \endverb
+    \endentry
     \entry{fischer2018}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=582e61688f938e2dc9f9c019ba6e496f}{%

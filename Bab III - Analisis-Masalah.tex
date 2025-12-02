@@ -201,8 +201,65 @@ Alternatif terakhir yang dipertimbangkan adalah menggunakan model Retrieval-Augm
 Meskipun RAG dengan alur proses otomatis diposisikan sebagai solusi tersendiri, pendekatan ini secara alami dapat diperluas menuju arsitektur \textit{multi-agent}. Hal ini karena proses retrieval, analisis konteks, validasi, dan generasi output pada dasarnya dapat dipisahkan menjadi peran-peran agen yang saling berkoordinasi dalam alur proses. Dengan kata lain, solusi \textit{RAG–workflow} merupakan dasar yang kompatibel untuk pengembangan sistem \textit{multi-agent} tanpa mengubah struktur utama yang diusulkan.
 
 \subsection{Analisis Penentuan Solusi}
-Setelah mempertimbangkan kelebihan dan kekurangan setiap alternatif, pendekatan RAG yang diintegrasikan dengan platform otomasi \textit{low-code} seperti n8n dipilih sebagai solusi utama. Pemilihan pendekatan berbasis RAG yang terintegrasi dengan \textit{workflow low-code} n8n bukan dilakukan karena AI dianggap sebagai satu-satunya solusi, melainkan karena pendekatan ini menawarkan kombinasi yang seimbang antara kemudahan penggunaan, kemampuan adaptif, serta biaya implementasi yang relatif rendah. 
+Untuk menentukan solusi terbaik di antara lima alternatif yang telah dianalisis, diperlukan suatu metode evaluasi yang objektif dan terukur. Oleh karena itu, dilakukan evaluasi komparatif menggunakan pendekatan \textit{weighted scoring matrix}. Setiap solusi dinilai berdasarkan empat kriteria utama, yaitu akurasi, efektivitas, biaya implementasi, dan fleksibilitas. Penilaian ini memberikan gambaran mengenai kinerja relatif masing-masing solusi dalam memenuhi kebutuhan UKM. Skor pada setiap kriteria berkisar antara 1 hingga 5, di mana nilai yang lebih tinggi menunjukkan kinerja yang lebih baik sesuai kriteria tersebut \autocite{Faisal2025}.
 
-Perbaikan prosedur manual dan penggunaan metode tradisional memang tetap relevan dan dapat berjalan paralel. Namun kedua pendekatan tersebut memiliki keterbatasan ketika UKM membutuhkan rekomendasi yang cepat, berbasis data, dan mampu menyesuaikan diri dengan perubahan kondisi operasional. 
+Akurasi menilai kemampuan solusi dalam menghasilkan rekomendasi yang tepat dan relevan, terutama karena ketepatan analisis sangat memengaruhi kualitas keputusan anggaran. Efektivitas menilai sejauh mana solusi mampu memberikan hasil yang benar-benar bermanfaat dalam konteks penggunaan, termasuk kemampuannya memberikan analisis yang dapat dipertanggungjawabkan. Biaya implementasi mengukur kelayakan teknis serta sumber daya yang dibutuhkan untuk menerapkan solusi, baik dari sisi kompleksitas, kebutuhan pemrosesan, maupun kemudahan integrasi. Sementara itu, fleksibilitas menilai kemampuan solusi untuk beradaptasi terhadap perubahan kebutuhan, pembaruan dokumen, atau penambahan fitur di masa depan. Melalui pendekatan ini, pemilihan solusi dapat dilakukan secara sistematis.
 
-Pendekatan RAG dipilih bukan sebagai substitusi total terhadap proses manual, tetapi sebagai alat bantu yang dapat mengotomatisasi bagian-bagian pekerjaan yang repetitif, menyajikan informasi yang lebih terstruktur, dan memberikan dukungan keputusan tanpa menambah beban kerja atau kebutuhan pelatihan tambahan bagi pelaku UKM.
+\begin{longtable}{|p{3.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\caption{Weighted Scoring Matrix Alternatif Solusi} \\
+\hline
+\textbf{Alternatif Solusi} & 
+\textbf{Akurasi (0.30)} &
+\textbf{Efektivitas (0.30)} &
+\textbf{Biaya Implementasi (0.20)} &
+\textbf{Fleksibilitas (0.20)} &
+\textbf{Skor Akhir} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Alternatif Solusi} & 
+\textbf{Akurasi (0.30)} &
+\textbf{Efektivitas (0.30)} &
+\textbf{Biaya Implementasi (0.20)} &
+\textbf{Fleksibilitas (0.20)} &
+\textbf{Skor Akhir} \\
+\hline
+\endhead
+
+\hline
+\multicolumn{6}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+% --- Row 5: AI Adoption Framework ---
+AI Adoption (TOE Framework)
+& 2 & 3 & 4 & 3
+& \textbf{2.9} \\ \hline
+
+% --- Row 4: Rule-Based System ---
+Rule-Based Expert System
+& 3 & 3 & 5 & 2
+& \textbf{3.2} \\ \hline
+
+% --- Row 3: ML Predictive Model ---
+Machine Learning Forecasting
+& 4 & 3 & 2 & 3
+& \textbf{3.1} \\ \hline
+
+% --- Row 2: Multi-Agent ---
+Multi-Agent System 
+& 4 & 4 & 2 & 4
+& \textbf{3.6} \\ \hline
+
+% --- Row 1: RAG + Workflow ---
+RAG + Workflow
+& 5 & 5 & 4 & 5 
+& \textbf{4.8} \\ \hline
+
+\end{longtable}
+
+Berdasarkan hasil perhitungan matriks, solusi \textit{RAG + workflow} memperoleh skor tertinggi. Hal ini menunjukkan bahwa solusi tersebut menawarkan kombinasi paling seimbang antara akurasi, efektivitas, biaya implementasi, dan fleksibilitas dibandingkan alternatif lainnya. 
+Pendekatan \textit{multi-agent} dan model prediktif ML tetap memiliki potensi, namun kompleksitas dan kebutuhan data yang tinggi membuatnya kurang sesuai untuk diterapkan langsung pada UKM. Sementara itu, solusi \textit{rule-based} dan kerangka adopsi AI memiliki keunggulan tertentu, tetapi tidak memberikan kemampuan analitis yang adaptif seperti RAG. Dengan demikian, solusi yang dipilih untuk dikembangkan lebih lanjut adalah RAG dengan \textit{workflow} otomatis.

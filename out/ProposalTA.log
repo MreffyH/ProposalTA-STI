@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  2 DEC 2025 09:24
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  2 DEC 2025 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1416,7 +1416,107 @@ Overfull \hbox (6.0032pt too wide) in paragraph at lines 199--199
 
 
 
-[18]) (Bab IV - Desain-Konsep-Solusi.tex
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 212--212
+[]|\TU/TimesNewRoman(0)/b/n/12 Akurasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
+[]|\TU/TimesNewRoman(0)/b/n/12 Efektivitas
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 214--214
+[]|\TU/TimesNewRoman(0)/b/n/12 Biaya Im-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+\TU/TimesNewRoman(0)/b/n/12 plementasi
+ []
+
+
+Overfull \hbox (5.10426pt too wide) in paragraph at lines 215--215
+[]|\TU/TimesNewRoman(0)/b/n/12 Fleksibilitas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+[]|\TU/TimesNewRoman(0)/b/n/12 Skor
+ []
+
+
+Overfull \hbox (57.77356pt too wide) in alignment at lines 208--218
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--222
+[]|\TU/TimesNewRoman(0)/b/n/12 Akurasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
+[]|\TU/TimesNewRoman(0)/b/n/12 Efektivitas
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 224--224
+[]|\TU/TimesNewRoman(0)/b/n/12 Biaya Im-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+\TU/TimesNewRoman(0)/b/n/12 plementasi
+ []
+
+
+Overfull \hbox (5.10426pt too wide) in paragraph at lines 225--225
+[]|\TU/TimesNewRoman(0)/b/n/12 Fleksibilitas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+[]|\TU/TimesNewRoman(0)/b/n/12 Skor
+ []
+
+
+Overfull \hbox (57.77356pt too wide) in alignment at lines 218--228
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (57.77356pt too wide) in alignment at lines 228--232
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (57.77356pt too wide) in alignment at lines 232--235
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 238--239
+[]|\TU/TimesNewRoman(0)/m/n/12 AI Adoption (TOE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+[]|\TU/TimesNewRoman(0)/m/n/12 Rule-Based Expert
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+[]|\TU/TimesNewRoman(0)/m/n/12 Machine Learning
+ []
+
+
+Overfull \hbox (57.77356pt too wide) in alignment at lines 235--262
+ [] [] [] [] [] [] 
+ []
+
+) (Bab IV - Desain-Konsep-Solusi.tex
 
 [19]
 Bab IV.
@@ -1477,10 +1577,10 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31349 strings out of 403196
- 616181 string characters out of 5456126
- 1979224 words of memory out of 5000000
- 59522 multiletter control sequences out of 15000+600000
+ 31356 strings out of 403196
+ 616351 string characters out of 5456126
+ 1982391 words of memory out of 5000000
+ 59529 multiletter control sequences out of 15000+600000
  632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,9n,93p,1245b,8564s stack positions out of 10000i,1000n,20000p,200000b,200000s
