@@ -19,6 +19,40 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global/global}
+    \entry{Badghish2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8b0a771fa75a4020ff059ef0ceaeb1e4}{%
+           family={Badghish},
+           familyi={B\bibinitperiod},
+           given={Saeed},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3ada165a9b5104113bf2cd7ca49194c}{%
+           family={Soomro},
+           familyi={S\bibinitperiod},
+           given={Yasir\bibnamedelima Ali},
+           giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{09280465e3d8bf517635edba830115bf}
+      \strng{fullhash}{09280465e3d8bf517635edba830115bf}
+      \strng{fullhashraw}{09280465e3d8bf517635edba830115bf}
+      \strng{bibnamehash}{09280465e3d8bf517635edba830115bf}
+      \strng{authorbibnamehash}{09280465e3d8bf517635edba830115bf}
+      \strng{authornamehash}{09280465e3d8bf517635edba830115bf}
+      \strng{authorfullhash}{09280465e3d8bf517635edba830115bf}
+      \strng{authorfullhashraw}{09280465e3d8bf517635edba830115bf}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Sustainability (Switzerland)}
+      \field{title}{Artificial Intelligence Adoption by SMEs to Achieve Sustainable Business Performance: Application of Technology–Organization–Environment Framework}
+      \field{volume}{16}
+      \field{year}{2024}
+    \endentry
     \entry{bahrammirzaee2010}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5e0589bd8c057d19121bc24e75daf4f9}{%

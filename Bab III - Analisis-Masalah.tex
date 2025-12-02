@@ -174,66 +174,31 @@ Sistem harus mudah diperbarui, termasuk pembaruan dokumen basis pengetahuan sert
 \end{longtable}
 
 \section{Analisis Pemilihan Solusi}
-Analisis pemilihan solusi digunakan untuk mencari dan mempertimbangkan segala rangkaian solusi yang bisa digunakan. Bagian ini akan membahas mengenai alternatif dan analisis penentuan solusi yang tersedia.
+Pada bagian ini membahas perumusan solusi untuk menjawab permasalahan yang
+diangkat dalam sistem perencanaan anggaran usaha kecil dan menengah. Beberapa
+alternatif solusi dirumuskan dengan mempertimbangkan pendekatan algoritmik
+yang relevan dengan kebutuhan sistem, khususnya dalam menyelesaikan masalah yang dialami pengguna. 
+Penentuan solusi akan mempertimbangkan kebutuhan fungsional dan nonfungsional yang telah dijelaskan
+sebelumnya. Bagian ini akan membahas mengenai alternatif dan analisis penentuan solusi yang tersedia.
 
 \subsection{Alternatif Solusi}
 Sebelum menentukan pendekatan yang akan digunakan, beberapa alternatif solusi telah dianalisis berdasarkan kesesuaian kebutuhan UKM, kompleksitas implementasi, serta tingkat pemeliharaan jangka panjang.
-\begin{longtable}{|p{3cm}|p{5cm}|p{5cm}|}
-\caption{Perbandingan Alternatif Solusi untuk Sistem Perencanaan Anggaran UKM}
-\label{tbl:alternatifSolusi} \\
-\hline
-\textbf{Metode} & \textbf{Kelebihan} & \textbf{Keterbatasan} \\
-\hline
-\endfirsthead
 
-\hline
-\textbf{Metode} & \textbf{Kelebihan} & \textbf{Keterbatasan} \\
-\hline
-\endhead
+\subsubsection{Pendekatan Transformasi dan Adopsi AI untuk UKM (berbasis kerangka TOE)}
+Berdasarkan jurnal \textcite{Badghish2024} alternatif solusi yang lebih strategis adalah menerapkan kerangka adopsi AI tingkat organisasi, seperti Technology–Organization–Environment (TOE). Pendekatan ini menekankan kesiapan teknologi, struktur organisasi, dan dukungan lingkungan sebagai fondasi untuk pengembangan sistem AI perencanaan anggaran. Solusi ini dapat membantu UKM meningkatkan kemampuan digital, meningkatkan kesadaran teknologi, dan membangun budaya organisasi yang mendukung pengambilan keputusan berbasis data. Kelemahannya adalah pendekatan ini tidak memberikan sistem teknis siap pakai dan membutuhkan waktu lebih lama untuk diterapkan, karena difokuskan pada kesiapan dan transformasi jangka panjang.
 
-\hline
-\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
-\endfoot
+\subsubsection{\textit{Rule-Based Expert System}}
+Solusi lainnya adalah sistem pakar berbasis aturan yang menggunakan pedoman, ambang batas, dan logika biaya untuk menilai kelayakan anggaran. Sistem jenis ini bekerja dengan mendefinisikan aturan seperti batas maksimum biaya pada kategori tertentu, standar alokasi, atau persyaratan ROI minimum untuk pengajuan anggaran baru. Keunggulannya adalah transparansi dan kemudahan dipahami oleh UKM, memungkinkan konsistensi dalam validasi anggaran tanpa memerlukan model prediktif atau dokumen kompleks. Namun, sistem ini kurang adaptif terhadap perubahan kondisi bisnis dan sulit dipelihara seiring bertambahnya jumlah aturan sehingga efektivitasnya menurun jika konteks operasional UKM berkembang atau berubah.
 
-\hline
-\endlastfoot
+\subsubsection{Model Prediksi Berbasis  \textit{Machine Learning}}
+Alternatif ketiga, jurnal \textcite{Vivet2023} juga menyebutkan bahwa bisa dilakukan pemanfaatan model prediktif berbasis \textit{machine learning} seperti \textit{Random Forest, Gradient Boosting, atau LSTM} untuk memperkirakan kebutuhan anggaran pada periode mendatang. Pendekatan ini kuat untuk memodelkan pola historis, terutama ketika UKM memiliki riwayat transaksi dan catatan keuangan yang cukup panjang. Model prediksi dapat memberikan estimasi kuantitatif terkait biaya, permintaan produk, dan arus kas sehingga membantu perencanaan anggaran dengan data berbasis tren. Keunggulannya terletak pada kemampuan menangkap pola nonlinier dan musiman, namun model ini membutuhkan dataset yang stabil dan berkualitas serta sering kali tidak memberikan penjelasan naratif sehingga pengguna sulit memahami alasan di balik prediksi yang diberikan.
 
-Metode Statistik Tradisional
-&
-Sederhana, mudah dipahami; komputasi ringan; efektif untuk pola stabil
-&
-Kurang adaptif terhadap perubahan; tidak cocok untuk data tidak terstruktur; sulit menangani nonlinieritas
-\\ \hline
+\subsubsection{Sistem \textit{Multi-Agent} untuk Analisis dan Keputusan Anggaran}
+Alternatif berikutnya adalah pendekatan \textit{Multi-Agent} sebagaimana dibahas dalam jurnal \textcite{Joshi2025}, dengan cara penerapan beberapa agen cerdas yang bekerja sama untuk menganalisis kebutuhan anggaran. Setiap agen dapat memiliki peran spesifik, seperti agen analisis historis, agen risiko, agen evaluasi manfaat, dan agen pendukung keputusan. Kolaborasi ini memungkinkan proses pengambilan keputusan yang lebih kaya dan berlapis, karena setiap agen memberikan perspektif yang berbeda berdasarkan fungsi masing-masing. Pendekatan multi-agent unggul untuk analisis kompleks yang melibatkan berbagai parameter dan dapat meniru proses kerja manusia yang terdistribusi. Kekurangannya adalah kebutuhan arsitektur yang lebih kompleks, koordinasi antaragen yang perlu dirancang matang, dan kebutuhan sumber daya komputasi yang lebih besar.
 
-\textit{Machine Learning} Konvensional
-&
-Mampu mempelajari pola kompleks; akurasi lebih baik; mendukung variabel banyak
-&
-Membutuhkan dataset besar; implementasi rumit; pemeliharaan tidak mudah bagi UKM
-\\ \hline
-
-Sistem Pakar (\textit{Rule-Based})
-&
-Aturan jelas; mudah diaudit; cocok untuk proses stabil
-&
-Tidak fleksibel; sulit diperbarui; tidak cocok untuk variasi kasus UKM
-\\ \hline
-
-\textit{LLM Standalone}
-&
-Mudah digunakan; tidak perlu pelatihan model; cepat memberikan analisis umum
-&
-Berpotensi \textit{hallucination}; tidak terhubung dengan data UKM; konsistensi jawaban tidak terjamin
-\\ \hline
-
-RAG + Workflow n8n
-&
-Berbasis data; rujukan jelas; mudah diautomasi; tidak perlu pelatihan model khusus
-&
-Butuh basis pengetahuan awal; bergantung pada kualitas \textit{retrieval}; memerlukan layanan model AI stabil
-\\ \hline
-
-\end{longtable}
+\subsubsection{Sistem Rekomendasi Berbasis \textit{Retrieval-Augmented Generation (RAG)} dengan Alur Proses Otomatis}
+Alternatif terakhir yang dipertimbangkan adalah menggunakan model Retrieval-Augmented Generation (RAG) yang dipadukan dengan alur kerja otomatis untuk memproses input perencanaan anggaran. Berdasarkan jurnal \textcite{lewis2020} RAG memungkinkan sistem menggabungkan kemampuan generatif model bahasa dengan pencarian dokumen pendukung sehingga rekomendasi yang dihasilkan bersifat kontekstual, dapat ditelusuri, dan mengurangi potensi halusinasi. Workflow otomatis berfungsi mengatur tahapan input, pengambilan dokumen, analisis, dan penyajian hasil secara terstruktur. Solusi ini unggul karena fleksibel, tidak memerlukan data historis dalam jumlah besar, serta mampu memberikan rekomendasi yang lebih adaptif. Namun, kualitas hasil sangat bergantung pada kelengkapan dan mutu dokumen pengetahuan yang disediakan, dan sistem membutuhkan desain alur kerja yang cermat agar stabil.
+Meskipun RAG dengan alur proses otomatis diposisikan sebagai solusi tersendiri, pendekatan ini secara alami dapat diperluas menuju arsitektur \textit{multi-agent}. Hal ini karena proses retrieval, analisis konteks, validasi, dan generasi output pada dasarnya dapat dipisahkan menjadi peran-peran agen yang saling berkoordinasi dalam alur proses. Dengan kata lain, solusi \textit{RAG–workflow} merupakan dasar yang kompatibel untuk pengembangan sistem \textit{multi-agent} tanpa mengubah struktur utama yang diusulkan.
 
 \subsection{Analisis Penentuan Solusi}
 Setelah mempertimbangkan kelebihan dan kekurangan setiap alternatif, pendekatan RAG yang diintegrasikan dengan platform otomasi \textit{low-code} seperti n8n dipilih sebagai solusi utama. Pemilihan pendekatan berbasis RAG yang terintegrasi dengan \textit{workflow low-code} n8n bukan dilakukan karena AI dianggap sebagai satu-satunya solusi, melainkan karena pendekatan ini menawarkan kombinasi yang seimbang antara kemudahan penggunaan, kemampuan adaptif, serta biaya implementasi yang relatif rendah. 

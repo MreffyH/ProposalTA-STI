@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  2 DEC 2025 02:31
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  2 DEC 2025 09:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1166,7 +1166,13 @@ Overfull \hbox (64.45271pt too wide) in paragraph at lines 303--308
 
 [3
 
-])
+]
+Overfull \hbox (18.71347pt too wide) in paragraph at lines 97--97
+ [] [][][]\TU/TimesNewRoman(0)/m/n/12 Sistem Rekomendasi Berbasis \TU/TimesNewR
+oman(0)/m/it/12 Retrieval-Augmented Generation (RAG) 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `ProposalTA.toc'.
 
@@ -1399,112 +1405,49 @@ Overfull \hbox (7.54723pt too wide) in alignment at lines 145--174
  []
 
 [15]
-Overfull \hbox (7.54723pt too wide) in alignment at lines 181--187
- [] [] [] 
- []
 
-
-Overfull \hbox (7.54723pt too wide) in alignment at lines 187--192
- [] [] [] 
- []
-
-
-Overfull \hbox (7.54723pt too wide) in alignment at lines 192--196
- [] [] [] 
- []
-
-
-Overfull \hbox (7.54723pt too wide) in alignment at lines 196--199
- [] [] [] 
- []
-
-
-Underfull \hbox (badness 7613) in paragraph at lines 201--202
-[]|\TU/TimesNewRoman(0)/m/n/12 Metode Statistik
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-[]|\TU/TimesNewRoman(0)/m/it/12 Machine Lear-
- []
-
-
-Underfull \hbox (badness 3229) in paragraph at lines 208--209
-\TU/TimesNewRoman(0)/m/it/12 ning \TU/TimesNewRoman(0)/m/n/12 Konvensio-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-[]|\TU/TimesNewRoman(0)/m/n/12 Mampu mempelajari pola
- []
-
-
-Underfull \hbox (badness 3514) in paragraph at lines 212--213
-\TU/TimesNewRoman(0)/m/n/12 implementasi rumit; peme-
- []
-
-
-Underfull \hbox (badness 5681) in paragraph at lines 212--213
-\TU/TimesNewRoman(0)/m/n/12 liharaan tidak mudah bagi
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-[]|\TU/TimesNewRoman(0)/m/n/12 Sistem Pakar
- []
-
-
-Underfull \hbox (badness 6675) in paragraph at lines 224--225
-\TU/TimesNewRoman(0)/m/n/12 lu pelatihan model; cepat
- []
-
-
-Underfull \hbox (badness 2213) in paragraph at lines 226--227
-\TU/TimesNewRoman(0)/m/n/12 dak terhubung dengan data
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-[]|\TU/TimesNewRoman(0)/m/n/12 Butuh basis pengetahuan
- []
-
-
-Underfull \hbox (badness 3148) in paragraph at lines 233--234
-\TU/TimesNewRoman(0)/m/n/12 litas \TU/TimesNewRoman(0)/m/it/12 retrieval\TU/Tim
-esNewRoman(0)/m/n/12 ; memerlukan
- []
-
-
-Overfull \hbox (7.54723pt too wide) in alignment at lines 199--236
- [] [] [] 
- []
-
-[16]) (Bab IV - Desain-Konsep-Solusi.tex
+[16]
 
 [17]
+Overfull \hbox (6.0032pt too wide) in paragraph at lines 199--199
+|[]\TU/TimesNewRoman(0)/b/n/12 Sistem Rekomendasi Berbasis \TU/TimesNewRoman(0)
+/b/it/12 Retrieval-Augmented Generation (RAG)
+ []
+
+
+
+[18]) (Bab IV - Desain-Konsep-Solusi.tex
+
+[19]
 Bab IV.
 File: image/Flowchart.png Graphic file (type bmp)
 <image/Flowchart.png>
 
 
-[18
+[20
 
 ]
 File: image/Architecture.png Graphic file (type bmp)
 <image/Architecture.png>
 
 
-[19]
-
-[20]) (Bab V - Rencana-Selanjutnya.tex
-
 [21]
+
+[22]) (Bab V - Rencana-Selanjutnya.tex
+
+[23]
 Bab V.
 )
 
-[22
+[24
 
 ]
+Overfull \hbox (12.08437pt too wide) in paragraph at lines 400--400
+\TU/TimesNewRoman(0)/m/n/12 SMEs to Achieve Sustainable Business Performance: A
+pplication of Technology–
+ []
+
+
 Overfull \hbox (10.57468pt too wide) in paragraph at lines 400--400
 [][]\TU/TimesNewRoman(0)/m/n/12 Kemenko, Kementerian Koordinator Bidang Perekon
 omian Republik Indonesia. 2024.
@@ -1512,7 +1455,7 @@ omian Republik Indonesia. 2024.
 
 
 
-[23
+[25
 
 
 ]
@@ -1522,25 +1465,25 @@ See the caption package documentation for explanation.
 
 
 
-[24] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
+[26] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: 3935B1DB023E571474F38A2D25963C30;6231.
+(rerunfilecheck)             Checksum: 3221502497AB428751AA964CCFF9A3DC;8108.
 Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 \openout1 = `ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31340 strings out of 403196
- 615942 string characters out of 5456126
- 1980394 words of memory out of 5000000
- 59513 multiletter control sequences out of 15000+600000
+ 31349 strings out of 403196
+ 616181 string characters out of 5456126
+ 1979224 words of memory out of 5000000
+ 59522 multiletter control sequences out of 15000+600000
  632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,9n,93p,1245b,8564s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (32 pages).
+pdf (34 pages).
