@@ -33,7 +33,7 @@ Pada awal pengerjaan, diperlukan perencanaan penggunanaan alat dan bahan yang di
 
 Domain + DNS
 &
-150.000--250.000/tahun
+Rp 150.000--250.000/tahun
 \\ \hline
 
 Perangkat (router, STB, kabel, microSD)
@@ -55,6 +55,11 @@ Biaya operasional lain
 &
 Rp 50.000--100.000
 \\ \hline
+
+\textbf{Total Biaya (Tahap Awal)}
+&
+Rp 650.000--1.250.000
+\\ \hline
 \end{longtable}
 
 \section{Desain Pengujian dan Evaluasi}
@@ -62,40 +67,129 @@ Rp 50.000--100.000
 Pada subbab ini, akan dibahas mengenai desain pengujian serta evaluasi dari sistem yang akan dirancang.
 
 \subsection{Verifikasi Fungsional (\textit{Black-box})}
-Pengujian per-\textit{use case} untuk memastikan alur berjalan sesuai spesifikasi:
-\begin{itemize}
-  \item \textbf{UC-01 (rekomendasi anggaran)}: skenario proyek kecil/menengah; verifikasi keluaran memuat ringkasan, alasan, risiko, referensi; aturan batas biaya diterapkan.
-  \item \textbf{UC-02 (validasi pengajuan)}: pengajuan yang layak/tidak layak/kurang data; pastikan sistem dapat \textit{accept/hold/reject} dengan justifikasi dan permintaan data tambahan bila perlu.
-  \item \textbf{UC-03 (kelayakan ekspansi)}: ide produk dengan asumsi permintaan; verifikasi pros/cons, risiko kunci, dan prasyarat eksekusi.
-\end{itemize}
+Berikut adalah pengujian per-\textit{use case} untuk memastikan alur berjalan sesuai spesifikasi:
+
+
+\begin{longtable}{|p{3cm}|p{3cm}|p{5cm}|}
+\caption{Skenario Pengujian}
+\label{tbl:Pengujian} \\
+\hline
+\textbf{Kode Uji} &  \textbf{Kode \textit{Use Case}} &  \textbf{Biaya}\\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Kode Uji} &  \textbf{Kode \textit{Use Case}} &  \textbf{Biaya}\\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+U-01
+&
+UC-01
+&
+Menggunakan skenario proyek kecil/menengah; verifikasi keluaran memuat ringkasan, alasan, risiko, referensi; aturan batas biaya diterapkan.
+\\ \hline
+
+U-02
+&
+UC-02
+&
+Skenario pengajuan rencana anggaran yang layak/tidak layak/kurang data; memastikan sistem dapat melakukan \textit{accept/hold/reject} dengan justifikasi dan permintaan data tambahan bila perlu.
+\\ \hline
+
+U-03
+&
+UC-03
+&
+Skenario pengajuan ide produk dengan asumsi permintaan; verifikasi pros dan cons, risiko kunci, dan prasyarat eksekusi.
+\\ \hline
+\end{longtable}
 
 \subsection{Evaluasi Kualitas RAG}
-Dataset uji kecil (mis.\ 30--50 \textit{prompt} representatif) disiapkan dari dokumen KB. Metrik evaluasi:
-\begin{itemize}
-  \item \textbf{Context Precision/Recall}: proporsi \textit{chunk} yang relevan dari dokumen yang diambil.
-  \item \textbf{Groundedness/Faithfulness}: kesesuaian pernyataan dengan sumber yang dikutip; tingkat halusinasi rendah.
-  \item \textbf{Answer Relevance}: kesesuaian jawaban dengan pertanyaan/konteks UKM.
-  \item \textbf{Citation Accuracy}: kecocokan rujukan dengan bagian dokumen yang benar.
-\end{itemize}
+Disiapkan dataset uji kecil (mis.\ 30--50 \textit{prompt} representatif) dari dokumen KB. Berikut adalah metrik evaluasi untuk pengujian kualitas RAG.
+
+\begin{longtable}{|p{3cm}|p{5cm}|p{5cm}|}
+\caption{Skenario Evaluasi RAG}
+\label{tbl:Evaluasi} \\
+\hline
+\textbf{Kode Evaluasi} &  \textbf{Evaluasi} &  \textbf{Deskripsi}\\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Kode Evaluasi} &  \textbf{Evaluasi} &  \textbf{Deskripsi}\\
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+E-01
+&
+Context Precision/Recall
+&
+Proporsi \textit{chunk} yang relevan dari dokumen yang diambil.
+\\ \hline
+
+E-02
+&
+Groundedness/Faithfulness
+&
+Kesesuaian pernyataan dengan sumber yang dikutip untuk menguji tingkat halusinasi rendah.
+\\ \hline
+
+E-03
+&
+Answer Relevance
+&
+Kesesuaian jawaban dengan pertanyaan/konteks UKM.
+\\ \hline
+
+E-04
+&
+Citation Accuracy
+&
+Kecocokan rujukan dengan bagian dokumen yang benar.
+\\ \hline
+\end{longtable}
 
 \section{Analisis Risiko dan Mitigasi}
 
 Berikut adalah analisis risiko yang mungkin terjadi serta mitigasi untuk mitigasi risiko tersebut.
 
-\begin{longtable}{|p{1.6cm}|p{2cm}|p{2cm}|p{2cm}|p{6cm}|}
+\begin{longtable}{|p{1.6cm}|p{2.5cm}|p{1.8cm}|p{1.8cm}|p{6cm}|}
 \caption{Risiko utama dan strategi mitigasi} \\
+\label{tbl:Risiko Mitigasi} \\
 \hline
-\textbf{Kode} & \textbf{Risiko} & \textbf{Prob.} & \textbf{Dampak} & \textbf{Mitigasi \& Rencana Kontinjensi} \\
+\textbf{Kode} & \textbf{Risiko} & \textbf{Prob.} & \textbf{Dampak} & \textbf{Mitigasi} \\
 \hline
 \endfirsthead
+
 \hline
-\textbf{Kode} & \textbf{Risiko} & \textbf{Prob.} & \textbf{Dampak} & \textbf{Mitigasi \& Rencana Kontinjensi} \\
+\textbf{Kode} & \textbf{Risiko} & \textbf{Prob.} & \textbf{Dampak} & \textbf{Mitigasi} \\
 \hline
 \endhead
-R-01 & Kualitas dokumen KB rendah/tidak mutakhir & Sedang & Tinggi & Kurasi awal, metadata wajib (sumber/tanggal); \textit{review} berkala; jika bukti tidak memadai, sistem menandai ``butuh data tambahan''. \\ \hline
-R-02 & Halusinasi/ ketidakselarasan jawaban & Sedang & Tinggi & Templat ketat (kutip sumber, hindari spekulasi), \textit{top-k} moderat, \textit{policy check}; jika tetap terjadi, tampilkan rekomendasi konservatif atau minta klarifikasi pengguna. \\ \hline
-R-03 & Koneksi/ tunneling tidak stabil & Sedang & Sedang & Monitoring koneksi; \textit{retry/backoff}; sediakan opsi \textit{fallback} (akses lokal/alternatif VPS) dan cache konfigurasi. \\ \hline
-R-04 & Biaya operasional melebihi estimasi & Rendah & Sedang & Gunakan paket gratis/hemat, batasi pemanggilan model, caching hasil; bila melonjak, alihkan ke jadwal batch atau model alternatif. \\ \hline
+
+\hline
+\multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+\endfoot
+
+\hline
+\endlastfoot
+R-01 & Kualitas dokumen KB rendah/tidak mutakhir & Sedang & Tinggi & Kurasi awal, metadata wajib (sumber/tanggal); \textit{review} berkala; jika bukti tidak memadai, maka sistem menandai ``butuh data tambahan''. \\ \hline
+R-02 & Halusinasi/ ketidakselarasan jawaban & Sedang & Tinggi & \textit{Template} ketat (kutip sumber, hindari spekulasi), \textit{top-k} moderat, \textit{policy check}; jika tetap terjadi, maka tampilkan rekomendasi konservatif atau minta klarifikasi pengguna. \\ \hline
+R-03 & Koneksi/ tunneling tidak stabil & Sedang & Sedang & Monitoring koneksi; \textit{retry/backoff}; sediakan opsi untuk akses lokal/alternatif VPS dan cache konfigurasi. \\ \hline
+R-04 & Biaya operasional melebihi estimasi & Rendah & Sedang & Gunakan paket gratis/hemat, batasi pemanggilan model, caching hasil; bila melonjak, alihkan ke model alternatif. \\ \hline
 R-05 & Perubahan ruang lingkup dan waktu pengembangan & Sedang & Sedang & \textit{Scope freeze} minimal, prioritas MoSCoW; bila mundur, fokus ke UC-01 \& UC-02 dulu, UC-03 dijadwalkan berikutnya. \\ \hline
 \end{longtable}
 

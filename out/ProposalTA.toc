@@ -109,7 +109,7 @@
 \contentsline {section}{\numberline {V.2}Desain Pengujian dan Evaluasi}{25}{section.5.2}%
 \contentsline {subsection}{\numberline {V.2.1}Verifikasi Fungsional (\textit {Black-box})}{25}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {V.2.2}Evaluasi Kualitas RAG}{25}{subsection.5.2.2}%
-\contentsline {section}{\numberline {V.3}Analisis Risiko dan Mitigasi}{25}{section.5.3}%
+\contentsline {section}{\numberline {V.3}Analisis Risiko dan Mitigasi}{26}{section.5.3}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
