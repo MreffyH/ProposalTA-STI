@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  4 DEC 2025 13:06
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  4 DEC 2025 13:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1777,11 +1777,6 @@ Underfull \hbox (badness 2103) in paragraph at lines 297--297
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 297--297
-\TU/TimesNewRoman(0)/m/n/12 01 & UC-02 dulu, UC-03 dija-
- []
-
-
 Overfull \hbox (51.46448pt too wide) in alignment at lines 292--298
  [] [] [] [] [] 
  []
@@ -1825,7 +1820,7 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 Here is how much of TeX's memory you used:
  31395 strings out of 403196
  617253 string characters out of 5456126
- 1988406 words of memory out of 5000000
+ 1988407 words of memory out of 5000000
  59567 multiletter control sequences out of 15000+600000
  632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

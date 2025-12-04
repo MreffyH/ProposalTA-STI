@@ -74,12 +74,12 @@ Berikut adalah pengujian per-\textit{use case} untuk memastikan alur berjalan se
 \caption{Skenario Pengujian}
 \label{tbl:Pengujian} \\
 \hline
-\textbf{Kode Uji} &  \textbf{Kode \textit{Use Case}} &  \textbf{Biaya}\\
+\textbf{Kode Uji} &  \textbf{Kode \textit{Use Case}} &  \textbf{Deskripsi}\\
 \hline
 \endfirsthead
 
 \hline
-\textbf{Kode Uji} &  \textbf{Kode \textit{Use Case}} &  \textbf{Biaya}\\
+\textbf{Kode Uji} &  \textbf{Kode \textit{Use Case}} &  \textbf{Deskripsi}\\
 \hline
 \endhead
 
@@ -124,7 +124,7 @@ Precision &= \frac{TP}{TP+FP}
 \textit{Precision} menunjukkan proporsi dokumen atau \textit{chunk} yang relevan di antara seluruh hasil \textit{retrieval}. Dalam sistem RAG, semakin tinggi \textit{Precision}, semakin kecil kemungkinan model menerima konteks yang salah, tidak relevan, atau berpotensi menyebabkan halusinasi. \textit{Precision} penting karena \textit{context contamination} (dokumen tidak relevan yang ikut diambil) dapat memengaruhi kualitas \textit{reasoning model} dan menurunkan akurasi rekomendasi.
 
 \begin{align}
-Precision &= \frac{TP}{TP+FN} 
+Recall &= \frac{TP}{TP+FN} 
 \end{align}
 \textit{Recall} mengukur seberapa banyak dokumen relevan dalam \textit{ground truth} yang berhasil diambil oleh sistem. Ini penting karena model membutuhkan konteks yang memadai untuk membangun penalaran yang tepat. \textit{Recall} yang rendah mengindikasikan bahwa konteks penting tidak ditemukan sehingga jawaban yang dihasilkan dapat tidak lengkap, tidak presisi, atau kehilangan informasi pendukung yang seharusnya dikutip.
 
@@ -294,7 +294,7 @@ R-01 & Kualitas dokumen KB rendah/tidak mutakhir & Sedang & Tinggi & Kurasi awal
 R-02 & Halusinasi/ ketidakselarasan jawaban & Sedang & Tinggi & \textit{Template} ketat (kutip sumber, hindari spekulasi), \textit{top-k} moderat, \textit{policy check}; jika tetap terjadi, maka tampilkan rekomendasi konservatif atau minta klarifikasi pengguna. \\ \hline
 R-03 & Koneksi/ tunneling tidak stabil & Sedang & Sedang & Monitoring koneksi; \textit{retry/backoff}; sediakan opsi untuk akses lokal/alternatif VPS dan cache konfigurasi. \\ \hline
 R-04 & Biaya operasional melebihi estimasi & Rendah & Sedang & Gunakan paket gratis/hemat, batasi pemanggilan model, caching hasil; bila melonjak, alihkan ke model alternatif. \\ \hline
-R-05 & Perubahan ruang lingkup dan waktu pengembangan & Sedang & Sedang & \textit{Scope freeze} minimal, prioritas MoSCoW; bila mundur, fokus ke UC-01 \& UC-02 dulu, UC-03 dijadwalkan berikutnya. \\ \hline
+R-05 & Perubahan ruang lingkup dan waktu pengembangan & Sedang & Sedang & Fokus ke UC-01 \& UC-02 dulu, UC-03 dijadwalkan berikutnya. \\ \hline
 \end{longtable}
 
 % Jelaskan secara detail langkah-langkah rencana selanjutnya, hal-hal yang diperlukan atau akan disiapkan, dan risiko dan mitigasinya, yang meliputi:
