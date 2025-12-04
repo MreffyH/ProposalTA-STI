@@ -528,6 +528,39 @@
       \field{title}{Budgeting in the Age of Artificial Intelligence: New Opportunities and Challenges}
       \field{year}{2022}
     \endentry
+    \entry{mekari2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fb8d8f85657f27b6c977ae78c7450ecc}{%
+           family={Utami},
+           familyi={U\bibinitperiod},
+           given={Novia\bibnamedelima Widya},
+           giveni={N\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb8d8f85657f27b6c977ae78c7450ecc}
+      \strng{fullhash}{fb8d8f85657f27b6c977ae78c7450ecc}
+      \strng{fullhashraw}{fb8d8f85657f27b6c977ae78c7450ecc}
+      \strng{bibnamehash}{fb8d8f85657f27b6c977ae78c7450ecc}
+      \strng{authorbibnamehash}{fb8d8f85657f27b6c977ae78c7450ecc}
+      \strng{authornamehash}{fb8d8f85657f27b6c977ae78c7450ecc}
+      \strng{authorfullhash}{fb8d8f85657f27b6c977ae78c7450ecc}
+      \strng{authorfullhashraw}{fb8d8f85657f27b6c977ae78c7450ecc}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed November 20, 2025}
+      \field{title}{Tahapan Penyusunan Anggaran Belanja Perusahaan}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.jurnal.id/id/blog/2018-4-tahapan-menyusun-anggaran-belanja-perusahaan/
+      \endverb
+      \verb{url}
+      \verb https://www.jurnal.id/id/blog/2018-4-tahapan-menyusun-anggaran-belanja-perusahaan/
+      \endverb
+    \endentry
     \entry{wasserbacher2022}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=aeb9aa2d9630f5650dab578314236f21}{%

@@ -113,7 +113,10 @@ Skenario pengajuan ide produk dengan asumsi permintaan; verifikasi pros dan cons
 \end{longtable}
 
 \subsection{Evaluasi Kualitas RAG}
-Disiapkan dataset uji kecil (mis.\ 30--50 \textit{prompt} representatif) dari dokumen KB. Berikut adalah metrik evaluasi untuk pengujian kualitas RAG.
+Bagian ini mendeskripsikan metrik, prosedur, dan kriteria penerimaan untuk mengevaluasi kualitas sistem RAG. Evaluasi dibagi menjadi empat lapis: (1) \textit{Retrieval}, (2) \textit{Generation}, (3) \textit{End-to-End} (ketuntasan alur), dan (4) \textit{Human Evaluation}.
+
+\subsubsection{Evaluasi \textit{Retrieval}}
+Bagian ini menilai apakah sistem mengambil konteks yang tepat dan non-redundan. Disini menggunakan metriks \textit{Precision, Recall, dan F1-Score}.
 
 \begin{longtable}{|p{3cm}|p{5cm}|p{5cm}|}
 \caption{Skenario Evaluasi RAG}
