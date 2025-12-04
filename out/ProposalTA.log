@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  4 DEC 2025 10:38
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  4 DEC 2025 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1623,187 +1623,213 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
  []
 
 
-Overfull \hbox (7.54723pt too wide) in alignment at lines 121--127
- [] [] [] 
- []
-
-
-Overfull \hbox (7.54723pt too wide) in alignment at lines 127--132
- [] [] [] 
- []
-
-
-Overfull \hbox (7.54723pt too wide) in alignment at lines 132--136
- [] [] [] 
- []
-
-
-Overfull \hbox (7.54723pt too wide) in alignment at lines 136--139
- [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-[]|\TU/TimesNewRoman(0)/m/n/12 Kesesuaian pernyataan
- []
-
-
-Underfull \hbox (badness 3428) in paragraph at lines 151--152
-\TU/TimesNewRoman(0)/m/n/12 dengan sumber yang diku-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-\TU/TimesNewRoman(0)/m/n/12 tip untuk menguji tingkat
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 158--159
-[]|\TU/TimesNewRoman(0)/m/n/12 Kesesuaian jawaban dengan
- []
-
-
-Underfull \hbox (badness 4899) in paragraph at lines 165--166
-[]|\TU/TimesNewRoman(0)/m/n/12 Kecocokan rujukan dengan
- []
-
-
-Overfull \hbox (7.54723pt too wide) in alignment at lines 139--167
- [] [] [] 
+Overfull \hbox (1.22pt too wide) in paragraph at lines 119--120
+\TU/TimesNewRoman(0)/m/n/12 Evaluasi ini menilai apakah sistem mengambil kontek
+s yang tepat dan non-redundan.
  []
 
 
 
 [25]
-Overfull \hbox (51.46448pt too wide) in alignment at lines 173--179
+
+[26]
+Overfull \hbox (0.85933pt too wide) in paragraph at lines 140--142
+\TU/TimesNewRoman(0)/m/n/12 yang mengukur tingkat kesamaan antara keluaran mode
+l dan kalimat rujukan. BLEU
+ []
+
+
+Overfull \hbox (9.123pt too wide) in paragraph at lines 149--151
+\TU/TimesNewRoman(0)/m/n/12 mengukur tumpang tindih teks terutama dari sisi \TU
+/TimesNewRoman(0)/m/it/12 recall\TU/TimesNewRoman(0)/m/n/12 . Varian umum seper
+ti \TU/TimesNewRoman(0)/m/it/12 ROUGE-
+ []
+
+
+
+[27]
+
+[28]
+Overfull \hbox (7.54723pt too wide) in alignment at lines 222--228
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in alignment at lines 228--233
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in alignment at lines 233--237
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in alignment at lines 237--240
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+[]|\TU/TimesNewRoman(0)/m/n/12 Kesesuaian pernyataan
+ []
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 252--253
+\TU/TimesNewRoman(0)/m/n/12 dengan sumber yang diku-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+\TU/TimesNewRoman(0)/m/n/12 tip untuk menguji tingkat
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 259--260
+[]|\TU/TimesNewRoman(0)/m/n/12 Kesesuaian jawaban dengan
+ []
+
+
+Underfull \hbox (badness 4899) in paragraph at lines 266--267
+[]|\TU/TimesNewRoman(0)/m/n/12 Kecocokan rujukan dengan
+ []
+
+
+Overfull \hbox (7.54723pt too wide) in alignment at lines 240--268
+ [] [] [] 
+ []
+
+
+
+[29]
+Overfull \hbox (51.46448pt too wide) in alignment at lines 274--280
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (51.46448pt too wide) in alignment at lines 179--184
+Overfull \hbox (51.46448pt too wide) in alignment at lines 280--285
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (51.46448pt too wide) in alignment at lines 184--188
+Overfull \hbox (51.46448pt too wide) in alignment at lines 285--289
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (51.46448pt too wide) in alignment at lines 188--191
+Overfull \hbox (51.46448pt too wide) in alignment at lines 289--292
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 192--192
+Underfull \hbox (badness 2261) in paragraph at lines 293--293
 \TU/TimesNewRoman(0)/m/n/12 men KB ren-
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 192--192
+Underfull \hbox (badness 2111) in paragraph at lines 293--293
 \TU/TimesNewRoman(0)/m/n/12 dah/tidak mu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--193
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\TU/TimesNewRoman(0)/m/n/12 Halusinasi/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--193
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \TU/TimesNewRoman(0)/m/n/12 ketidaksela-
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 194--194
+Underfull \hbox (badness 4846) in paragraph at lines 295--295
 []|\TU/TimesNewRoman(0)/m/n/12 Koneksi/ tun-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--194
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
 \TU/TimesNewRoman(0)/m/n/12 neling tidak
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
 []|\TU/TimesNewRoman(0)/m/n/12 Biaya ope-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
 \TU/TimesNewRoman(0)/m/n/12 rasional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--195
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
 \TU/TimesNewRoman(0)/m/n/12 melebihi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 297--297
 []|\TU/TimesNewRoman(0)/m/n/12 Perubahan
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 196--196
+Underfull \hbox (badness 2103) in paragraph at lines 297--297
 \TU/TimesNewRoman(0)/m/n/12 ruang lingkup
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 196--196
+Underfull \hbox (badness 2401) in paragraph at lines 297--297
 \TU/TimesNewRoman(0)/m/n/12 01 & UC-02 dulu, UC-03 dija-
  []
 
 
-Overfull \hbox (51.46448pt too wide) in alignment at lines 191--197
+Overfull \hbox (51.46448pt too wide) in alignment at lines 292--298
  [] [] [] [] [] 
  []
 
-[26])
+[30])
 
-[27]
+[31]
 Overfull \hbox (12.08437pt too wide) in paragraph at lines 400--400
 \TU/TimesNewRoman(0)/m/n/12 SMEs to Achieve Sustainable Business Performance: A
 pplication of Technology–
  []
 
 
+
+[32
+
+
+]
 Overfull \hbox (10.57468pt too wide) in paragraph at lines 400--400
 [][]\TU/TimesNewRoman(0)/m/n/12 Kemenko, Kementerian Koordinator Bidang Perekon
 omian Republik Indonesia. 2024.
  []
 
 
-
-[28
-
-
-]
-
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 380.
 See the caption package documentation for explanation.
 
 
 
-[29] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
+[33] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: 771450D3F889BF48B759DAC7EC6C1FF8;9796.
+(rerunfilecheck)             Checksum: 5A55D62DFE6FBBA3096EDA68E7AB2C84;10297.
 Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 \openout1 = `ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31388 strings out of 403196
- 617029 string characters out of 5456126
- 1987828 words of memory out of 5000000
- 59560 multiletter control sequences out of 15000+600000
+ 31395 strings out of 403196
+ 617253 string characters out of 5456126
+ 1988406 words of memory out of 5000000
+ 59567 multiletter control sequences out of 15000+600000
  632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 73i,9n,93p,1447b,6721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,13n,93p,1447b,6721s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (36 pages).
+pdf (40 pages).

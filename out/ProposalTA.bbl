@@ -19,6 +19,36 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global/global}
+    \entry{adilnaib2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c22c8e5c187ddc4723e3806331a30d2c}{%
+           family={Adilnaib},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{c22c8e5c187ddc4723e3806331a30d2c}
+      \strng{fullhash}{c22c8e5c187ddc4723e3806331a30d2c}
+      \strng{fullhashraw}{c22c8e5c187ddc4723e3806331a30d2c}
+      \strng{bibnamehash}{c22c8e5c187ddc4723e3806331a30d2c}
+      \strng{authorbibnamehash}{c22c8e5c187ddc4723e3806331a30d2c}
+      \strng{authornamehash}{c22c8e5c187ddc4723e3806331a30d2c}
+      \strng{authorfullhash}{c22c8e5c187ddc4723e3806331a30d2c}
+      \strng{authorfullhashraw}{c22c8e5c187ddc4723e3806331a30d2c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed December 1, 2025}
+      \field{title}{Evaluation Metrics for Retrieval-Augmented Generation (RAG) Systems}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/nlp/evaluation-metrics-for-retrieval-augmented-generation-rag-systems/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/nlp/evaluation-metrics-for-retrieval-augmented-generation-rag-systems/
+      \endverb
+    \endentry
     \entry{Badghish2024}{article}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=8b0a771fa75a4020ff059ef0ceaeb1e4}{%

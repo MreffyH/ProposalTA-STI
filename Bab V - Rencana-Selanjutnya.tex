@@ -113,14 +113,115 @@ Skenario pengajuan ide produk dengan asumsi permintaan; verifikasi pros dan cons
 \end{longtable}
 
 \subsection{Evaluasi Kualitas RAG}
-Bagian ini mendeskripsikan metrik, prosedur, dan kriteria penerimaan untuk mengevaluasi kualitas sistem RAG. Evaluasi dibagi menjadi empat lapis: (1) \textit{Retrieval}, (2) \textit{Generation}, (3) \textit{End-to-End} (ketuntasan alur), dan (4) \textit{Human Evaluation}.
+Bagian ini mendeskripsikan metrik, prosedur, dan kriteria penerimaan untuk mengevaluasi kualitas sistem RAG. Evaluasi dibagi menjadi empat bagian yaitu \textit{Retrieval}, \textit{Generation}, \textit{End-to-End}, dan \textit{Human Evaluation} \autocite{adilnaib2025}.
 
 \subsubsection{Evaluasi \textit{Retrieval}}
-Bagian ini menilai apakah sistem mengambil konteks yang tepat dan non-redundan. Disini menggunakan metriks \textit{Precision, Recall, dan F1-Score}.
+Evaluasi ini menilai apakah sistem mengambil konteks yang tepat dan non-redundan. Disini menggunakan penilaian \textit{Precision, Recall, dan F1-Score}.
+
+\begin{align}
+Precision &= \frac{TP}{TP+FP}
+\end{align}
+\textit{Precision} menunjukkan proporsi dokumen atau \textit{chunk} yang relevan di antara seluruh hasil \textit{retrieval}. Dalam sistem RAG, semakin tinggi \textit{Precision}, semakin kecil kemungkinan model menerima konteks yang salah, tidak relevan, atau berpotensi menyebabkan halusinasi. \textit{Precision} penting karena \textit{context contamination} (dokumen tidak relevan yang ikut diambil) dapat memengaruhi kualitas \textit{reasoning model} dan menurunkan akurasi rekomendasi.
+
+\begin{align}
+Precision &= \frac{TP}{TP+FN} 
+\end{align}
+\textit{Recall} mengukur seberapa banyak dokumen relevan dalam \textit{ground truth} yang berhasil diambil oleh sistem. Ini penting karena model membutuhkan konteks yang memadai untuk membangun penalaran yang tepat. \textit{Recall} yang rendah mengindikasikan bahwa konteks penting tidak ditemukan sehingga jawaban yang dihasilkan dapat tidak lengkap, tidak presisi, atau kehilangan informasi pendukung yang seharusnya dikutip.
+
+\begin{align}
+F_{1}Score &= 2.\frac{Precision.Recall}{Precision+Recall}
+\end{align}
+\textit{Precision dan Recall} sering berada dalam hubungan yang saling bertolak belakang. Oleh karena itu, \textit{F1-Score} digunakan sebagai metrik harmonisasi untuk memberikan gambaran utuh tentang performa \textit{retrieval}. \textit{F1-Score} memastikan bahwa sistem tidak hanya mengambil konteks yang tepat (\textit{Precision} tinggi), tetapi juga tidak kehilangan konteks penting (\textit{Recall} tinggi). Dalam lingkungan RAG, \textit{F1-Score} berfungsi sebagai indikator kualitas \textit{retrieval} yang stabil, efisien, dan siap digunakan untuk \textit{reasoning} oleh model generatif.
+
+\subsubsection{Evaluasi \textit{Generation}}
+Evaluasi ini bertujuan untuk menilai kualitas keluaran model terhadap jawaban rujukan.
+\begin{align}
+BLEU &= BP.exp(\sum_{N}^{n=1} w_n log   p_n) 
+\end{align}
+\textit{BLEU (Bilingual Evaluation Understudy)} adalah metrik berbasis kecocokan \textit{n-gram} yang mengukur tingkat kesamaan antara keluaran model dan kalimat rujukan. BLEU menghitung proporsi \textit{n-gram} pada jawaban sistem yang muncul dalam jawaban referensi, sehingga dapat menggambarkan seberapa dekat struktur dan pilihan kata model dengan teks acuan. BLEU juga menggunakan \textit{brevity penalty} untuk mencegah model menghasilkan jawaban yang terlalu pendek. Dalam konteks RAG, BLEU membantu melihat apakah sistem menghasilkan frasa yang sesuai dengan referensi tanpa banyak deviasi.
+
+\begin{align}
+ROUGE-N &= \frac{\sum_{ngram \in Ref}\min\big(Count_Ref(ngram),\ Count_{Hyp}(ngram)\big)
+}{
+\sum_{ngram \in Ref} 
+Count_{Ref}(ngram)
+}
+\end{align}
+\textit{ROUGE (Recall-Oriented Understudy for Gisting Evaluation)} adalah metrik yang mengukur tumpang tindih teks terutama dari sisi \textit{recall}. Varian umum seperti \textit{ROUGE-1} mengukur kecocokan \textit{unigram}, sementara \textit{ROUGE-L} menggunakan \textit{Longest Common Subsequence (LCS)} untuk menilai keselarasan struktur kalimat. ROUGE penting untuk evaluasi sistem rekomendasi karena menilai sejauh mana isi jawaban sistem menangkap elemen-elemen penting dari referensi, termasuk konteks dan informasi kunci.
+
+\begin{align}
+F_{\text{mean}} &= 
+\frac{10 \cdot P \cdot R}{R + 9P}
+\\[6pt]
+\text{Penalty} &= 
+0.5\left( \frac{\text{chunks}}{\text{matches}} \right)^3
+\\[6pt]
+\text{METEOR} &= 
+F_{\text{mean}} \cdot (1 - \text{Penalty})
+\end{align}
+
+\textit{METEOR (Metric for Evaluation of Translation with Explicit ORdering)} adalah metrik yang menggabungkan kecocokan \textit{unigram} berdasarkan \textit{stemming}, \textit{synonyms}, dan \textit{paraphrasing}. Berbeda dari BLEU yang fokus pada presisi, METEOR mencoba menyeimbangkan \textit{precision} dan \textit{recall} melalui \textit{harmonic mean}. Metrik ini lebih peka terhadap variasi bahasa dan sering menunjukkan korelasi lebih tinggi dengan penilaian manusia. Dalam konteks rekomendasi anggaran, METEOR dapat mengidentifikasi kesesuaian semantik meskipun struktur kalimat tidak identik.
+    
+\begin{align}
+P &= 
+\frac{1}{|H|}
+\sum_{h \in H}
+\max_{r \in R}
+\text{Sim}\big(E(h),\, E(r)\big)
+\\[6pt]
+R &= 
+\frac{1}{|R|}
+\sum_{r \in R}
+\max_{h \in H}
+\text{Sim}\big(E(r),\, E(h)\big)
+\\[6pt]
+F_{1} &= 
+\frac{2PR}{P + R}
+\end{align}
+
+\textit{BERTScore} menggunakan representasi \textit{semantic embeddings} dari model \textit{transformer} untuk membandingkan kemiripan semantik antara keluaran sistem dan referensi. Alih-alih mencocokkan kata secara literal, BERTScore menilai kemiripan makna menggunakan jarak vektor di ruang representasi. Nilainya dilaporkan dalam tiga bentuk: \textit{precision}, \textit{recall}, dan \textit{F1}. Metrik ini sangat penting untuk sistem RAG karena mampu menangkap kesepadanan makna secara lebih dalam, terutama ketika struktur kalimat berbeda tetapi tetap menyampaikan informasi yang sama.
+
+\subsubsection{Evaluasi \textit{End to End}}
+Evaluasi ini membahas kinerja keseluruhan sistem RAG dengan mempertimbangkan \textit{retriever} dan \textit{generation} secara bersamaan.
+Evaluasi ini meliputi \textit{Answer Relevance and Context Utilization, Groundedness, Hallucination Rate, Response Coherence and Readability, dan Relevancy Score}.
+
+\begin{align}
+Answer Relevance &= \frac{Words in Response∩Words in Reference}{Words in Reference}\\
+Context Utilization &= \frac{Words in Response∩Words in Retrieved Docs}{Words in Response}
+\end{align}
+
+Memeriksa apakah jawaban sistem menjawab pertanyaan pengguna dan menggunakan informasi yang diambil secara efektif.
+
+\begin{align}
+Groundedness &= \frac{Words in Response∩Words in Retrieved Docs}{Words in Response}
+\end{align}
+
+Mengukur apakah teks yang dihasilkan didukung oleh sumber yang diambil untuk mengurangi risiko halusinasi.
+
+\begin{align}
+Hallucination Rate &= \frac{Words in Response−Words in Retrieved Docs}{Words in Response}
+\end{align}
+
+Melacak seberapa sering sistem menghasilkan informasi yang salah atau tidak didukung oleh sumber.
+
+\begin{align}
+Coherence &= \frac{Total Words in Response}{Number of Sentences in Response}
+\end{align}
+
+Memastikan jawaban yang dihasilkan jelas, terstruktur secara logis dan mudah dipahami.
+
+\begin{align}
+Relevancy Score &= \frac{Words in Response∩Words in Query}{Words in Query}
+\end{align}
+
+Mengukur seberapa baik keluaran sistem sesuai dengan maksud kueri pengguna.
+
+\subsubsection{Evaluasi Manusia}
+Skenario evaluasi berikut dirancang untuk menilai kualitas sistem RAG secara menyeluruh, baik dari aspek pengambilan konteks, penyusunan jawaban, maupun ketertelusuran sumber yang digunakan. Setiap metrik dipilih untuk memastikan bahwa sistem tidak hanya menghasilkan keluaran yang relevan, tetapi juga dapat dipertanggungjawabkan secara faktual dan konsisten. Tabel berikut merangkum komponen evaluasi yang digunakan dalam penelitian ini.
 
 \begin{longtable}{|p{3cm}|p{5cm}|p{5cm}|}
-\caption{Skenario Evaluasi RAG}
-\label{tbl:Evaluasi} \\
+\caption{Human Evaluation}
+\label{tbl:Human Evaluation} \\
 \hline
 \textbf{Kode Evaluasi} &  \textbf{Evaluasi} &  \textbf{Deskripsi}\\
 \hline
@@ -137,28 +238,28 @@ Bagian ini menilai apakah sistem mengambil konteks yang tepat dan non-redundan. 
 
 \hline
 \endlastfoot
-E-01
+HE-01
 &
 Context Precision/Recall
 &
 Proporsi \textit{chunk} yang relevan dari dokumen yang diambil.
 \\ \hline
 
-E-02
+HE-02
 &
 Groundedness/Faithfulness
 &
 Kesesuaian pernyataan dengan sumber yang dikutip untuk menguji tingkat halusinasi rendah.
 \\ \hline
 
-E-03
+HE-03
 &
 Answer Relevance
 &
 Kesesuaian jawaban dengan pertanyaan/konteks UKM.
 \\ \hline
 
-E-04
+HE-04
 &
 Citation Accuracy
 &
@@ -168,7 +269,7 @@ Kecocokan rujukan dengan bagian dokumen yang benar.
 
 \section{Analisis Risiko dan Mitigasi}
 
-Berikut adalah analisis risiko yang mungkin terjadi serta mitigasi untuk mitigasi risiko tersebut.
+Berikut adalah analisis risiko yang mungkin terjadi, probabilitas, dampak, serta mitigasi risiko tersebut.
 
 \begin{longtable}{|p{1.6cm}|p{2.5cm}|p{1.8cm}|p{1.8cm}|p{6cm}|}
 \caption{Risiko utama dan strategi mitigasi} \\
