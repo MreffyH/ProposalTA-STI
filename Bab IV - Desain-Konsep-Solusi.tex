@@ -4,10 +4,10 @@
 \chapter{DESAIN KONSEP SOLUSI}
 \label{chap:desain-konsep-solusi}
 
-Bab ini menjelaskan desain konsep solusi implementasi AI dalam perencanaan anggaran pada usaha kecil dan menengah (UKM). Bab ini akan meliputi \textit{use case, flowchart}, dan arsitektur sistem.
+Bab ini menjelaskan desain konsep solusi implementasi AI dalam perencanaan anggaran pada usaha kecil dan menengah (UKM). Bab ini akan meliputi \textit{use case, flowchart}, arsitektur sistem, dan desain implementasi RAG.
 
 % ------------------------------------------------
-\section{Aktor dan Use Case}
+\section{Desain \textit{Use Case}}
 % ------------------------------------------------
 
 Untuk menegaskan ruang lingkup sistem, aktor yang terlibat, dan menentukan batas interaksi pengguna dengan sistem, diagram berikut memetakan tiga fungsi utama yang akan didukung yaitu rekomendasi anggaran proyek, validasi pengajuan anggaran, serta analisis kelayakan produk/usaha baru.
@@ -20,9 +20,9 @@ Untuk menegaskan ruang lingkup sistem, aktor yang terlibat, dan menentukan batas
 	\label{gambar:Use Case}
 \end{figure}
 
-Agar elemen pada diagram tersebut mudah dilacak, ringkasan tiap \textit{use case} disajikan pada tabel berikut. Tabel ini merangkum tujuan, keluaran yang diharapkan, dan akan menjadi acuan saat menyusun alur proses (To-Be) pada bagian selanjutnya.
+Agar elemen pada diagram tersebut mudah dilacak, ringkasan tiap \textit{use case} disajikan pada tabel berikut. Tabel ini merangkum tujuan, keluaran yang diharapkan, dan akan menjadi acuan saat menyusun alur proses (\textit{To-Be}) pada bagian selanjutnya.
 
-\begin{longtable}{|p{2cm}|p{5cm}|p{7.5cm}|}
+\begin{longtable}{|p{1.8cm}|p{5cm}|p{7.5cm}|}
 \caption{Daftar \textit{Use Case} Sistem}
 \label{tbl:use-case} \\
 \hline
@@ -57,7 +57,7 @@ Pengguna mendapatkan peenilaian kelayakan memasuki produk atau pasar baru dengan
 \section{Alur Utama Sistem (To-Be)}
 % ------------------------------------------------
 
-Berdasarkan tiga use case di atas, alur To-Be berikut menggambarkan langkah end-to-end dari input pengguna hingga keluaran sistem. Langkah bernuansa terotomasi merepresentasikan proses yang dijalankan mesin (orkestrasi, \textit{retrieval, reasoning}), sedangkan langkah lainnya menunjukkan keputusan/aktivitas organisasi yang tetap berada pada kendali pengguna.
+Berdasarkan tiga \textit{use case} di subbab sebelumnya, alur \textit{To-Be} berikut menggambarkan langkah \textit{end-to-end} dari input pengguna hingga keluaran sistem. Langkah bernuansa terotomasi merepresentasikan proses yang dijalankan mesin (orkestrasi, \textit{retrieval, reasoning}), sedangkan langkah lainnya menunjukkan keputusan/aktivitas organisasi yang tetap berada pada kendali pengguna.
 
 \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
@@ -70,14 +70,14 @@ Berdasarkan tiga use case di atas, alur To-Be berikut menggambarkan langkah end-
 Proses dimulai dari penentuan jenis analisis oleh pengguna. Hal ini berupa pemilihan untuk ingin melakukan anggaran proyek, validasi pengajuan, atau ekspansi usaha. Pilihan ini akan menentukan parameter input yang dibutuhkan serta jalur proses selanjutnya. Setelah itu, pengguna menetapkan pedoman analisis berupa tujuan periode, asumsi utama (misalnya permintaan, biaya, atau kapasitas), dan bila ada, hasil evaluasi anggaran sebelumnya sebagai konteks bisnis. Sistem kemudian melakukan orkestrasi \textit{workflow}, yaitu menyusun kueri dari input tersebut, memilih sumber data (dokumen pedoman, histori, atau referensi pasar), lalu memanggil modul \textit{retrieval} dan meneruskan konteksnya ke modul reasoning. Pada tahap penentuan anggaran, mesin melakukan RAG dengan menelusuri \textit{knowledge base}, mengambil chunk paling relevan, dan menyusun rekomendasi berikut justifikasinya berdasarkan mode analisis yang dipilih. Selanjutnya masuk ke pengesahan anggaran, di mana hasil sistem diuji kelayakannya (misalnya melalui batas biaya atau ambang ROI) sebelum didistribusikan sebagai acuan pelaksanaan. Terakhir, pada tahap pelaksanaan, anggaran dijalankan dan dilakukan monitoring serta pelaporan realisasi, lalu data tersebut kembali menjadi artefak dan \textit{evidence} untuk siklus evaluasi berikutnya.
 
 % ------------------------------------------------
-\section{Arsitektur Sistem Berlapis}
+\section{Arsitektur Sistem}
 % ------------------------------------------------
-
+Bagian ini akan menjelaskan desain arsitektur sistem. Desain ini menggambarkan \textit{Presentation, Application Gateaway, Business, dan Data and Infrastructure layer}. Berikut merupakan desain diagram arsitektur sistem. 
 \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
     	\includegraphics[width=0.9\textwidth]{image/Architecture system.png}
-	\caption{Arsitektur sistem berlapis}
+	\caption{Arsitektur sistem}
 	\label{gambar:architecture}
 \end{figure}
 
@@ -85,15 +85,47 @@ Diagram arsitektur sistem Gambar \ref{gambar:architecture} menggambarkan seluruh
 
 \begin{enumerate} 
 	\item \textit{Presentation Layer}\\ 
-	Pada lapisan pengguna berinteraksi melalui \textit{Web Dashboard dan Chat-Style Interface} untuk memilih mode analisis, mengisi input seperti periode, asumsi permintaan atau biaya, mengunggah dokumen, serta melihat hasil evaluasi berupa ringkasan rekomendasi, alasan, risiko, referensi, dan status proses. 
+	Pada lapisan ini, pengguna berinteraksi melalui \textit{Web Dashboard dan Chat-Style Interface} untuk memilih mode analisis, mengisi input seperti periode, asumsi permintaan atau biaya, mengunggah dokumen, serta melihat hasil evaluasi berupa ringkasan rekomendasi, alasan, risiko, referensi, dan status proses. 
 	\item \textit{Application Gateaway Layer}\\ 
-	Lapisan ini berperan sebagai pintu masuk seluruh request dari antarmuka. Di layer ini dilakukan autentikasi, validasi dan normalisasi input, penyusunan kueri dan payload, serta orkestrasi pipeline melalui \textit{Workflow Connector}. 
+	Lapisan ini berperan sebagai pintu masuk seluruh request dari antarmuka. Di layer ini dilakukan autentikasi, validasi dan normalisasi input, penyusunan kueri, serta orkestrasi pipeline melalui \textit{Workflow Connector}. 
 	\item \textit{Business Layer}\\ 
-	Lapisan terdiri dari \textit{Multi Agent dan Output Composer. Multi Agent} mencakup \textit{Rule Validator} untuk memeriksa batas biaya dan ambang ROI, \textit{Retrieval Service} untuk membangun embedding dan menemukan dokumen relevan, serta RAG Reasoner yang menggabungkan input dan konteks untuk menghasilkan rekomendasi yang dapat dijelaskan. \textit{Output Composer} kemudian menyusun hasil akhir ke dalam bentuk terstruktur seperti Rangkuman, Alasan, Risiko, Rekomendasi, dan Referensi. 
+	Lapisan terdiri dari \textit{Multi Agent dan Output Composer. Multi Agent} mencakup \textit{Rule Validator} untuk memeriksa batas biaya dan ambang ROI, \textit{Retrieval Service} untuk membangun embedding dan menemukan dokumen relevan, serta \textit{RAG Reasoner} yang menggabungkan input dan konteks untuk menghasilkan rekomendasi yang dapat dijelaskan. \textit{Output Composer} kemudian menyusun hasil akhir ke dalam bentuk terstruktur seperti Rangkuman, Alasan, Risiko, Rekomendasi, dan Referensi. Jumlah \textit{agent} mungkin bisa bertambah sesuai kebutuhan implemetasi nantinya.
 	\item \textit{Data and Infrastructure Layer}\\ 
-	Lapisan ini yang memuat \textit{Knowledge Database} berisi dokumen pedoman, histori, dan referensi pasar beserta metadata. Lalu ada \textit{Vector Store} untuk penyimpanan \textit{embedding} dan operasi \textit{similarity search}. Selanjutnya terdapat \textit{Logging} yang mencatat jejak input, dokumen yang digunakan, dan versi komponen sebagai dasar monitoring dan audit. Secara keseluruhan, pemetaan prosesnya adalah: penentuan jenis analisis dan pedoman terjadi di \textit{Presentation Layer}, orkestrasi \textit{workflow di Application Gateway}, penelusuran \textit{knowledge base} dan penyusunan rekomendasi di \textit{Business dan Data Layer}. Pengesahan dan pelaksanaan terjadi di \textit{Presentation Layer} dan proses organisasi di luar sistem. 
+	Lapisan ini yang memuat \textit{Knowledge Database} berisi dokumen pedoman, histori, dan referensi pasar beserta metadata. Lalu ada \textit{Vector Store} untuk penyimpanan \textit{embedding} dan operasi \textit{similarity search}. Selanjutnya terdapat \textit{Logging} yang mencatat jejak input, dokumen yang digunakan, dan versi komponen sebagai dasar monitoring dan audit. 
 \end{enumerate}
 
+Secara keseluruhan, pemetaan prosesnya diawali dengan penentuan jenis analisis dan pedoman yang terjadi di \textit{Presentation Layer}, orkestrasi \textit{workflow di Application Gateway}, penelusuran \textit{knowledge base} dan penyusunan rekomendasi di \textit{Business dan Data Layer}. Pengesahan dan pelaksanaan terjadi di \textit{Presentation Layer} dan proses organisasi di luar sistem. 
+
+% ------------------------------------------------
+\section{Implementasi RAG pada Sistem}
+% ------------------------------------------------
+
+Bagian ini akan menjelaskan mengenai desain alur proses RAG berkerja pada sistem. Desain sistem akan meliputi \textit{Data Source, Data Preprocessing} hingga pengeluaran \textit{output} atau hasil.
+
+\begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=0.9\textwidth]{image/Flow RAG.png}
+	\caption{RAG pada Sistem}
+	\label{gambar:flow rag}
+\end{figure}
+
+Diagram \ref{gambar:flow rag} menggambarkan alur proses RAG yang bekerja pada sistem. Penjelasan mengenai masing-masing proses adalah sebagai berikut.
+\begin{enumerate} 
+	\item \textit{Data Source}: Sistem mengumpulkan berbagai data seperti histori anggaran, pedoman, dan data eksternal seperti harga pasar.
+	\item \textit{Data Preprocessing}: Data dibersihkan, distandardisasi, lalu disiapkan untuk diproses.
+	\item \textit{Chunking and Embedding}: Dokumen dipotong menjadi bagian kecil (\textit{chunk}), lalu tiap \textit{chunk} diubah jadi vektor.
+	\item \textit{Indexing (Vector Store)}: Semua \textit{embedding} disimpan agar bisa dicari berdasarkan kemiripan.
+	\item \textit{Query Encoding}: SPertanyaan dari pengguna diubah menjadi \textit{embedding} supaya bisa dicocokkan dengan dokumen.
+	\item \textit{Similarity Search (Retriever)}: Sistem mencari \textit{chunk} paling relevan dari \textit{vector store}.
+	\item \textit{Fusion / Context Construction}: Hasil pencarian disatukan menjadi konteks untuk membantu LLM berpikir.
+	\item \textit{Iterative Retrieval (Opsional)}: Jika setelah membaca konteks ternyata masih ada informasi yang kurang, maka sistem bisa melakukan \textit{retrieval} tambahan (misalnya data eksternal).
+	\item \textit{LLM Generation}: LLM membuat jawaban berdasarkan konteks yang dipilih pengguna, bisa analisis anggaran, validasi ROI, atau menilai peluang pasar.
+	\item \textit{Post-processing and Policy Check}: Jawaban diperiksa, dirapikan, dicek aturan (misalnya batas anggaran atau ROI).
+	\item \textit{Output}: asil diberikan ke pengguna dan proses dicatat untuk evaluasi.
+\end{enumerate}
+
+Simbol * merupakan tanda yang diberikan untuk proses yang kemungkinan besar akan dibantu oleh \textit{agent}.
 % \section{Perbandingan Sistem Tradisional dan Sistem Berbasis AI}
 % Subbab ini menguraikan perbandingan antara pendekatan tradisional dan pendekatan berbasis AI dalam dua aspek utama, yaitu akurasi perencanaan anggaran dan akurasi \textit{forecasting}.
 

@@ -103,21 +103,23 @@
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \contentsline {chapter}{\numberline {IV}DESAIN KONSEP SOLUSI}{20}{chapter.4}%
-\contentsline {section}{\numberline {IV.1}Aktor dan Use Case}{20}{section.4.1}%
+\contentsline {section}{\numberline {IV.1}Desain \textit {Use Case}}{20}{section.4.1}%
 \contentsline {section}{\numberline {IV.2}Alur Utama Sistem (To-Be)}{21}{section.4.2}%
-\contentsline {section}{\numberline {IV.3}Arsitektur Sistem Berlapis}{22}{section.4.3}%
-\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{24}{chapter.5}%
-\contentsline {section}{\numberline {V.1}Rencana Implementasi}{24}{section.5.1}%
-\contentsline {section}{\numberline {V.2}Desain Pengujian dan Evaluasi}{25}{section.5.2}%
-\contentsline {subsection}{\numberline {V.2.1}Verifikasi Fungsional (\textit {Black-box})}{25}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {V.2.2}Evaluasi Kualitas RAG}{25}{subsection.5.2.2}%
+\contentsline {section}{\numberline {IV.3}Arsitektur Sistem}{22}{section.4.3}%
+\contentsline {section}{\numberline {IV.4}Implementasi RAG pada Sistem}{23}{section.4.4}%
+\contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{26}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Linimasa Pengerjaan}{26}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Rencana Implementasi}{27}{section.5.2}%
+\contentsline {section}{\numberline {V.3}Desain Pengujian dan Evaluasi}{27}{section.5.3}%
+\contentsline {subsection}{\numberline {V.3.1}Verifikasi Fungsional}{27}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {V.3.2}Evaluasi Kualitas RAG}{28}{subsection.5.3.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\contentsline {subsubsection}{\numberline {V.2.2.1}Evaluasi \textit {Retrieval}}{26}{subsubsection.5.2.2.1}%
-\contentsline {subsubsection}{\numberline {V.2.2.2}Evaluasi \textit {Generation}}{27}{subsubsection.5.2.2.2}%
-\contentsline {subsubsection}{\numberline {V.2.2.3}Evaluasi \textit {End to End}}{28}{subsubsection.5.2.2.3}%
-\contentsline {subsubsection}{\numberline {V.2.2.4}Evaluasi Manusia}{29}{subsubsection.5.2.2.4}%
-\contentsline {section}{\numberline {V.3}Analisis Risiko dan Mitigasi}{30}{section.5.3}%
+\contentsline {subsubsection}{\numberline {V.3.2.1}Evaluasi \textit {Retrieval}}{28}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {V.3.2.2}Evaluasi \textit {Generation}}{29}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {V.3.2.3}Evaluasi \textit {End to End}}{31}{subsubsection.5.3.2.3}%
+\contentsline {subsubsection}{\numberline {V.3.2.4}Evaluasi Manusia}{32}{subsubsection.5.3.2.4}%
+\contentsline {section}{\numberline {V.4}Analisis Risiko dan Mitigasi}{33}{section.5.4}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
