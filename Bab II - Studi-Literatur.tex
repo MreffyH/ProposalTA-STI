@@ -46,8 +46,8 @@ Pendekatan \textit{Retrieval-Augmented Generation (RAG)} diperkenalkan sebagai s
 \subsection{Arsitektur dan Mekanisme RAG}
 
 Secara umum, RAG terdiri dari dua komponen utama yaitu \textit{retriever} dan \textit{generator}. 
-Menurut \textcite{lewis2020}, \textit{retriever} menggunakan \textit{Dense Passage Retrieval (DPR)} untuk mencari dokumen yang relevan berdasarkan kueri input, sedangkan generator (umumnya model berbasis BART atau model \textit{seq2seq} lainnya) menghasilkan keluaran dengan menggabungkan input asli dan konten dari dokumen yang diambil \autocite{lewis2020}. 
-Pada jurnal tersebut dijelaskan bahwa RAG dapat bekerja dalam dua mode, yaitu RAG-Sequence dan RAG-Token. RAG-Sequence menggunakan satu dokumen untuk seluruh hasil keluaran, sedangkan RAG-Token mengizinkan model menggunakan dokumen yang berbeda pada setiap token yang dihasilkan. Fleksibilitas ini membuat RAG unggul dalam menghasilkan keluaran yang kaya informasi dan lebih faktual.
+Menurut \textcite{lewis2020}, \textit{retriever} menggunakan \textit{Dense Passage Retrieval (DPR)} untuk mencari dokumen yang relevan berdasarkan kueri input, sedangkan generator (umumnya model berbasis BART atau model \textit{seq2seq} lainnya) menghasilkan keluaran dengan menggabungkan input asli dan konten dari dokumen yang diambil. 
+Dijelaskan bahwa RAG dapat bekerja dalam dua mode, yaitu RAG-Sequence dan RAG-Token. RAG-Sequence menggunakan satu dokumen untuk seluruh hasil keluaran, sedangkan RAG-Token mengizinkan model menggunakan dokumen yang berbeda pada setiap token yang dihasilkan. Fleksibilitas ini membuat RAG unggul dalam menghasilkan keluaran yang kaya informasi dan lebih faktual.
 
 \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
@@ -121,10 +121,10 @@ No Majority
 
 Salah satu temuan penting pada tabel hasil eksperimen adalah bahwa RAG menghasilkan jawaban yang lebih spesifik dan minim \textit{hallucination} dibandingkan model generatif murni seperti BART. Selain itu, kemampuan untuk memperbarui pengetahuan hanya dengan mengganti indeks dokumen membuat RAG jauh lebih fleksibel dan efisien dalam konteks dunia nyata.
 
-Menurut \textcite{Gao2024}, memperkuat temuan ini dengan menunjukkan bahwa pendekatan RAG tidak hanya efektif dari sisi akurasi, tetapi juga unggul dalam aspek interpretabilitas dan pembaruan pengetahuan. Model dapat memberikan justifikasi berdasarkan dokumen yang diambil sehingga cocok digunakan dalam sistem pengambilan keputusan yang memerlukan transparansi dan auditabilitas.
+\textcite{Gao2024} memperkuat temuan ini dengan menunjukkan bahwa pendekatan RAG tidak hanya efektif dari sisi akurasi, tetapi juga unggul dalam aspek interpretabilitas dan pembaruan pengetahuan. Model dapat memberikan justifikasi berdasarkan dokumen yang diambil sehingga cocok digunakan dalam sistem pengambilan keputusan yang memerlukan transparansi dan auditabilitas.
 
 \section{\textit{Workflow dan Multi-Agent AI}}
-Perkembangan AI \textit{multi-agent} memberikan kemampuan baru untuk mengotomatiskan alur kerja (\textit{workflow}) dan mendukung pengambilan keputusan kompleks di berbagai sektor, termasuk layanan keuangan. Menurut \textcite{Joshi2025}, framework \textit{multi-agent} modern memanfaatkan kemampuan \textit{reasoning}, \textit{planning}, dan interaksi otonom antaragen untuk menjalankan serangkaian tugas yang sebelumnya memerlukan koordinasi manusia. Hal ini menjadikan arsitektur \textit{multi-agent} relevan dalam konteks sistem yang membutuhkan kolaborasi, analisis kompleks, serta kemampuan adaptasi terhadap dinamika lingkungan \textit{real-time}.
+Perkembangan AI \textit{multi-agent} memberikan kemampuan baru untuk mengotomatiskan alur kerja (\textit{workflow}) dan mendukung pengambilan keputusan kompleks di berbagai sektor, termasuk layanan keuangan. Menurut \textcite{Joshi2025}, framework \textit{multi-agent} modern memanfaatkan kemampuan \textit{reasoning}, \textit{planning}, dan interaksi otonom antar agen untuk menjalankan serangkaian tugas yang sebelumnya memerlukan koordinasi manusia. Hal ini menjadikan arsitektur \textit{multi-agent} relevan dalam konteks sistem yang membutuhkan kolaborasi, analisis kompleks, serta kemampuan adaptasi terhadap dinamika lingkungan \textit{real-time}.
 
 \subsection{Konsep dan Peran Multi-Agent dalam Sistem AI}
 
@@ -136,7 +136,7 @@ Perkembangan AI \textit{multi-agent} memberikan kemampuan baru untuk mengotomati
 	\label{gambar:Multi Agents App}
 \end{figure}
 
-Multi-agent AI terdiri dari sekumpulan agen cerdas yang dapat bekerja secara individual maupun kolaboratif untuk mencapai tujuan tertentu. \textcite{Joshi2025} menjelaskan bahwa agen dapat menjalankan peran yang berbeda misalnya analis risiko, agen pengambil keputusan, dan agen evaluator yang kemudian berinteraksi melalui mekanisme koordinasi yang terstruktur. Dalam sektor finansial, struktur ini digunakan untuk tugas seperti analisis investasi, manajemen risiko, pendeteksian \textit{fraud}, hingga otomasi proses operasional. 
+Multi-agent AI terdiri dari sekumpulan agen cerdas yang dapat bekerja secara individual maupun kolaboratif untuk mencapai tujuan tertentu. \textcite{Joshi2025} menjelaskan bahwa agen dapat menjalankan peran yang berbeda misalnya agen analis risiko, agen pengambil keputusan, dan agen evaluator yang kemudian berinteraksi melalui mekanisme koordinasi yang terstruktur. Dalam sektor finansial, struktur ini digunakan untuk tugas seperti analisis investasi, manajemen risiko, pendeteksian \textit{fraud}, hingga otomasi proses operasional. 
 
 Menurut gambar \ref{gambar:Multi Agents App}, \textit{multi-agent} AI dapat menangani berbagai domain keputusan dengan membagi fungsi menjadi agen-agen spesifik seperti agen analitik, agen pengawas, hingga agen eksekusi tugas. Pendekatan ini meningkatkan efisiensi dan memperkecil risiko kesalahan akibat proses manual.
 

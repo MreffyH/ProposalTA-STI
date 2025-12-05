@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  5 DEC 2025 21:39
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  5 DEC 2025 22:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1165,7 +1165,7 @@ Overfull \hbox (64.45271pt too wide) in paragraph at lines 303--308
 [2
 
 ]
-Overfull \hbox (18.71347pt too wide) in paragraph at lines 97--97
+Overfull \hbox (18.71347pt too wide) in paragraph at lines 95--95
  [] [][][]\TU/TimesNewRoman(0)/m/n/12 Sistem Rekomendasi Berbasis \TU/TimesNewR
 oman(0)/m/it/12 Retrieval-Augmented Generation (RAG) 
  []
@@ -1798,10 +1798,10 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31408 strings out of 403196
- 617504 string characters out of 5456126
- 1985784 words of memory out of 5000000
- 59579 multiletter control sequences out of 15000+600000
+ 31407 strings out of 403196
+ 617493 string characters out of 5456126
+ 1985779 words of memory out of 5000000
+ 59578 multiletter control sequences out of 15000+600000
  632918 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,13n,93p,1447b,6721s stack positions out of 10000i,1000n,20000p,200000b,200000s

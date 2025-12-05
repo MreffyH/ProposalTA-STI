@@ -45,8 +45,6 @@
 \babel@toc {indonesian}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
-\babel@toc {english}{}\relax 
-\babel@toc {indonesian}{}\relax 
 \contentsline {subsection}{\numberline {II.4.2}Kelebihan RAG dalam Tugas Berbasis Pengetahuan}{10}{subsection.2.4.2}%
 \babel@toc {english}{}\relax 
 \babel@toc {indonesian}{}\relax 
