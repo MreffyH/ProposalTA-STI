@@ -97,7 +97,7 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage[bahasai]{datetime2}
-
+\usepackage{pdfpages}
 
 \setcounter{tocdepth}{4} % kedalaman daftar isi sampai subsubbab
 \setcounter{secnumdepth}{4} % kedalaman penomoran sampai subsubbab
@@ -248,38 +248,39 @@
 % ==========================================
 % LEMBAR PENGESAHAN 
 % ==========================================
-\newpage
-\thispagestyle{empty}
-\pagenumbering{gobble}
-\begin{center}
-  \textbf{\large LEMBAR PENGESAHAN}\\[1cm]
-  \vspace*{1.5cm}
+\includepdf[pages=-]{LEMBAR PENGESAHAN.pdf}
+% \newpage
+% \thispagestyle{empty}
+% \pagenumbering{gobble}
+% \begin{center}
+%   \textbf{\large LEMBAR PENGESAHAN}\\[1cm]
+%   \vspace*{1.5cm}
     
-  {\large\bfseries IMPLEMENTASI AI BERBASIS RAG UNTUK PERENCANAAN ANGGARAN USAHA KECIL DAN MENENGAH}\\
-     \vspace{2cm}
+%   {\large\bfseries IMPLEMENTASI AI BERBASIS RAG UNTUK PERENCANAAN ANGGARAN USAHA KECIL DAN MENENGAH}\\
+%      \vspace{2cm}
 
-  {\Large \textbf{Proposal Tugas Akhir}}\\
+%   {\Large \textbf{Proposal Tugas Akhir}}\\
 
 
-  \vspace{1.5cm}
+%   \vspace{1.5cm}
     
     
-  {\large Oleh}\\[0.3cm]
-    \textbf{
-    {\large Muhammad Reffy Haykal}\\
-    {\large 18222103}
-  }\\
+%   {\large Oleh}\\[0.3cm]
+%     \textbf{
+%     {\large Muhammad Reffy Haykal}\\
+%     {\large 18222103}
+%   }\\
     
-  \vspace{0.3cm}
+%   \vspace{0.3cm}
  
-  {\large Program Studi Sistem dan Teknologi Informasi}\\
-  {\large Sekolah Teknik Elektro dan Informatika}\\
-  {\large Institut Teknologi Bandung}\\
+%   {\large Program Studi Sistem dan Teknologi Informasi}\\
+%   {\large Sekolah Teknik Elektro dan Informatika}\\
+%   {\large Institut Teknologi Bandung}\\
 
-  \vspace{1.5cm}
+%   \vspace{1.5cm}
 
-  Proposal Tugas Akhir ini telah disetujui dan disahkan\\ 
-  di Bandung, pada tanggal \today\\[1cm]
+%   Proposal Tugas Akhir ini telah disetujui dan disahkan\\ 
+%   di Bandung, pada tanggal \today\\[1cm]
 
 % ==========================================
 % Versi 1 pembimbing (default)
@@ -289,10 +290,10 @@
 	% NIP. 123456789 
 % ==========================================
 
-\end{center}
+% \end{center}
 
-\vspace{0.5cm}
-\noindent
+% \vspace{0.5cm}
+% \noindent
 
 % ==========================================
 % Jika ada 2 pembimbing TA, uncomment dan edit 
@@ -300,12 +301,11 @@
 % bagian versi 1 pembimbing di atas.
 % ==========================================
 
-\begin{tabular}{p{1cm}p{7cm}p{7cm}}
-  & Pembimbing 1 & Pembimbing 2 \\[3cm]
-  & Prof. Dr. Ir. Suhono Harso Supangkat, M.Eng. & Ir. Devi Willieam Anggara S.T., M.Phil., Ph.D., IPP. \\[0.2cm]
-  & NIP. 19621203198811101 & NIP. 124110055
-\end{tabular}
-
+% \begin{tabular}{p{1cm}p{7cm}p{7cm}}
+%   & Pembimbing 1 & Pembimbing 2 \\[3cm]
+%   & Prof. Dr. Ir. Suhono Harso Supangkat, M.Eng. & Ir. Devi Willieam Anggara S.T., M.Phil., Ph.D., IPP. \\[0.2cm]
+%   & NIP. 19621203198811101 & NIP. 124110055
+% \end{tabular}
 
 
 % -- Change page number style to roman ---
