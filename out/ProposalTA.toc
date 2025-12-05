@@ -109,7 +109,7 @@
 \contentsline {section}{\numberline {IV.4}Implementasi RAG pada Sistem}{23}{section.4.4}%
 \contentsline {chapter}{\numberline {V}RENCANA SELANJUTNYA}{26}{chapter.5}%
 \contentsline {section}{\numberline {V.1}Linimasa Pengerjaan}{26}{section.5.1}%
-\contentsline {section}{\numberline {V.2}Rencana Implementasi}{27}{section.5.2}%
+\contentsline {section}{\numberline {V.2}Biaya Implementasi}{27}{section.5.2}%
 \contentsline {section}{\numberline {V.3}Desain Pengujian dan Evaluasi}{27}{section.5.3}%
 \contentsline {subsection}{\numberline {V.3.1}Verifikasi Fungsional}{27}{subsection.5.3.1}%
 \contentsline {subsection}{\numberline {V.3.2}Evaluasi Kualitas RAG}{28}{subsection.5.3.2}%
