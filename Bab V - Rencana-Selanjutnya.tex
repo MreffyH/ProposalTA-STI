@@ -259,16 +259,16 @@ Mengukur seberapa baik keluaran sistem sesuai dengan maksud kueri pengguna.
 \subsubsection{Evaluasi Manusia}
 Skenario evaluasi berikut dirancang untuk menilai kualitas sistem RAG secara menyeluruh, baik dari aspek pengambilan konteks, penyusunan jawaban, maupun ketertelusuran sumber yang digunakan. Setiap metrik dipilih untuk memastikan bahwa sistem tidak hanya menghasilkan keluaran yang relevan, tetapi juga dapat dipertanggungjawabkan secara faktual dan konsisten. Tabel berikut merangkum komponen evaluasi yang digunakan dalam penelitian ini.
 
-\begin{longtable}{|p{3cm}|p{5cm}|p{5cm}|}
+\begin{longtable}{|p{5cm}|p{7cm}|p{5cm}|}
 \caption{Human Evaluation}
 \label{tbl:Human Evaluation} \\
 \hline
-\textbf{Kode Evaluasi} &  \textbf{Evaluasi} &  \textbf{Deskripsi}\\
+\textbf{Evaluasi} &  \textbf{Deskripsi}\\
 \hline
 \endfirsthead
 
 \hline
-\textbf{Kode Evaluasi} &  \textbf{Evaluasi} &  \textbf{Deskripsi}\\
+\textbf{Evaluasi} &  \textbf{Deskripsi}\\
 \hline
 \endhead
 
@@ -278,29 +278,21 @@ Skenario evaluasi berikut dirancang untuk menilai kualitas sistem RAG secara men
 
 \hline
 \endlastfoot
-HE-01
-&
 Context Precision/Recall
 &
 Proporsi \textit{chunk} yang relevan dari dokumen yang diambil.
 \\ \hline
 
-HE-02
-&
-Groundedness/Faithfulness
+Groundedness/ Faithfulness
 &
 Kesesuaian pernyataan dengan sumber yang dikutip untuk menguji tingkat halusinasi rendah.
 \\ \hline
 
-HE-03
-&
 Answer Relevance
 &
 Kesesuaian jawaban dengan pertanyaan/konteks UKM.
 \\ \hline
 
-HE-04
-&
 Citation Accuracy
 &
 Kecocokan rujukan dengan bagian dokumen yang benar.
