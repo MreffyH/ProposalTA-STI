@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  5 DEC 2025 23:40
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  6 DEC 2025 00:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -996,7 +996,7 @@ Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-
 english.tex)
 Package babel Info: Importing data for english
-(babel)             from babel-en.ini. Reported on input line 26.
+(babel)             from babel-en.ini. Reported on input line 25.
 )
 \openout1 = `ProposalTA.aux'.
 
@@ -1234,7 +1234,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 ]
-Overfull \hbox (18.71347pt too wide) in paragraph at lines 95--95
+Overfull \hbox (18.71347pt too wide) in paragraph at lines 94--94
  [] [][][]\TU/TimesNewRoman(0)/m/n/12 Sistem Rekomendasi Berbasis \TU/TimesNewR
 oman(0)/m/it/12 Retrieval-Augmented Generation (RAG) 
  []
@@ -1257,68 +1257,7 @@ oman(0)/m/it/12 Retrieval-Augmented Generation (RAG)
 
 
 
-[4] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.lol)
-\tf@lol=\write8
-\openout8 = `ProposalTA.lol'.
-
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@centercr' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightskip' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@flushglue' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leftskip' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@flushglue' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\finalhyphendemerits' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parindent' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\parfillskip' on input line 355.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@skip' on input line 355.
-
-
-
-[5
-
-] (Bab I - Pendahuluan.tex
+[4] (Bab I - Pendahuluan.tex
 Bab I.
 
 
@@ -1833,7 +1772,7 @@ Overfull \hbox (48.61902pt too wide) in alignment at lines 324--330
 )
 
 [33]
-Overfull \hbox (12.08437pt too wide) in paragraph at lines 400--400
+Overfull \hbox (12.08437pt too wide) in paragraph at lines 395--395
 \TU/TimesNewRoman(0)/m/n/12 SMEs to Achieve Sustainable Business Performance: A
 pplication of Technology–
  []
@@ -1844,13 +1783,13 @@ pplication of Technology–
 
 
 ]
-Overfull \hbox (10.57468pt too wide) in paragraph at lines 400--400
+Overfull \hbox (10.57468pt too wide) in paragraph at lines 395--395
 [][]\TU/TimesNewRoman(0)/m/n/12 Kemenko, Kementerian Koordinator Bidang Perekon
 omian Republik Indonesia. 2024.
  []
 
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 380.
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 375.
 See the caption package documentation for explanation.
 
 
@@ -1861,19 +1800,19 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: 5319B42DD734449D7D3DC4CD40EACF95;10509.
+(rerunfilecheck)             Checksum: C986263839B56D9936C64ED5F15BDA06;10401.
 Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 \openout1 = `ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32621 strings out of 403196
- 636947 string characters out of 5456126
- 2012982 words of memory out of 5000000
- 60768 multiletter control sequences out of 15000+600000
- 632918 words of font info for 83 fonts, out of 8000000 for 9000
+ 32608 strings out of 403196
+ 636578 string characters out of 5456126
+ 2012853 words of memory out of 5000000
+ 60760 multiletter control sequences out of 15000+600000
+ 632902 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,14n,93p,1447b,6725s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (42 pages).
+pdf (41 pages).

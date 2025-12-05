@@ -1,7 +1,6 @@
 \babel@toc {indonesian}{}\relax 
 \contentsline {chapter}{DAFTAR GAMBAR}{iii}{figure.caption.1}%
 \contentsline {chapter}{DAFTAR TABEL}{iv}{figure.caption.1}%
-\contentsline {chapter}{\centering \normalsize DAFTAR KODE}{v}{chapter*.2}%
 \contentsline {chapter}{\numberline {I}PENDAHULUAN}{1}{chapter.1}%
 \contentsline {section}{\numberline {I.1}Latar Belakang}{1}{section.1.1}%
 \babel@toc {english}{}\relax 
