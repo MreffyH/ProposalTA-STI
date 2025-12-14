@@ -1,16 +1,16 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'C:\Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.blg'
-[129] biber-MSWIN64:342> INFO - === 
-[174] Biber.pm:421> INFO - Reading 'C:\Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.bcf'
-[423] Biber.pm:1002> INFO - Found 15 citekeys in bib section 0
-[440] Biber.pm:4487> INFO - Processing section 0
-[453] Biber.pm:4678> INFO - Looking for bibtex file 'daftar-pustaka.bib' for section 0
-[501] bibtex.pm:1713> INFO - LaTeX decoding ...
-[522] bibtex.pm:1519> INFO - Found BibTeX data source 'daftar-pustaka.bib'
-[738] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
-[738] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
-[738] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[738] Biber.pm:4307> INFO - Sorting list 'cms/global//global/global/global' of type 'entry' with template 'cms' and locale 'indonesian'
-[738] Biber.pm:4313> INFO - No sort tailoring available for locale 'indonesian'
-[765] bbl.pm:676> INFO - Writing 'C:\Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.bbl' with encoding 'UTF-8'
-[779] bbl.pm:779> INFO - Output to C:\Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.bbl
+[319] biber-MSWIN64:342> INFO - === 
+[382] Biber.pm:421> INFO - Reading 'C:\Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.bcf'
+[772] Biber.pm:1002> INFO - Found 15 citekeys in bib section 0
+[795] Biber.pm:4487> INFO - Processing section 0
+[805] Biber.pm:4678> INFO - Looking for bibtex file 'daftar-pustaka.bib' for section 0
+[882] bibtex.pm:1713> INFO - LaTeX decoding ...
+[915] bibtex.pm:1519> INFO - Found BibTeX data source 'daftar-pustaka.bib'
+[1149] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1149] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'level = 4' with 'level = 2'
+[1149] UCollate.pm:68> INFO - Overriding locale 'indonesian' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1149] Biber.pm:4307> INFO - Sorting list 'cms/global//global/global/global' of type 'entry' with template 'cms' and locale 'indonesian'
+[1149] Biber.pm:4313> INFO - No sort tailoring available for locale 'indonesian'
+[1190] bbl.pm:676> INFO - Writing 'C:\Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.bbl' with encoding 'UTF-8'
+[1200] bbl.pm:779> INFO - Output to C:\Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.bbl
