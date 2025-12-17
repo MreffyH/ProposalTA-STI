@@ -180,6 +180,36 @@
       \field{title}{CRISP-DM 1.0: Step-by-step data mining guide}
       \field{year}{2000}
     \endentry
+    \entry{Schroer2021}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c74b986888a0e309f448e40d381069f}{%
+           family={Christoph\bibnamedelima Schröer},
+           familyi={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Jorge\bibnamedelimb Marx\bibnamedelima Gómez},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0,
+           suffix={Felix\bibnamedelima Kruse},
+           suffixi={F\bibinitperiod\bibinitdelim K\bibinitperiod},
+           suffixun=0}}%
+      }
+      \strng{namehash}{4c74b986888a0e309f448e40d381069f}
+      \strng{fullhash}{4c74b986888a0e309f448e40d381069f}
+      \strng{fullhashraw}{4c74b986888a0e309f448e40d381069f}
+      \strng{bibnamehash}{4c74b986888a0e309f448e40d381069f}
+      \strng{authorbibnamehash}{4c74b986888a0e309f448e40d381069f}
+      \strng{authornamehash}{4c74b986888a0e309f448e40d381069f}
+      \strng{authorfullhash}{4c74b986888a0e309f448e40d381069f}
+      \strng{authorfullhashraw}{4c74b986888a0e309f448e40d381069f}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Emerging Technologies and Innovative Research}
+      \field{title}{A Systematic Literature Review on Applying CRISP-DM Process Model}
+      \field{year}{2021}
+    \endentry
     \entry{Faisal2025}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=aa6796c2c32a8836b1716d941189e4ca}{%
@@ -693,6 +723,38 @@
       \field{title}{Machine Learning for Financial Forecasting, Planning and Analysis: Recent Developments and Pitfalls}
       \field{volume}{4}
       \field{year}{2022}
+    \endentry
+    \entry{rudiger2000}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=93c4571a5818e3fd7fe299eb7352e55d}{%
+           family={Wirth},
+           familyi={W\bibinitperiod},
+           given={Rüdiger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5dfd4b665b86c69a99a0455c78004e8}{%
+           family={Hipp},
+           familyi={H\bibinitperiod},
+           given={Jochen},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{fullhash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{fullhashraw}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{bibnamehash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{authorbibnamehash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{authornamehash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{authorfullhash}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \strng{authorfullhashraw}{c6be7756f27c3954c00f12c46ba4d2d5}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{title}{CRISP-DM: Towards a Standard Process Model for Data Mining}
+      \field{year}{2000}
     \endentry
   \enddatalist
 \endrefsection

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  17 DEC 2025 12:50
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  17 DEC 2025 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1234,7 +1234,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 ]
-Overfull \hbox (18.71347pt too wide) in paragraph at lines 98--98
+Overfull \hbox (18.71347pt too wide) in paragraph at lines 105--105
  [] [][][]\TU/TimesNewRoman(0)/m/n/12 Sistem Rekomendasi Berbasis \TU/TimesNewR
 oman(0)/m/it/12 Retrieval-Augmented Generation (RAG) 
  []
@@ -1321,12 +1321,17 @@ Overfull \hbox (7.54723pt too wide) in alignment at lines 83--120
 
 
 [10]
+File: image/CRISPDM.png Graphic file (type bmp)
+<image/CRISPDM.png>
+
+
+[11]
 File: image/Applications of AI Multi Agents.png Graphic file (type bmp)
 <image/Applications of AI Multi Agents.png>
 
 
-[11]
-Overfull \hbox (13.64363pt too wide) in paragraph at lines 155--157
+[12]
+Overfull \hbox (13.64363pt too wide) in paragraph at lines 168--170
 \TU/TimesNewRoman(0)/m/n/12 Beberapa framework \TU/TimesNewRoman(0)/m/it/12 mul
 ti-agent \TU/TimesNewRoman(0)/m/n/12 populer seperti LangChain, CrewAI, OpenAI 
 Swarm,
@@ -1334,13 +1339,13 @@ Swarm,
 
 ) (Bab III - Analisis-Masalah.tex
 
-[12]
+[13]
 Bab III.
 File: image/As Is Perencanaan Anggaran.png Graphic file (type bmp)
 <image/As Is Perencanaan Anggaran.png>
 
 
-[13
+[14
 
 ]
 Underfull \hbox (badness 3250) in paragraph at lines 62--63
@@ -1374,7 +1379,7 @@ Underfull \hbox (badness 4036) in paragraph at lines 119--120
 
 
 
-[14]
+[15]
 Overfull \hbox (7.54723pt too wide) in alignment at lines 127--133
  [] [] [] 
  []
@@ -1404,11 +1409,11 @@ Overfull \hbox (7.54723pt too wide) in alignment at lines 145--174
  [] [] [] 
  []
 
-[15]
-
 [16]
 
 [17]
+
+[18]
 Overfull \hbox (6.0032pt too wide) in paragraph at lines 199--199
 |[]\TU/TimesNewRoman(0)/b/n/12 Sistem Rekomendasi Berbasis \TU/TimesNewRoman(0)
 /b/it/12 Retrieval-Augmented Generation (RAG)
@@ -1416,7 +1421,7 @@ Overfull \hbox (6.0032pt too wide) in paragraph at lines 199--199
 
 
 
-[18]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 212--212
 []|\TU/TimesNewRoman(0)/b/n/12 Akurasi
  []
@@ -1528,13 +1533,13 @@ Overfull \hbox (15.09442pt too wide) in alignment at lines 235--262
 
 ) (Bab IV - Desain-Konsep-Solusi.tex
 
-[19]
+[20]
 Bab IV.
 File: image/Use Case.png Graphic file (type bmp)
 <image/Use Case.png>
 
 
-[20
+[21
 
 ]
 Overfull \hbox (44.53589pt too wide) in alignment at lines 25--31
@@ -1575,28 +1580,28 @@ File: image/To Be Flowchart.png Graphic file (type bmp)
 <image/To Be Flowchart.png>
 
 
-[21]
+[22]
 File: image/Architecture system.png Graphic file (type bmp)
 <image/Architecture system.png>
 
 
-[22]
+[23]
 File: image/Flow RAG.png Graphic file (type bmp)
 <image/Flow RAG.png>
 
 
-[23]
+[24]
 
-[24]) (Bab V - Rencana-Selanjutnya.tex
+[25]) (Bab V - Rencana-Selanjutnya.tex
 
-[25]
+[26]
 Bab V.
 
 Underfull \hbox (badness 1472) in paragraph at lines 46--47
 \TU/TimesNewRoman(0)/m/n/12 siapan data, desain sistem, pembuatan
  []
 
-[26
+[27
 
 ]
 Underfull \hbox (badness 1253) in paragraph at lines 137--138
@@ -1646,7 +1651,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
 
 
-[27]
+[28]
 Overfull \hbox (1.22pt too wide) in paragraph at lines 159--160
 \TU/TimesNewRoman(0)/m/n/12 Evaluasi ini menilai apakah sistem mengambil kontek
 s yang tepat dan non-redundan.
@@ -1654,7 +1659,7 @@ s yang tepat dan non-redundan.
 
 
 
-[28]
+[29]
 Overfull \hbox (0.85933pt too wide) in paragraph at lines 180--182
 \TU/TimesNewRoman(0)/m/n/12 yang mengukur tingkat kesamaan antara keluaran mode
 l dan kalimat rujukan. BLEU
@@ -1662,7 +1667,7 @@ l dan kalimat rujukan. BLEU
 
 
 
-[29]
+[30]
 Overfull \hbox (9.123pt too wide) in paragraph at lines 189--191
 \TU/TimesNewRoman(0)/m/n/12 mengukur tumpang tindih teks terutama dari sisi \TU
 /TimesNewRoman(0)/m/it/12 recall\TU/TimesNewRoman(0)/m/n/12 . Varian umum seper
@@ -1671,9 +1676,9 @@ ti \TU/TimesNewRoman(0)/m/it/12 ROUGE-
 
 
 
-[30]
-
 [31]
+
+[32]
 Underfull \hbox (badness 2359) in paragraph at lines 288--289
 []|\TU/TimesNewRoman(0)/m/n/12 Kesesuaian pernyataan dengan sumber
  []
@@ -1683,7 +1688,7 @@ Underfull \hbox (badness 1184) in paragraph at lines 293--294
 []|\TU/TimesNewRoman(0)/m/n/12 Kesesuaian jawaban dengan pertanyaa-
  []
 
-[32]
+[33]
 Overfull \hbox (48.61902pt too wide) in alignment at lines 306--312
  [] [] [] [] [] 
  []
@@ -1765,7 +1770,7 @@ Overfull \hbox (48.61902pt too wide) in alignment at lines 324--330
 
 )
 
-[33]
+[34]
 Overfull \hbox (12.08437pt too wide) in paragraph at lines 395--395
 \TU/TimesNewRoman(0)/m/n/12 SMEs to Achieve Sustainable Business Performance: A
 pplication of Technology–
@@ -1773,7 +1778,7 @@ pplication of Technology–
 
 
 
-[34
+[35
 
 
 ]
@@ -1788,25 +1793,25 @@ See the caption package documentation for explanation.
 
 
 
-[35] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
+[36] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
  ***********
 Package rerunfilecheck Info: File `ProposalTA.out' has not changed.
-(rerunfilecheck)             Checksum: C986263839B56D9936C64ED5F15BDA06;10401.
+(rerunfilecheck)             Checksum: EC01BBF8131C894A420AB0A05E541887;10645.
 Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 \openout1 = `ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32616 strings out of 403196
- 636788 string characters out of 5456126
- 2012914 words of memory out of 5000000
- 60768 multiletter control sequences out of 15000+600000
+ 32638 strings out of 403196
+ 637344 string characters out of 5456126
+ 2014360 words of memory out of 5000000
+ 60789 multiletter control sequences out of 15000+600000
  632902 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,14n,93p,1447b,6725s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (41 pages).
+pdf (42 pages).
