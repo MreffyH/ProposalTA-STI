@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  14 DEC 2025 17:53
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  17 DEC 2025 12:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1234,7 +1234,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 ]
-Overfull \hbox (18.71347pt too wide) in paragraph at lines 94--94
+Overfull \hbox (18.71347pt too wide) in paragraph at lines 98--98
  [] [][][]\TU/TimesNewRoman(0)/m/n/12 Sistem Rekomendasi Berbasis \TU/TimesNewR
 oman(0)/m/it/12 Retrieval-Augmented Generation (RAG) 
  []
@@ -1275,12 +1275,6 @@ naan \TU/TimesNewRoman(0)/m/it/12 Retrieval-Augmented
 
 
 [3]
-Overfull \hbox (2.22977pt too wide) in paragraph at lines 67--69
-\TU/TimesNewRoman(0)/m/n/12 Pengujian dilakukan untuk menilai apakah sistem men
-ghasilkan keluaran yang
- []
-
-
 
 [4]) (Bab II - Studi-Literatur.tex
 
@@ -1806,10 +1800,10 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32608 strings out of 403196
- 636578 string characters out of 5456126
- 2012855 words of memory out of 5000000
- 60760 multiletter control sequences out of 15000+600000
+ 32616 strings out of 403196
+ 636788 string characters out of 5456126
+ 2012914 words of memory out of 5000000
+ 60768 multiletter control sequences out of 15000+600000
  632902 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,14n,93p,1447b,6725s stack positions out of 10000i,1000n,20000p,200000b,200000s

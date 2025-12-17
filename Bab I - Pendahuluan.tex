@@ -49,25 +49,28 @@ Agar tugas akhir ini terarah dan fokus pada tujuan yang ingin dicapai, maka bata
 
 % --- Metodologi Pengerjaan TA ---
 \section{Metodologi}
-Tugas akhir ini menggunakan pendekatan \textit{Waterfall} sebagai model pengembangan sistem. Model ini dipilih karena memberikan alur kerja yang terstruktur dan sesuai dengan kebutuhan tugas akhir yang menekankan proses analisis, perancangan, pembangunan, dan evaluasi sistem pendukung keputusan berbasis \textit{Retrieval-Augmented Generation} (RAG). Setiap tahap menghasilkan keluaran yang menjadi dasar untuk tahap berikutnya sehingga memudahkan proses validasi dan dokumentasi.
-
-Secara umum, metodologi tugas akhir terdiri dari lima tahapan utama sebagai berikut:
+Tugas akhir ini menggunakan model proses CRISP-DM(\textit{Cross Industry Standard Process for Data Mining}) sebagai kerangka metodologi pengembangan sistem AI berbasis RAG (\textit{Retrieval-Augmented Generation}) untuk mendukung perencanaan anggaran UKM.
+CRISP-DM bersifat \textit{industry-independent} dan terdiri dari enam fase iteratif. Sifat iteratif ini penting karena pengembangan RAG biasanya membutuhkan perulangan perbaikan data, strategi \textit{retrieval}, dan \textit{prompt} berdasarkan hasil evaluasi \textcite{chapman2000}.
 
 \begin{enumerate}
 
-\item \textbf{Analisis Kebutuhan}\\
-Tahapan ini mencakup identifikasi tiga permasalahan utama UKM, yaitu ketidaktepatan penentuan anggaran proyek, ketiadaan mekanisme validasi anggaran baru, serta kesulitan menilai kelayakan ekspansi usaha atau produk baru. Analisis dilakukan melalui studi literatur, tinjauan tugas akhir terkait perencanaan anggaran dan pengambilan keputusan pada UKM, serta pengkajian kebutuhan data dan proses bisnis UKM. Hasil analisis digunakan untuk menyusun spesifikasi sistem dan kebutuhan fungsional.
+\item \textbf{\textit{Business Understanding}}\\
+Tahap ini mencakup pemahaman masalah anggaran UKM, batasan operasional, serta kriteria keberhasilan solusi. Aktivitas yang dilakukan meliputi identifikasi kebutuhan pengguna, perumusan tujuan \textit{data mining/AI}, penentuan \textit{success criteria}, dan penyusunan rencana kerja proyek.
+Hasil dari tahapan ini adalah dokumen kebutuhan, pendifinisian target, serta kriteria keberhasilan.
 
-\item \textbf{Perancangan Sistem (\textit{System Design})}\\
-Tahap ini mencakup perancangan arsitektur sistem berbasis RAG untuk menghasilkan analisis anggaran, validasi rencana anggaran, dan rekomendasi kelayakan ekspansi usaha. Perancangan meliputi desain proses \textit{retrieval}, \textit{generation}, serta pemetaan kebutuhan data UKM. Selain itu, dilakukan perancangan alur otomasi menggunakan platform \textit{low-code} untuk proses pengambilan data, pemanggilan RAG, dan penyajian hasil. Diagram alur, arsitektur komponen, dan skenario interaksi sistem disusun pada tahap ini.
+\item \textbf{\textit{Data Understanding}}\\
+Tahap ini mencakup pengumpulan data/dokumen, eksplorasi, deskripsi, dan pengecekan kualitas data. Data untuk RAG dapat berupa data historis keuangan usaha, dokumen internal usaha, dan referensi eksternal yang relevan. Hasil dari tahapan ini dapat berupa inventarisasi data, deskripsi struktur data, laporan kualitas data, dan risiko yang mungkin terjadi.
 
-\item \textbf{Implementasi Sistem}\\
-Tahapan ini meliputi pembangunan komponen sistem sesuai rancangan, termasuk implementasi model RAG, konfigurasi modul \textit{retrieval}, serta integrasi alur otomasi. Data simulasi atau data studi kasus UKM digunakan untuk menghasilkan keluaran berupa rekomendasi alokasi anggaran, validasi pengajuan anggaran, dan analisis kelayakan ekspansi. Implementasi dilakukan secara bertahap untuk memastikan konsistensi fungsi setiap komponen.
+\item \textbf{\textit{Data Preparation}}\\
+Tahapan ini meliputi aktivitas menyiapkan data agar siap digunakan oleh model. Aktivitas ini mencakup seleksi data, pembersihan, transformasi, dan pembentukan atribut/meta data. Untuk RAG, \textit{data preparation} spesifik meliputi normalisasi dan \textit{cleaning}, anonimisasi data sensitif, konversi dokumen, \textit{Chunking}, dan pembuatan \textit{embeddings} dan penyimpanan ke \textit{vector database} untuk kebutuhan \textit{retrieval}. Hasil dari tahapan ini adalah dataset yang siap digunakan untuk tahap pemodelan.
 
-\item \textbf{Pengujian Sistem (\textit{Testing})}\\
-Pengujian dilakukan untuk menilai apakah sistem menghasilkan keluaran yang relevan, konsisten, dan sesuai kebutuhan UKM. Metode pengujian mengacu pada evaluasi RAG, yang mencakup penilaian relevansi konteks, ketepatan jawaban, serta kesesuaian rekomendasi dengan data yang digunakan. Selain itu, dilakukan pengujian alur otomasi  untuk memastikan integrasi antarkomponen berjalan stabil.
+\item \textbf{\textit{Modeling}}\\
+Tahapan ini mencakup pemilihan teknik, pembangunan \textit{test case}, dan pembangunan model. Model yang dibuat untuk RAG meliputi \textit{retriever dan generator}
 
-\item \textbf{Evaluasi dan Dokumentasi}\\
-Tahap terakhir mencakup evaluasi efektivitas sistem dalam mendukung pengambilan keputusan anggaran UKM, termasuk batasan sistem dan potensi pengembangan lanjutan. Seluruh tahapan, hasil pengujian, dan analisis disusun dalam bentuk laporan tugas akhir.
+\item \textbf{\textit{Evaluation}}\\
+Tahap ini mencakup pengecekan hasil terhadap tujuan bisnis, menginterpretasi hasil, dan menentukan tindakan perbaikan. Evaluasi untuk RAG meliputi evaluasi kualitas jawaban, keterlacakan, \textit{retrieval}, dan uji pengguna. Hasil evaluasi digunakan untuk iterasi kembali ke fase \textit{data preparation/modeling}.
+
+\item \textbf{\textit{Deployment}}\\
+Tahap ini mencakup implementasi akhir serta rencana penerapan, \textit{monitoring}, dan \textit{maintenance}. Hasil dari tahapan ini adalah sistem RAG yang siap digunakan oleh UKM untuk mendukung perencanaan anggaran.
 
 \end{enumerate}

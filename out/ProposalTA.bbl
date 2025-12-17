@@ -112,6 +112,74 @@
       \field{volume}{19}
       \field{year}{2010}
     \endentry
+    \entry{chapman2000}{book}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=6e42f1026173c2e52fdda7fdd636f359}{%
+           family={Chapman},
+           familyi={C\bibinitperiod},
+           given={Pete},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f37a206983a831906b78d21c7d52eaad}{%
+           family={Clinton},
+           familyi={C\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c25b09dcdc549eef103243260ef9097}{%
+           family={Kerber},
+           familyi={K\bibinitperiod},
+           given={Randy},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad3964a47e85a21d4e37e96bdc189722}{%
+           family={Khabaza},
+           familyi={K\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0837e07a12ac06f6572ab8dbb4dbdc8b}{%
+           family={Reinartz},
+           familyi={R\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a4e3f5f408e7cfa7e86f42b4a99fe8b}{%
+           family={Shearer},
+           familyi={S\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af1a0d1689b9ebc8dd4fc7107edca9bb}{%
+           family={Wirth},
+           familyi={W\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Chicago}%
+      }
+      \list{publisher}{1}{%
+        {SPSS Inc.}%
+      }
+      \strng{namehash}{e4568ace118615d389c03c0583880045}
+      \strng{fullhash}{2fde78135730e0585fe6413c746a19a4}
+      \strng{fullhashraw}{2fde78135730e0585fe6413c746a19a4}
+      \strng{bibnamehash}{2fde78135730e0585fe6413c746a19a4}
+      \strng{authorbibnamehash}{2fde78135730e0585fe6413c746a19a4}
+      \strng{authornamehash}{e4568ace118615d389c03c0583880045}
+      \strng{authorfullhash}{2fde78135730e0585fe6413c746a19a4}
+      \strng{authorfullhashraw}{2fde78135730e0585fe6413c746a19a4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CRISP-DM 1.0: Step-by-step data mining guide}
+      \field{year}{2000}
+    \endentry
     \entry{Faisal2025}{online}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=aa6796c2c32a8836b1716d941189e4ca}{%
