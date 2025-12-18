@@ -76,7 +76,7 @@ Bagian ini akan menjelaskan desain arsitektur sistem. Desain ini menggambarkan \
 \begin{figure}[h] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
 	\centering
   \captionsetup{justification=centering}
-    	\includegraphics[width=0.9\textwidth]{image/Architecture system.png}
+    	\includegraphics[width=0.9\textwidth]{image/Architecture.png}
 	\caption{Arsitektur sistem}
 	\label{gambar:architecture}
 \end{figure}
@@ -89,7 +89,7 @@ Diagram arsitektur sistem Gambar \ref{gambar:architecture} menggambarkan seluruh
 	\item \textit{Application Gateaway Layer}\\ 
 	Lapisan ini berperan sebagai pintu masuk seluruh request dari antarmuka. Di layer ini dilakukan autentikasi, validasi dan normalisasi input, penyusunan kueri, serta orkestrasi pipeline melalui \textit{Workflow Connector}. 
 	\item \textit{Business Layer}\\ 
-	Lapisan terdiri dari \textit{Multi Agent dan Output Composer. Multi Agent} mencakup \textit{Rule Validator} untuk memeriksa batas biaya dan ambang ROI, \textit{Retrieval Service} untuk membangun embedding dan menemukan dokumen relevan, serta \textit{RAG Reasoner} yang menggabungkan input dan konteks untuk menghasilkan rekomendasi yang dapat dijelaskan. \textit{Output Composer} kemudian menyusun hasil akhir ke dalam bentuk terstruktur seperti Rangkuman, Alasan, Risiko, Rekomendasi, dan Referensi. Jumlah \textit{agent} mungkin bisa bertambah sesuai kebutuhan implemetasi nantinya.
+	Lapisan terdiri dari modul yang akan dibuat beserta \textit{output composer}. 
 	\item \textit{Data and Infrastructure Layer}\\ 
 	Lapisan ini yang memuat \textit{Knowledge Database} berisi dokumen pedoman, histori, dan referensi pasar beserta metadata. Lalu ada \textit{Vector Store} untuk penyimpanan \textit{embedding} dan operasi \textit{similarity search}. Selanjutnya terdapat \textit{Logging} yang mencatat jejak input, dokumen yang digunakan, dan versi komponen sebagai dasar monitoring dan audit. 
 \end{enumerate}

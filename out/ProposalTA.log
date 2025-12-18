@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  17 DEC 2025 21:14
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  18 DEC 2025 09:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1581,8 +1581,8 @@ File: image/To Be Flowchart.png Graphic file (type bmp)
 
 
 [22]
-File: image/Architecture system.png Graphic file (type bmp)
-<image/Architecture system.png>
+File: image/Architecture.png Graphic file (type bmp)
+<image/Architecture.png>
 
 
 [23]
@@ -1590,85 +1590,128 @@ File: image/Flow RAG.png Graphic file (type bmp)
 <image/Flow RAG.png>
 
 
-[24]
+[24]) (Bab V - Rencana-Selanjutnya.tex
 
-[25]) (Bab V - Rencana-Selanjutnya.tex
-
-[26]
+[25]
 Bab V.
 
-Underfull \hbox (badness 1472) in paragraph at lines 46--47
-\TU/TimesNewRoman(0)/m/n/12 siapan data, desain sistem, pembuatan
+Overfull \hbox (7.54721pt too wide) in alignment at lines 14--20
+ [] [] [] 
  []
 
-[27
+
+Overfull \hbox (7.54721pt too wide) in alignment at lines 20--25
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.54721pt too wide) in alignment at lines 25--29
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.54721pt too wide) in alignment at lines 29--32
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+[]|\TU/TimesNewRoman(0)/m/n/12 Oktober – De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+[]|\TU/TimesNewRoman(0)/m/n/12 Januari – Juni
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+[]|\TU/TimesNewRoman(0)/m/it/12 Data Prepara-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\TU/TimesNewRoman(0)/m/it/12 tion, Modeling,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\TU/TimesNewRoman(0)/m/it/12 Evaluation,
+ []
+
+
+Overfull \hbox (7.54721pt too wide) in alignment at lines 32--57
+ [] [] [] 
+ []
+
+[26
 
 ]
-Underfull \hbox (badness 1253) in paragraph at lines 137--138
+Underfull \hbox (badness 1253) in paragraph at lines 146--147
 []|\TU/TimesNewRoman(0)/m/n/12 Menggunakan skenario pro-
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 137--138
+Underfull \hbox (badness 1701) in paragraph at lines 146--147
 \TU/TimesNewRoman(0)/m/n/12 yek kecil/menengah; verifi-
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 137--138
+Underfull \hbox (badness 1320) in paragraph at lines 146--147
 \TU/TimesNewRoman(0)/m/n/12 kasi keluaran memuat ring-
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 137--138
+Underfull \hbox (badness 1406) in paragraph at lines 146--147
 \TU/TimesNewRoman(0)/m/n/12 si; aturan batas biaya dite-
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 144--145
+Underfull \hbox (badness 1264) in paragraph at lines 153--154
 []|\TU/TimesNewRoman(0)/m/n/12 Skenario pengajuan rencana
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 \TU/TimesNewRoman(0)/m/n/12 anggaran yang layak/tidak
  []
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 144--145
+Underfull \hbox (badness 3536) in paragraph at lines 153--154
 \TU/TimesNewRoman(0)/m/n/12 layak/kurang data; memas-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 \TU/TimesNewRoman(0)/m/it/12 accept/hold/reject \TU/TimesNewRoman(0)/m/n/12 den
 gan
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 \TU/TimesNewRoman(0)/m/n/12 justifikasi dan permintaan
  []
 
 
 
-[28]
-Overfull \hbox (1.22pt too wide) in paragraph at lines 159--160
+[27]
+Overfull \hbox (1.22pt too wide) in paragraph at lines 168--169
 \TU/TimesNewRoman(0)/m/n/12 Evaluasi ini menilai apakah sistem mengambil kontek
 s yang tepat dan non-redundan.
  []
 
 
 
-[29]
-Overfull \hbox (0.85933pt too wide) in paragraph at lines 180--182
+[28]
+Overfull \hbox (0.85933pt too wide) in paragraph at lines 189--191
 \TU/TimesNewRoman(0)/m/n/12 yang mengukur tingkat kesamaan antara keluaran mode
 l dan kalimat rujukan. BLEU
  []
 
 
 
-[30]
-Overfull \hbox (9.123pt too wide) in paragraph at lines 189--191
+[29]
+Overfull \hbox (9.123pt too wide) in paragraph at lines 198--200
 \TU/TimesNewRoman(0)/m/n/12 mengukur tumpang tindih teks terutama dari sisi \TU
 /TimesNewRoman(0)/m/it/12 recall\TU/TimesNewRoman(0)/m/n/12 . Varian umum seper
 ti \TU/TimesNewRoman(0)/m/it/12 ROUGE-
@@ -1676,101 +1719,101 @@ ti \TU/TimesNewRoman(0)/m/it/12 ROUGE-
 
 
 
-[31]
+[30]
 
-[32]
-Underfull \hbox (badness 2359) in paragraph at lines 288--289
+[31]
+Underfull \hbox (badness 2359) in paragraph at lines 297--298
 []|\TU/TimesNewRoman(0)/m/n/12 Kesesuaian pernyataan dengan sumber
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 293--294
+Underfull \hbox (badness 1184) in paragraph at lines 302--303
 []|\TU/TimesNewRoman(0)/m/n/12 Kesesuaian jawaban dengan pertanyaa-
  []
 
-[33]
-Overfull \hbox (48.61902pt too wide) in alignment at lines 306--312
+[32]
+Overfull \hbox (48.61902pt too wide) in alignment at lines 315--321
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (48.61902pt too wide) in alignment at lines 312--317
+Overfull \hbox (48.61902pt too wide) in alignment at lines 321--326
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (48.61902pt too wide) in alignment at lines 317--321
+Overfull \hbox (48.61902pt too wide) in alignment at lines 326--330
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (48.61902pt too wide) in alignment at lines 321--324
+Overfull \hbox (48.61902pt too wide) in alignment at lines 330--333
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 325--325
+Underfull \hbox (badness 2261) in paragraph at lines 334--334
 \TU/TimesNewRoman(0)/m/n/12 men KB ren-
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 325--325
+Underfull \hbox (badness 2111) in paragraph at lines 334--334
 \TU/TimesNewRoman(0)/m/n/12 dah/tidak mu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
 []|\TU/TimesNewRoman(0)/m/n/12 Halusinasi/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
 \TU/TimesNewRoman(0)/m/n/12 ketidaksela-
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 327--327
+Underfull \hbox (badness 4846) in paragraph at lines 336--336
 []|\TU/TimesNewRoman(0)/m/n/12 Koneksi/ tun-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 327--327
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
 \TU/TimesNewRoman(0)/m/n/12 neling tidak
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 []|\TU/TimesNewRoman(0)/m/n/12 Biaya ope-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 \TU/TimesNewRoman(0)/m/n/12 rasional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 \TU/TimesNewRoman(0)/m/n/12 melebihi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--329
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
 []|\TU/TimesNewRoman(0)/m/n/12 Perubahan
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 329--329
+Underfull \hbox (badness 2103) in paragraph at lines 338--338
 \TU/TimesNewRoman(0)/m/n/12 ruang lingkup
  []
 
 
-Overfull \hbox (48.61902pt too wide) in alignment at lines 324--330
+Overfull \hbox (48.61902pt too wide) in alignment at lines 333--339
  [] [] [] [] [] 
  []
 
 )
 
-[34]
+[33]
 Overfull \hbox (12.08437pt too wide) in paragraph at lines 395--395
 \TU/TimesNewRoman(0)/m/n/12 SMEs to Achieve Sustainable Business Performance: A
 pplication of Technology–
@@ -1778,7 +1821,7 @@ pplication of Technology–
 
 
 
-[35
+[34
 
 
 ]
@@ -1793,7 +1836,7 @@ See the caption package documentation for explanation.
 
 
 
-[36] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
+[35] (c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
@@ -1806,12 +1849,12 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  32638 strings out of 403196
- 637344 string characters out of 5456126
- 2014360 words of memory out of 5000000
+ 637281 string characters out of 5456126
+ 2014363 words of memory out of 5000000
  60789 multiletter control sequences out of 15000+600000
  632902 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,14n,93p,1447b,6725s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on c:/Users\ASUS\Documents\GitHub\ProposalTA-STI\out\ProposalTA.
-pdf (42 pages).
+pdf (41 pages).

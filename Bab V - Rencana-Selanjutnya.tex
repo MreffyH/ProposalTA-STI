@@ -11,16 +11,16 @@ Bagian ini juga memuat analisis risiko yang mungkin muncul selama proses impleme
 \section{Linimasa Pengerjaan}
 Bagian ini akan embahas mengenai lini masa pengerjaan tugas akhir. Setiap periode menggambarkan fokus kegiatan utama yang akan dikerjakan hingga tahap implementasi dan evaluasi. 
 
-\begin{longtable}{|p{5cm}|p{7cm}|p{7cm}|}
+\begin{longtable}{|p{3cm}|p{3cm}|p{7cm}|}
 \caption{Linimasa Pengerjaan}
 \label{tbl:Linimasa} \\
 \hline
-\textbf{Waktu} &  \textbf{Kegiatan} \\
+\textbf{Waktu} & \textbf{Fase} & \textbf{Kegiatan} \\
 \hline
 \endfirsthead
 
 \hline
-\textbf{Waktu} &  \textbf{Kegiatan} \\
+\textbf{Waktu} & \textbf{Waktu} & \textbf{Kegiatan} \\
 \hline
 \endhead
 
@@ -33,17 +33,26 @@ Bagian ini akan embahas mengenai lini masa pengerjaan tugas akhir. Setiap period
 
 September 2025
 &
+-
+&
 Cari topik, diskusi awal, dan finalisasi arah proposal tugas akhir.
 \\ \hline
 
 Oktober – Desember 2025
 &
-Penulisan Proposal TA, \textit{business understanding}, dan studi literatur.
+\textit{Business Understanding and Data Understanding}
+&
+finalisasi kebutuhan dan kriteria sukses, pengumpulan dan pemahaman data
 \\ \hline
 
 Januari – Juni 2026
 &
-Semua aktivitas Tugas Akhir, seperti persiapan data, desain sistem, pembuatan prototipe, pengujian, evaluasi, penulisan laporan, dan sidang.
+\textit{Data Preparation, Modeling, Evaluation, Deployment}
+&
+pemilihan dokumen dan knowledge base,
+implementasi RAG dan workflow otomasi,
+verifikasi fungsional dan evaluasi kualitas RAG,
+penerapan prototipe dengan dilakukan monitoring
 \\ \hline
 \end{longtable}
 
@@ -153,7 +162,7 @@ Skenario pengajuan ide produk dengan asumsi permintaan; verifikasi pros dan cons
 \end{longtable}
 
 \subsection{Evaluasi Kualitas RAG}
-Bagian ini mendeskripsikan metrik, prosedur, dan kriteria penerimaan untuk mengevaluasi kualitas sistem RAG. Evaluasi dibagi menjadi empat bagian yaitu \textit{Retrieval}, \textit{Generation}, \textit{End-to-End}, dan \textit{Human Evaluation} \autocite{adilnaib2025}.
+Bagian ini mendeskripsikan metrik, prosedur, dan kriteria penerimaan untuk mengevaluasi kualitas sistem RAG. Evaluasi dilakukan pada fase \textit{Evaluation} CRISP-DM dan hasilnya dipakai untuk iterasi perbaikan. Evaluasi dibagi menjadi empat bagian yaitu \textit{Retrieval}, \textit{Generation}, \textit{End-to-End}, dan \textit{Human Evaluation} \autocite{adilnaib2025}.
 
 \subsubsection{Evaluasi \textit{Retrieval}}
 Evaluasi ini menilai apakah sistem mengambil konteks yang tepat dan non-redundan. Disini menggunakan penilaian \textit{Precision, Recall, dan F1-Score}.
@@ -257,7 +266,7 @@ Relevancy Score &= \frac{Words in Response∩Words in Query}{Words in Query}
 Mengukur seberapa baik keluaran sistem sesuai dengan maksud kueri pengguna.
 
 \subsubsection{Evaluasi Manusia}
-Skenario evaluasi berikut dirancang untuk menilai kualitas sistem RAG secara menyeluruh, baik dari aspek pengambilan konteks, penyusunan jawaban, maupun ketertelusuran sumber yang digunakan. Setiap metrik dipilih untuk memastikan bahwa sistem tidak hanya menghasilkan keluaran yang relevan, tetapi juga dapat dipertanggungjawabkan secara faktual dan konsisten. Tabel berikut merangkum komponen evaluasi yang digunakan dalam penelitian ini.
+Skenario evaluasi berikut dirancang untuk menilai kualitas sistem RAG secara menyeluruh, baik dari aspek pengambilan konteks, penyusunan jawaban, maupun ketertelusuran sumber yang digunakan. Setiap metrik dipilih untuk memastikan bahwa sistem tidak hanya menghasilkan keluaran yang relevan, tetapi juga dapat dipertanggungjawabkan secara faktual dan konsisten. Tabel berikut merangkum komponen evaluasi yang digunakan dalam tugas akhir ini.
 
 \begin{longtable}{|p{5cm}|p{7cm}|p{5cm}|}
 \caption{Human Evaluation}
