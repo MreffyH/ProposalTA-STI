@@ -491,39 +491,6 @@
       \verb https://www.ekon.go.id/publikasi/detail/6152/pemerintah-dorong-umkm-naik-kelas-tingkatkan-kontribusi-terhadap-ekspor-indonesia
       \endverb
     \endentry
-    \entry{ajitesh2022}{online}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=59f484da1bb5341a2bdb0dfd8f6fe96a}{%
-           family={Kumar},
-           familyi={K\bibinitperiod},
-           given={Ajitesh},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
-      \strng{fullhash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
-      \strng{fullhashraw}{59f484da1bb5341a2bdb0dfd8f6fe96a}
-      \strng{bibnamehash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
-      \strng{authorbibnamehash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
-      \strng{authornamehash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
-      \strng{authorfullhash}{59f484da1bb5341a2bdb0dfd8f6fe96a}
-      \strng{authorfullhashraw}{59f484da1bb5341a2bdb0dfd8f6fe96a}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed October 20, 2025}
-      \field{title}{Linear vs Non-Linear Data: How to Know}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://vitalflux.com/how-know-data-linear-non-linear/
-      \endverb
-      \verb{url}
-      \verb https://vitalflux.com/how-know-data-linear-non-linear/
-      \endverb
-    \endentry
     \entry{lewis2020}{online}{}{}
       \name{author}{12}{}{%
         {{un=0,uniquepart=base,hash=ecbe786a5668bf643d74bb24fe1c3cfe}{%

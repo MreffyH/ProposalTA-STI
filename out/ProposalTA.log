@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  18 DEC 2025 09:43
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.4) (preloaded format=xelatex 2025.10.27)  18 FEB 2026 12:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -996,7 +996,7 @@ Package csquotes Info: Redefining alias 'default' -> 'fallback'.
 (C:\Users\ASUS\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-
 english.tex)
 Package babel Info: Importing data for english
-(babel)             from babel-en.ini. Reported on input line 25.
+(babel)             from babel-en.ini. Reported on input line 23.
 )
 \openout1 = `ProposalTA.aux'.
 
@@ -1234,7 +1234,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 ]
-Overfull \hbox (18.71347pt too wide) in paragraph at lines 105--105
+Overfull \hbox (18.71347pt too wide) in paragraph at lines 103--103
  [] [][][]\TU/TimesNewRoman(0)/m/n/12 Sistem Rekomendasi Berbasis \TU/TimesNewR
 oman(0)/m/it/12 Retrieval-Augmented Generation (RAG) 
  []
@@ -1267,14 +1267,14 @@ Bab I.
 ]
 
 [2]
-Overfull \hbox (4.17117pt too wide) in paragraph at lines 45--46
+
+[3]
+Overfull \hbox (4.17117pt too wide) in paragraph at lines 47--48
 []\TU/TimesNewRoman(0)/m/n/12 Pendekatan kecerdasan buatan dibatasi pada penggu
 naan \TU/TimesNewRoman(0)/m/it/12 Retrieval-Augmented
  []
 
 
-
-[3]
 
 [4]) (Bab II - Studi-Literatur.tex
 
@@ -1848,10 +1848,10 @@ Package logreq Info: Writing requests to 'ProposalTA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32638 strings out of 403196
- 637281 string characters out of 5456126
- 2014363 words of memory out of 5000000
- 60789 multiletter control sequences out of 15000+600000
+ 32633 strings out of 403196
+ 637122 string characters out of 5456126
+ 2013296 words of memory out of 5000000
+ 60784 multiletter control sequences out of 15000+600000
  632902 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  73i,14n,93p,1447b,6725s stack positions out of 10000i,1000n,20000p,200000b,200000s
